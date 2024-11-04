@@ -1,0 +1,45 @@
+module core(    input[15:0] cin, 
+		input [6:0] caddr,
+		input cload,
+		input clk1,
+		input clk2, 
+		input rstn,
+		input [15:0] din,
+		input valid_in,
+		output [15:0] dout,
+		output valid_out);
+
+reg [15:0] imem;
+reg [15:0] iaddr;
+wire [15:0] totalSum;
+
+// Load all coefficients into CMEM
+while(cload == true){
+	cmem[caddr] = cin;
+}
+
+// Handling inputs and outputs based on clk1
+// If valid out output data
+always @(posedege.clk1) {
+	imem[iaddr] = din;
+	valid_in = true;
+	if(valid_out = true) {
+		dout = totalSum;
+	}	
+}
+// Core runs at clk2 and passes on inputs to ALU
+always @(posedge.clk2) {
+	if(valid_in) {
+		valid_in = false;
+		ALU(imem, cmem, totalSum);
+		valid_out = true;
+	}
+}
+endmodule
+
+
+
+
+
+
+
