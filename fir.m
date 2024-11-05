@@ -1,12 +1,8 @@
-% Define the input signal
-input_signal = [4, 8, 4, 0, 4, 8, 4];
+function output_signal = fir(input_signal, filter_coefficients)
 
-% Define the FIR filter coefficients
-filter_coeffs = [0.25, 0.5, 0.25];
-
-% Get the length of the input signal and filter
+% Get the length of the input signal and filter coefficients
 input_length = length(input_signal);
-filter_length = length(filter_coeffs);
+filter_length = length(filter_coefficients);
 
 % Initialize the output signal
 output_signal = zeros(1, input_length);
@@ -15,13 +11,7 @@ output_signal = zeros(1, input_length);
 for i = 1:input_length
     for j = 1:filter_length
         if i-j+1 > 0
-            output_signal(i) = output_signal(i) + filter_coeffs(j) * input_signal(i-j+1);
+            output_signal(i) = output_signal(i) + filter_coefficients(j) * input_signal(i-j+1);
         end
     end
 end
-
-% Display the results
-disp('Input signal:');
-disp(input_signal);
-disp('Output signal:');
-disp(output_signal);
