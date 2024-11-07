@@ -31,7 +31,9 @@ always @(posedege.clk1) {
 always @(posedge.clk2) {
 	if(valid_in) {
 		valid_in = false;
-		ALU(imem, cmem, totalSum);
+		for (int i = 0; i < 63; i++) {
+			ALU(imem[length(imen)-1-i], cmem[i], totalSum);
+		}
 		valid_out = true;
 	}
 }
