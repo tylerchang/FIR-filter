@@ -7,11 +7,13 @@ module alu_tb();
     reg [38:0] totalSumIn;
     wire [38:0] totalSumOut;
     reg clk;
-	
+    reg rstn;
     // Instantiate the ALU
     alu dut (
         .inputX(inputX),
         .inputB(inputB),
+	.clk(clk),
+	.rstn(rstn),
         .totalSumIn(totalSumIn),
         .totalSumOut(totalSumOut)
     );
@@ -26,9 +28,12 @@ module alu_tb();
         $dumpfile("./alu.vcd");
         $dumpvars(0,alu_tb.dut);
 	clk = 0;
+	rstn = 0;
         totalSumIn = 0;
         @(posedge clk);	
-	
+	@(negedge clk);
+	rstn = 1;
+
         @(posedge clk); 
         $display("Starting ALU testbench");
 
@@ -37,6 +42,7 @@ module alu_tb();
         	inputX = $random;
         	inputB = $random;
 		expected_result = inputX * inputB + totalSumIn;
+        	@(posedge clk);
         	@(posedge clk);
         	$display("inputX = %0d, inputB = %0d, totalSumIn = %0d", inputX, inputB, totalSumIn);
         	$display("Expected: %0d, Got: %0d", expected_result, totalSumOut);

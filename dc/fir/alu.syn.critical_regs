@@ -7,7 +7,7 @@ Report : timing
         -sort_by slack
 Design : alu
 Version: U-2022.12-SP7
-Date   : Sun Nov 17 18:07:15 2024
+Date   : Sun Nov 17 18:53:32 2024
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -15,44 +15,86 @@ Wire Load Model Mode: top
 
 Endpoint                         Path Delay     Path Required     Slack
 ------------------------------------------------------------------------
-totalSumOut[38] (out)              19.67 r        infinity     infinity
-totalSumOut[37] (out)              19.53 r        infinity     infinity
-totalSumOut[36] (out)              19.05 r        infinity     infinity
-totalSumOut[35] (out)              18.58 r        infinity     infinity
-totalSumOut[34] (out)              18.11 r        infinity     infinity
-totalSumOut[33] (out)              17.63 r        infinity     infinity
-totalSumOut[32] (out)              17.16 r        infinity     infinity
-totalSumOut[31] (out)              16.69 r        infinity     infinity
-totalSumOut[30] (out)              16.21 r        infinity     infinity
-totalSumOut[29] (out)              15.74 r        infinity     infinity
-totalSumOut[28] (out)              15.27 r        infinity     infinity
-totalSumOut[27] (out)              14.79 r        infinity     infinity
-totalSumOut[26] (out)              14.32 r        infinity     infinity
-totalSumOut[25] (out)              13.85 r        infinity     infinity
-totalSumOut[24] (out)              13.37 r        infinity     infinity
-totalSumOut[23] (out)              12.90 r        infinity     infinity
-totalSumOut[22] (out)              12.43 r        infinity     infinity
-totalSumOut[21] (out)              11.95 r        infinity     infinity
-totalSumOut[20] (out)              11.48 r        infinity     infinity
-totalSumOut[19] (out)              11.01 r        infinity     infinity
-totalSumOut[18] (out)              10.53 r        infinity     infinity
-totalSumOut[17] (out)              10.06 r        infinity     infinity
-totalSumOut[16] (out)               9.59 r        infinity     infinity
-totalSumOut[15] (out)               9.11 r        infinity     infinity
-totalSumOut[14] (out)               8.64 r        infinity     infinity
-totalSumOut[13] (out)               8.17 r        infinity     infinity
-totalSumOut[12] (out)               7.70 r        infinity     infinity
-totalSumOut[11] (out)               7.22 r        infinity     infinity
-totalSumOut[10] (out)               6.75 r        infinity     infinity
-totalSumOut[9] (out)                6.28 r        infinity     infinity
-totalSumOut[8] (out)                5.80 r        infinity     infinity
-totalSumOut[7] (out)                5.33 r        infinity     infinity
-totalSumOut[6] (out)                4.86 r        infinity     infinity
-totalSumOut[5] (out)                4.38 r        infinity     infinity
-totalSumOut[4] (out)                3.91 r        infinity     infinity
-totalSumOut[3] (out)                3.44 r        infinity     infinity
-totalSumOut[2] (out)                2.87 f        infinity     infinity
-totalSumOut[1] (out)                2.35 r        infinity     infinity
-totalSumOut[0] (out)                0.93 f        infinity     infinity
+totalSumOut_reg_34_/D (DFFHQX4TS)     3.82 f          1.76        -2.06
+totalSumOut_reg_36_/D (DFFHQX4TS)     3.82 f          1.76        -2.06
+totalSumOut_reg_38_/D (DFFHQX8TS)     3.82 f          1.76        -2.06
+totalSumOut_reg_37_/D (DFFHQX8TS)     3.82 f          1.76        -2.06
+totalSumOut_reg_33_/D (DFFHQX8TS)     3.82 f          1.76        -2.06
+totalSumOut_reg_31_/D (DFFHQX8TS)     3.82 f          1.77        -2.05
+totalSumOut_reg_27_/D (DFFHQX8TS)     3.82 f          1.77        -2.05
+totalSumOut_reg_24_/D (DFFHQX8TS)     3.82 f          1.77        -2.05
+totalSumOut_reg_18_/D (DFFHQX8TS)     3.79 f          1.77        -2.03
+totalSumOut_reg_23_/D (DFFHQX8TS)     3.79 f          1.77        -2.03
+totalSumOut_reg_26_/D (DFFHQX8TS)     3.79 f          1.77        -2.02
+totalSumOut_reg_28_/D (DFFHQX8TS)     3.79 f          1.77        -2.02
+totalSumOut_reg_29_/D (DFFHQX8TS)     3.78 f          1.77        -2.02
+totalSumOut_reg_25_/D (DFFHQX8TS)     3.78 f          1.77        -2.02
+totalSumOut_reg_21_/D (DFFHQX8TS)     3.78 f          1.77        -2.02
+totalSumOut_reg_20_/D (DFFHQX8TS)     3.78 f          1.77        -2.01
+totalSumOut_reg_30_/D (DFFHQX8TS)     3.78 f          1.77        -2.01
+totalSumOut_reg_22_/D (DFFHQX4TS)     3.80 r          1.79        -2.01
+totalSumOut_reg_32_/D (DFFHQX8TS)     3.75 f          1.75        -2.01
+totalSumOut_reg_35_/D (DFFHQX8TS)     3.77 f          1.77        -2.00
+totalSumOut_reg_13_/D (DFFQX1TS)     3.69 f           1.69        -2.00
+totalSumOut_reg_17_/D (DFFQX1TS)     3.73 r           1.73        -1.99
+totalSumOut_reg_15_/D (DFFQX1TS)     3.66 f           1.69        -1.97
+totalSumOut_reg_19_/D (DFFHQX8TS)     3.73 f          1.77        -1.96
+totalSumOut_reg_16_/D (DFFHQX8TS)     3.70 f          1.77        -1.93
+totalSumOut_reg_14_/D (DFFQX1TS)     3.62 f           1.69        -1.93
+totalSumOut_reg_12_/D (DFFQX1TS)     3.58 f           1.69        -1.89
+totalSumOut_reg_11_/D (DFFQX1TS)     3.56 f           1.69        -1.87
+totalSumOut_reg_9_/D (DFFQX1TS)     3.50 f            1.69        -1.81
+totalSumOut_reg_10_/D (DFFQX1TS)     3.42 f           1.69        -1.73
+totalSumOut_reg_8_/D (DFFQX1TS)     3.31 f            1.69        -1.62
+totalSumOut_reg_7_/D0 (MDFFHQX4TS)     2.98 f         1.65        -1.33
+totalSumOut_reg_6_/D (DFFQX1TS)     2.97 f            1.69        -1.28
+totalSumOut_reg_5_/D (DFFQX1TS)     2.73 f            1.69        -1.04
+totalSumOut_reg_4_/D (DFFQX1TS)     2.67 f            1.69        -0.98
+totalSumOut_reg_3_/D (DFFQX1TS)     2.47 f            1.69        -0.78
+totalSumOut_reg_2_/D (DFFQX1TS)     2.30 f            1.69        -0.61
+totalSumOut_reg_1_/D0 (MDFFHQX4TS)     1.80 f         1.65        -0.15
+totalSumOut_reg_0_/D (DFFTRX1TS)     1.28 f           1.63         0.36
+totalSumOut_reg_1_/S0 (MDFFHQX4TS)     0.83 f         1.65         0.81
+totalSumOut_reg_7_/S0 (MDFFHQX4TS)     0.83 f         1.65         0.81
+totalSumOut[0] (out)                0.76 f            1.95         1.19
+totalSumOut[17] (out)               0.72 f            1.95         1.23
+totalSumOut[15] (out)               0.72 f            1.95         1.23
+totalSumOut[14] (out)               0.72 f            1.95         1.23
+totalSumOut[13] (out)               0.72 f            1.95         1.23
+totalSumOut[12] (out)               0.72 f            1.95         1.23
+totalSumOut[11] (out)               0.72 f            1.95         1.23
+totalSumOut[10] (out)               0.72 f            1.95         1.23
+totalSumOut[9] (out)                0.72 f            1.95         1.23
+totalSumOut[8] (out)                0.72 f            1.95         1.23
+totalSumOut[6] (out)                0.72 f            1.95         1.23
+totalSumOut[5] (out)                0.72 f            1.95         1.23
+totalSumOut[4] (out)                0.72 f            1.95         1.23
+totalSumOut[3] (out)                0.72 f            1.95         1.23
+totalSumOut[2] (out)                0.72 f            1.95         1.23
+totalSumOut_reg_0_/RN (DFFTRX1TS)     0.11 r          1.55         1.44
+totalSumOut[38] (out)               0.32 f            1.95         1.63
+totalSumOut[37] (out)               0.32 f            1.95         1.63
+totalSumOut[35] (out)               0.32 f            1.95         1.63
+totalSumOut[33] (out)               0.32 f            1.95         1.63
+totalSumOut[32] (out)               0.32 f            1.95         1.63
+totalSumOut[31] (out)               0.32 f            1.95         1.63
+totalSumOut[30] (out)               0.32 f            1.95         1.63
+totalSumOut[29] (out)               0.32 f            1.95         1.63
+totalSumOut[28] (out)               0.32 f            1.95         1.63
+totalSumOut[27] (out)               0.32 f            1.95         1.63
+totalSumOut[26] (out)               0.32 f            1.95         1.63
+totalSumOut[25] (out)               0.32 f            1.95         1.63
+totalSumOut[24] (out)               0.32 f            1.95         1.63
+totalSumOut[23] (out)               0.32 f            1.95         1.63
+totalSumOut[21] (out)               0.32 f            1.95         1.63
+totalSumOut[20] (out)               0.32 f            1.95         1.63
+totalSumOut[19] (out)               0.32 f            1.95         1.63
+totalSumOut[18] (out)               0.32 f            1.95         1.63
+totalSumOut[16] (out)               0.32 f            1.95         1.63
+totalSumOut[7] (out)                0.30 f            1.95         1.65
+totalSumOut[1] (out)                0.30 f            1.95         1.65
+totalSumOut[36] (out)               0.28 f            1.95         1.67
+totalSumOut[34] (out)               0.28 f            1.95         1.67
+totalSumOut[22] (out)               0.28 f            1.95         1.67
 
 1
