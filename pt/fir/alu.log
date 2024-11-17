@@ -55,8 +55,8 @@ Error: Cannot find design 'lfsr1'. (DES-004)
 ## Timing Constraints
 source ./timing.tcl
 Linking design alu...
-Information: 495 (93.93%) library cells are unused in library scx3_cmos8rf_lpvt_tt_1p2v_25c..... (LNK-045)
-Information: total 495 library cells are unused (LNK-046)
+Information: 509 (96.58%) library cells are unused in library scx3_cmos8rf_lpvt_tt_1p2v_25c..... (LNK-045)
+Information: total 509 library cells are unused (LNK-046)
 Warning: No port objects matched 'clk' (SEL-004)
 Error: Nothing matched for ports (SEL-005)
 Error: can't read "clk_name": no such variable
@@ -94,4 +94,17 @@ Information: Defining new variable 'typical_output_delay'. (CMD-041)
 Information: Defining new variable 'verilog_files'. (CMD-041)
 Information: Defining new variable 'typical_input_delay'. (CMD-041)
 Information: Defining new variable 'clk_transition'. (CMD-041)
-pt_shell> 
+pt_shell> man
+Error: Required argument 'Topic: command, variable, or message.' was not found (CMD-007)
+pt_shell> primetime
+Error: unknown command 'primetime' (CMD-005)
+pt_shell> exit
+
+Timing updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full, 0 logical)
+Noise updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full)
+Maximum memory usage for this session: 2917.48 MB
+CPU usage for this session: 2 seconds 
+Elapsed time for this session: 206 seconds
+Diagnostics summary: 5 errors, 1 warning, 13 informationals
+
+Thank you for using pt_shell!

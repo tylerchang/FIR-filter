@@ -15,7 +15,7 @@ set power_enable_analysis true
 
 ## Setting files/paths
 set verilog_files {../../dc/fir/alu.nl.v}
-set my_toplevel lfsr1
+set my_toplevel alu
 set search_path ". /courses/ee6321/share/ibm13rflpvt/synopsys/"
 set link_path "* scx3_cmos8rf_lpvt_tt_1p2v_25c.db" 
 
@@ -41,7 +41,7 @@ report_timing -significant_digits 4 -delay_type min_max >> ${rpt_file}
 
 ## Power analysis
 set power_analysis_mode "time_based"
-read_vcd "../../qsim_dc/fir/alu.vcd" -strip_path "testbench/alu"
+read_vcd "../../qsim_dc/fir/alu.vcd" -strip_path"alu_tb/dut"
 report_switching_activity >> ${rpt_file}
 report_switching_activity -list_not_annotated >> ${rpt_file}
 update_power

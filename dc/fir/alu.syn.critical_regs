@@ -7,7 +7,7 @@ Report : timing
         -sort_by slack
 Design : alu
 Version: U-2022.12-SP7
-Date   : Sun Nov 17 14:37:58 2024
+Date   : Sun Nov 17 18:07:15 2024
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -15,44 +15,44 @@ Wire Load Model Mode: top
 
 Endpoint                         Path Delay     Path Required     Slack
 ------------------------------------------------------------------------
-totalSumOut[38] (out)              19.93 r        infinity     infinity
-totalSumOut[37] (out)              19.35 f        infinity     infinity
-totalSumOut[36] (out)              18.94 f        infinity     infinity
-totalSumOut[35] (out)              18.54 f        infinity     infinity
-totalSumOut[34] (out)              18.13 f        infinity     infinity
-totalSumOut[33] (out)              17.73 f        infinity     infinity
-totalSumOut[32] (out)              17.32 f        infinity     infinity
-totalSumOut[31] (out)              16.92 f        infinity     infinity
-totalSumOut[30] (out)              16.48 r        infinity     infinity
-totalSumOut[29] (out)              16.07 r        infinity     infinity
-totalSumOut[28] (out)              15.34 r        infinity     infinity
-totalSumOut[27] (out)              14.86 r        infinity     infinity
-totalSumOut[26] (out)              14.39 r        infinity     infinity
-totalSumOut[25] (out)              13.92 r        infinity     infinity
-totalSumOut[24] (out)              13.44 r        infinity     infinity
-totalSumOut[23] (out)              12.97 r        infinity     infinity
-totalSumOut[22] (out)              12.50 r        infinity     infinity
-totalSumOut[21] (out)              12.02 r        infinity     infinity
-totalSumOut[20] (out)              11.55 r        infinity     infinity
-totalSumOut[19] (out)              11.08 r        infinity     infinity
-totalSumOut[18] (out)              10.60 r        infinity     infinity
-totalSumOut[17] (out)              10.13 r        infinity     infinity
-totalSumOut[16] (out)               9.66 r        infinity     infinity
-totalSumOut[15] (out)               9.19 r        infinity     infinity
-totalSumOut[14] (out)               8.71 r        infinity     infinity
-totalSumOut[13] (out)               8.24 r        infinity     infinity
-totalSumOut[12] (out)               7.77 r        infinity     infinity
-totalSumOut[11] (out)               7.29 r        infinity     infinity
-totalSumOut[10] (out)               6.82 r        infinity     infinity
-totalSumOut[9] (out)                6.35 r        infinity     infinity
-totalSumOut[8] (out)                5.87 r        infinity     infinity
-totalSumOut[7] (out)                5.40 r        infinity     infinity
-totalSumOut[6] (out)                4.93 r        infinity     infinity
-totalSumOut[5] (out)                4.49 r        infinity     infinity
-totalSumOut[4] (out)                4.08 r        infinity     infinity
-totalSumOut[3] (out)                3.54 r        infinity     infinity
-totalSumOut[2] (out)                2.88 f        infinity     infinity
-totalSumOut[1] (out)                2.32 r        infinity     infinity
-totalSumOut[0] (out)                0.92 f        infinity     infinity
+totalSumOut[38] (out)              19.67 r        infinity     infinity
+totalSumOut[37] (out)              19.53 r        infinity     infinity
+totalSumOut[36] (out)              19.05 r        infinity     infinity
+totalSumOut[35] (out)              18.58 r        infinity     infinity
+totalSumOut[34] (out)              18.11 r        infinity     infinity
+totalSumOut[33] (out)              17.63 r        infinity     infinity
+totalSumOut[32] (out)              17.16 r        infinity     infinity
+totalSumOut[31] (out)              16.69 r        infinity     infinity
+totalSumOut[30] (out)              16.21 r        infinity     infinity
+totalSumOut[29] (out)              15.74 r        infinity     infinity
+totalSumOut[28] (out)              15.27 r        infinity     infinity
+totalSumOut[27] (out)              14.79 r        infinity     infinity
+totalSumOut[26] (out)              14.32 r        infinity     infinity
+totalSumOut[25] (out)              13.85 r        infinity     infinity
+totalSumOut[24] (out)              13.37 r        infinity     infinity
+totalSumOut[23] (out)              12.90 r        infinity     infinity
+totalSumOut[22] (out)              12.43 r        infinity     infinity
+totalSumOut[21] (out)              11.95 r        infinity     infinity
+totalSumOut[20] (out)              11.48 r        infinity     infinity
+totalSumOut[19] (out)              11.01 r        infinity     infinity
+totalSumOut[18] (out)              10.53 r        infinity     infinity
+totalSumOut[17] (out)              10.06 r        infinity     infinity
+totalSumOut[16] (out)               9.59 r        infinity     infinity
+totalSumOut[15] (out)               9.11 r        infinity     infinity
+totalSumOut[14] (out)               8.64 r        infinity     infinity
+totalSumOut[13] (out)               8.17 r        infinity     infinity
+totalSumOut[12] (out)               7.70 r        infinity     infinity
+totalSumOut[11] (out)               7.22 r        infinity     infinity
+totalSumOut[10] (out)               6.75 r        infinity     infinity
+totalSumOut[9] (out)                6.28 r        infinity     infinity
+totalSumOut[8] (out)                5.80 r        infinity     infinity
+totalSumOut[7] (out)                5.33 r        infinity     infinity
+totalSumOut[6] (out)                4.86 r        infinity     infinity
+totalSumOut[5] (out)                4.38 r        infinity     infinity
+totalSumOut[4] (out)                3.91 r        infinity     infinity
+totalSumOut[3] (out)                3.44 r        infinity     infinity
+totalSumOut[2] (out)                2.87 f        infinity     infinity
+totalSumOut[1] (out)                2.35 r        infinity     infinity
+totalSumOut[0] (out)                0.93 f        infinity     infinity
 
 1

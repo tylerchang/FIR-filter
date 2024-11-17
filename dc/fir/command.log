@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version U-2022.12-SP7 for linux64 -- Oct 10, 2023
-#@ # Date:   Sun Nov 17 14:37:06 2024
+#@ # Date:   Sun Nov 17 18:06:24 2024
 #@ # Run by: tc3407@cadpc07
 #@ 
 
@@ -8699,7 +8699,7 @@ source -echo -verbose /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-L
 #@ 
 #@ # -- End source ../common_script/common.tcl
 
-#@ read_verilog "../../rtl/$top_level/$top_level.v"
+#@ read_verilog "../../rtl/fir/$top_level.v"
 #@ set set_fix_multiple_port_nets "true"
 #@ list_designs
 #@ 
@@ -8722,7 +8722,7 @@ source -echo -verbose /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-L
 #@ ###################################################################### 
 #@ 
 #@ # Setting variables 
-#@ set clk_period 2.00
+#@ set clk_period 5.00
 #@ set clk_uncertainty 0
 #@ set clk_transition 0.010
 #@ set typical_input_delay 0.05

@@ -1,0 +1,67 @@
+# do runsim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim DE vmap 2024.2 Lib Mapping Utility 2024.05 May 20 2024
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim DE vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 17:58:34 on Nov 17,2024
+# vlog -reportprogress 300 "+acc" -incr ../../rtl/fir/alu.v 
+# -- Skipping module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 17:58:34 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim DE vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 17:58:34 on Nov 17,2024
+# vlog -reportprogress 300 "+acc" -incr ./test_alu.v 
+# -- Skipping module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 17:58:34 on Nov 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Warning: (vsim-8690) Ignoring plusarg '+acc' with -novopt in effect.
+# vsim "+acc" -t ps -lib work alu_tb 
+# Start time: 17:58:34 on Nov 17,2024
+# //  ModelSim DE 2024.2 May 20 2024 Linux 4.18.0-553.27.1.el8_10.x86_64
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.alu_tb
+# Loading work.alu
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/clk'.
+# Executing ONERROR command at macro ./waveformat.do line 3
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/resetn'.
+# Executing ONERROR command at macro ./waveformat.do line 4
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/i'.
+# Executing ONERROR command at macro ./waveformat.do line 5
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/lfsr_out'.
+# Executing ONERROR command at macro ./waveformat.do line 6
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/lfsr_out_matlab'.
+# Executing ONERROR command at macro ./waveformat.do line 7
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/lfsr_out_qsim'.
+# Executing ONERROR command at macro ./waveformat.do line 8
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/error_count'.
+# Executing ONERROR command at macro ./waveformat.do line 9
+# Starting ALU testbench
+# Test 1 failed!
+# inputX = 1, inputB = 2, totalSumIn = 0
+# Expected: 2, Got: x
+# All 100 tests passed successfully!
+# ** Note: $finish    : ./test_alu.v(46)
+#    Time: 45 ns  Iteration: 1  Instance: /alu_tb
+# 1
+# Break in Module alu_tb at ./test_alu.v line 46
+# End time: 18:00:12 on Nov 17,2024, Elapsed time: 0:01:38
+# Errors: 0, Warnings: 1

@@ -7,7 +7,7 @@ Report : timing
         -sort_by slack
 Design : alu
 Version: U-2022.12-SP7
-Date   : Sun Nov 17 14:37:58 2024
+Date   : Sun Nov 17 18:07:16 2024
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
@@ -23,55 +23,54 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/CO (CMPR32X2TS)                     0.47      11.41 f
-  U693/CO (CMPR32X2TS)                     0.47      11.88 f
-  U695/CO (CMPR32X2TS)                     0.47      12.35 f
-  U697/CO (CMPR32X2TS)                     0.47      12.83 f
-  U699/CO (CMPR32X2TS)                     0.47      13.30 f
-  U701/CO (CMPR32X2TS)                     0.47      13.77 f
-  U703/CO (CMPR32X2TS)                     0.47      14.25 f
-  U705/CO (CMPR32X2TS)                     0.47      14.72 f
-  U707/CO (CMPR32X2TS)                     0.47      15.19 f
-  U709/CO (CMPR32X2TS)                     0.67      15.87 f
-  U711/CO (CMPR32X2TS)                     0.47      16.34 f
-  U654/Y (INVX2TS)                         0.09      16.43 r
-  U738/CO (CMPR32X2TS)                     0.38      16.81 r
-  U737/CO (CMPR32X2TS)                     0.41      17.22 r
-  U736/CO (CMPR32X2TS)                     0.41      17.62 r
-  U735/CO (CMPR32X2TS)                     0.41      18.03 r
-  U734/CO (CMPR32X2TS)                     0.41      18.43 r
-  U733/CO (CMPR32X2TS)                     0.41      18.84 r
-  U732/CO (CMPR32X2TS)                     0.39      19.23 r
-  U655/Y (XOR2XLTS)                        0.18      19.41 r
-  U656/Y (XOR2XLTS)                        0.52      19.93 r
-  totalSumOut[38] (out)                    0.00      19.93 r
-  data arrival time                                  19.93
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/CO (CMPR32X2TS)                     0.47      11.34 f
+  U668/CO (CMPR32X2TS)                     0.47      11.81 f
+  U672/CO (CMPR32X2TS)                     0.47      12.28 f
+  U676/CO (CMPR32X2TS)                     0.47      12.76 f
+  U680/CO (CMPR32X2TS)                     0.47      13.23 f
+  U684/CO (CMPR32X2TS)                     0.47      13.70 f
+  U688/CO (CMPR32X2TS)                     0.47      14.18 f
+  U692/CO (CMPR32X2TS)                     0.47      14.65 f
+  U696/CO (CMPR32X2TS)                     0.47      15.12 f
+  U700/CO (CMPR32X2TS)                     0.47      15.60 f
+  U704/CO (CMPR32X2TS)                     0.47      16.07 f
+  U709/CO (CMPR32X2TS)                     0.47      16.54 f
+  U711/CO (CMPR32X2TS)                     0.47      17.02 f
+  U713/CO (CMPR32X2TS)                     0.47      17.49 f
+  U715/CO (CMPR32X2TS)                     0.47      17.96 f
+  U717/CO (CMPR32X2TS)                     0.47      18.44 f
+  U719/CO (CMPR32X2TS)                     0.47      18.91 f
+  U743/CO (CMPR32X2TS)                     0.46      19.37 f
+  U745/Y (XOR2XLTS)                        0.30      19.67 r
+  totalSumOut[38] (out)                    0.00      19.67 r
+  data arrival time                                  19.67
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -86,53 +85,54 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/CO (CMPR32X2TS)                     0.47      11.41 f
-  U693/CO (CMPR32X2TS)                     0.47      11.88 f
-  U695/CO (CMPR32X2TS)                     0.47      12.35 f
-  U697/CO (CMPR32X2TS)                     0.47      12.83 f
-  U699/CO (CMPR32X2TS)                     0.47      13.30 f
-  U701/CO (CMPR32X2TS)                     0.47      13.77 f
-  U703/CO (CMPR32X2TS)                     0.47      14.25 f
-  U705/CO (CMPR32X2TS)                     0.47      14.72 f
-  U707/CO (CMPR32X2TS)                     0.47      15.19 f
-  U709/CO (CMPR32X2TS)                     0.67      15.87 f
-  U711/CO (CMPR32X2TS)                     0.47      16.34 f
-  U654/Y (INVX2TS)                         0.09      16.43 r
-  U738/CO (CMPR32X2TS)                     0.38      16.81 r
-  U737/CO (CMPR32X2TS)                     0.41      17.22 r
-  U736/CO (CMPR32X2TS)                     0.41      17.62 r
-  U735/CO (CMPR32X2TS)                     0.41      18.03 r
-  U734/CO (CMPR32X2TS)                     0.41      18.43 r
-  U733/CO (CMPR32X2TS)                     0.41      18.84 r
-  U732/S (CMPR32X2TS)                      0.51      19.35 f
-  totalSumOut[37] (out)                    0.00      19.35 f
-  data arrival time                                  19.35
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/CO (CMPR32X2TS)                     0.47      11.34 f
+  U668/CO (CMPR32X2TS)                     0.47      11.81 f
+  U672/CO (CMPR32X2TS)                     0.47      12.28 f
+  U676/CO (CMPR32X2TS)                     0.47      12.76 f
+  U680/CO (CMPR32X2TS)                     0.47      13.23 f
+  U684/CO (CMPR32X2TS)                     0.47      13.70 f
+  U688/CO (CMPR32X2TS)                     0.47      14.18 f
+  U692/CO (CMPR32X2TS)                     0.47      14.65 f
+  U696/CO (CMPR32X2TS)                     0.47      15.12 f
+  U700/CO (CMPR32X2TS)                     0.47      15.60 f
+  U704/CO (CMPR32X2TS)                     0.47      16.07 f
+  U709/CO (CMPR32X2TS)                     0.47      16.54 f
+  U711/CO (CMPR32X2TS)                     0.47      17.02 f
+  U713/CO (CMPR32X2TS)                     0.47      17.49 f
+  U715/CO (CMPR32X2TS)                     0.47      17.96 f
+  U717/CO (CMPR32X2TS)                     0.47      18.44 f
+  U719/CO (CMPR32X2TS)                     0.47      18.91 f
+  U743/S (CMPR32X2TS)                      0.51      19.42 f
+  U720/Y (INVX2TS)                         0.11      19.53 r
+  totalSumOut[37] (out)                    0.00      19.53 r
+  data arrival time                                  19.53
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -147,52 +147,53 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/CO (CMPR32X2TS)                     0.47      11.41 f
-  U693/CO (CMPR32X2TS)                     0.47      11.88 f
-  U695/CO (CMPR32X2TS)                     0.47      12.35 f
-  U697/CO (CMPR32X2TS)                     0.47      12.83 f
-  U699/CO (CMPR32X2TS)                     0.47      13.30 f
-  U701/CO (CMPR32X2TS)                     0.47      13.77 f
-  U703/CO (CMPR32X2TS)                     0.47      14.25 f
-  U705/CO (CMPR32X2TS)                     0.47      14.72 f
-  U707/CO (CMPR32X2TS)                     0.47      15.19 f
-  U709/CO (CMPR32X2TS)                     0.67      15.87 f
-  U711/CO (CMPR32X2TS)                     0.47      16.34 f
-  U654/Y (INVX2TS)                         0.09      16.43 r
-  U738/CO (CMPR32X2TS)                     0.38      16.81 r
-  U737/CO (CMPR32X2TS)                     0.41      17.22 r
-  U736/CO (CMPR32X2TS)                     0.41      17.62 r
-  U735/CO (CMPR32X2TS)                     0.41      18.03 r
-  U734/CO (CMPR32X2TS)                     0.41      18.43 r
-  U733/S (CMPR32X2TS)                      0.51      18.94 f
-  totalSumOut[36] (out)                    0.00      18.94 f
-  data arrival time                                  18.94
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/CO (CMPR32X2TS)                     0.47      11.34 f
+  U668/CO (CMPR32X2TS)                     0.47      11.81 f
+  U672/CO (CMPR32X2TS)                     0.47      12.28 f
+  U676/CO (CMPR32X2TS)                     0.47      12.76 f
+  U680/CO (CMPR32X2TS)                     0.47      13.23 f
+  U684/CO (CMPR32X2TS)                     0.47      13.70 f
+  U688/CO (CMPR32X2TS)                     0.47      14.18 f
+  U692/CO (CMPR32X2TS)                     0.47      14.65 f
+  U696/CO (CMPR32X2TS)                     0.47      15.12 f
+  U700/CO (CMPR32X2TS)                     0.47      15.60 f
+  U704/CO (CMPR32X2TS)                     0.47      16.07 f
+  U709/CO (CMPR32X2TS)                     0.47      16.54 f
+  U711/CO (CMPR32X2TS)                     0.47      17.02 f
+  U713/CO (CMPR32X2TS)                     0.47      17.49 f
+  U715/CO (CMPR32X2TS)                     0.47      17.96 f
+  U717/CO (CMPR32X2TS)                     0.47      18.44 f
+  U719/S (CMPR32X2TS)                      0.51      18.94 f
+  U718/Y (INVX2TS)                         0.11      19.05 r
+  totalSumOut[36] (out)                    0.00      19.05 r
+  data arrival time                                  19.05
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -207,51 +208,52 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/CO (CMPR32X2TS)                     0.47      11.41 f
-  U693/CO (CMPR32X2TS)                     0.47      11.88 f
-  U695/CO (CMPR32X2TS)                     0.47      12.35 f
-  U697/CO (CMPR32X2TS)                     0.47      12.83 f
-  U699/CO (CMPR32X2TS)                     0.47      13.30 f
-  U701/CO (CMPR32X2TS)                     0.47      13.77 f
-  U703/CO (CMPR32X2TS)                     0.47      14.25 f
-  U705/CO (CMPR32X2TS)                     0.47      14.72 f
-  U707/CO (CMPR32X2TS)                     0.47      15.19 f
-  U709/CO (CMPR32X2TS)                     0.67      15.87 f
-  U711/CO (CMPR32X2TS)                     0.47      16.34 f
-  U654/Y (INVX2TS)                         0.09      16.43 r
-  U738/CO (CMPR32X2TS)                     0.38      16.81 r
-  U737/CO (CMPR32X2TS)                     0.41      17.22 r
-  U736/CO (CMPR32X2TS)                     0.41      17.62 r
-  U735/CO (CMPR32X2TS)                     0.41      18.03 r
-  U734/S (CMPR32X2TS)                      0.51      18.54 f
-  totalSumOut[35] (out)                    0.00      18.54 f
-  data arrival time                                  18.54
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/CO (CMPR32X2TS)                     0.47      11.34 f
+  U668/CO (CMPR32X2TS)                     0.47      11.81 f
+  U672/CO (CMPR32X2TS)                     0.47      12.28 f
+  U676/CO (CMPR32X2TS)                     0.47      12.76 f
+  U680/CO (CMPR32X2TS)                     0.47      13.23 f
+  U684/CO (CMPR32X2TS)                     0.47      13.70 f
+  U688/CO (CMPR32X2TS)                     0.47      14.18 f
+  U692/CO (CMPR32X2TS)                     0.47      14.65 f
+  U696/CO (CMPR32X2TS)                     0.47      15.12 f
+  U700/CO (CMPR32X2TS)                     0.47      15.60 f
+  U704/CO (CMPR32X2TS)                     0.47      16.07 f
+  U709/CO (CMPR32X2TS)                     0.47      16.54 f
+  U711/CO (CMPR32X2TS)                     0.47      17.02 f
+  U713/CO (CMPR32X2TS)                     0.47      17.49 f
+  U715/CO (CMPR32X2TS)                     0.47      17.96 f
+  U717/S (CMPR32X2TS)                      0.51      18.47 f
+  U716/Y (INVX2TS)                         0.11      18.58 r
+  totalSumOut[35] (out)                    0.00      18.58 r
+  data arrival time                                  18.58
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -266,50 +268,51 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/CO (CMPR32X2TS)                     0.47      11.41 f
-  U693/CO (CMPR32X2TS)                     0.47      11.88 f
-  U695/CO (CMPR32X2TS)                     0.47      12.35 f
-  U697/CO (CMPR32X2TS)                     0.47      12.83 f
-  U699/CO (CMPR32X2TS)                     0.47      13.30 f
-  U701/CO (CMPR32X2TS)                     0.47      13.77 f
-  U703/CO (CMPR32X2TS)                     0.47      14.25 f
-  U705/CO (CMPR32X2TS)                     0.47      14.72 f
-  U707/CO (CMPR32X2TS)                     0.47      15.19 f
-  U709/CO (CMPR32X2TS)                     0.67      15.87 f
-  U711/CO (CMPR32X2TS)                     0.47      16.34 f
-  U654/Y (INVX2TS)                         0.09      16.43 r
-  U738/CO (CMPR32X2TS)                     0.38      16.81 r
-  U737/CO (CMPR32X2TS)                     0.41      17.22 r
-  U736/CO (CMPR32X2TS)                     0.41      17.62 r
-  U735/S (CMPR32X2TS)                      0.51      18.13 f
-  totalSumOut[34] (out)                    0.00      18.13 f
-  data arrival time                                  18.13
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/CO (CMPR32X2TS)                     0.47      11.34 f
+  U668/CO (CMPR32X2TS)                     0.47      11.81 f
+  U672/CO (CMPR32X2TS)                     0.47      12.28 f
+  U676/CO (CMPR32X2TS)                     0.47      12.76 f
+  U680/CO (CMPR32X2TS)                     0.47      13.23 f
+  U684/CO (CMPR32X2TS)                     0.47      13.70 f
+  U688/CO (CMPR32X2TS)                     0.47      14.18 f
+  U692/CO (CMPR32X2TS)                     0.47      14.65 f
+  U696/CO (CMPR32X2TS)                     0.47      15.12 f
+  U700/CO (CMPR32X2TS)                     0.47      15.60 f
+  U704/CO (CMPR32X2TS)                     0.47      16.07 f
+  U709/CO (CMPR32X2TS)                     0.47      16.54 f
+  U711/CO (CMPR32X2TS)                     0.47      17.02 f
+  U713/CO (CMPR32X2TS)                     0.47      17.49 f
+  U715/S (CMPR32X2TS)                      0.51      18.00 f
+  U714/Y (INVX2TS)                         0.11      18.11 r
+  totalSumOut[34] (out)                    0.00      18.11 r
+  data arrival time                                  18.11
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -324,49 +327,50 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/CO (CMPR32X2TS)                     0.47      11.41 f
-  U693/CO (CMPR32X2TS)                     0.47      11.88 f
-  U695/CO (CMPR32X2TS)                     0.47      12.35 f
-  U697/CO (CMPR32X2TS)                     0.47      12.83 f
-  U699/CO (CMPR32X2TS)                     0.47      13.30 f
-  U701/CO (CMPR32X2TS)                     0.47      13.77 f
-  U703/CO (CMPR32X2TS)                     0.47      14.25 f
-  U705/CO (CMPR32X2TS)                     0.47      14.72 f
-  U707/CO (CMPR32X2TS)                     0.47      15.19 f
-  U709/CO (CMPR32X2TS)                     0.67      15.87 f
-  U711/CO (CMPR32X2TS)                     0.47      16.34 f
-  U654/Y (INVX2TS)                         0.09      16.43 r
-  U738/CO (CMPR32X2TS)                     0.38      16.81 r
-  U737/CO (CMPR32X2TS)                     0.41      17.22 r
-  U736/S (CMPR32X2TS)                      0.51      17.73 f
-  totalSumOut[33] (out)                    0.00      17.73 f
-  data arrival time                                  17.73
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/CO (CMPR32X2TS)                     0.47      11.34 f
+  U668/CO (CMPR32X2TS)                     0.47      11.81 f
+  U672/CO (CMPR32X2TS)                     0.47      12.28 f
+  U676/CO (CMPR32X2TS)                     0.47      12.76 f
+  U680/CO (CMPR32X2TS)                     0.47      13.23 f
+  U684/CO (CMPR32X2TS)                     0.47      13.70 f
+  U688/CO (CMPR32X2TS)                     0.47      14.18 f
+  U692/CO (CMPR32X2TS)                     0.47      14.65 f
+  U696/CO (CMPR32X2TS)                     0.47      15.12 f
+  U700/CO (CMPR32X2TS)                     0.47      15.60 f
+  U704/CO (CMPR32X2TS)                     0.47      16.07 f
+  U709/CO (CMPR32X2TS)                     0.47      16.54 f
+  U711/CO (CMPR32X2TS)                     0.47      17.02 f
+  U713/S (CMPR32X2TS)                      0.51      17.52 f
+  U712/Y (INVX2TS)                         0.11      17.63 r
+  totalSumOut[33] (out)                    0.00      17.63 r
+  data arrival time                                  17.63
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -381,48 +385,49 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/CO (CMPR32X2TS)                     0.47      11.41 f
-  U693/CO (CMPR32X2TS)                     0.47      11.88 f
-  U695/CO (CMPR32X2TS)                     0.47      12.35 f
-  U697/CO (CMPR32X2TS)                     0.47      12.83 f
-  U699/CO (CMPR32X2TS)                     0.47      13.30 f
-  U701/CO (CMPR32X2TS)                     0.47      13.77 f
-  U703/CO (CMPR32X2TS)                     0.47      14.25 f
-  U705/CO (CMPR32X2TS)                     0.47      14.72 f
-  U707/CO (CMPR32X2TS)                     0.47      15.19 f
-  U709/CO (CMPR32X2TS)                     0.67      15.87 f
-  U711/CO (CMPR32X2TS)                     0.47      16.34 f
-  U654/Y (INVX2TS)                         0.09      16.43 r
-  U738/CO (CMPR32X2TS)                     0.38      16.81 r
-  U737/S (CMPR32X2TS)                      0.51      17.32 f
-  totalSumOut[32] (out)                    0.00      17.32 f
-  data arrival time                                  17.32
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/CO (CMPR32X2TS)                     0.47      11.34 f
+  U668/CO (CMPR32X2TS)                     0.47      11.81 f
+  U672/CO (CMPR32X2TS)                     0.47      12.28 f
+  U676/CO (CMPR32X2TS)                     0.47      12.76 f
+  U680/CO (CMPR32X2TS)                     0.47      13.23 f
+  U684/CO (CMPR32X2TS)                     0.47      13.70 f
+  U688/CO (CMPR32X2TS)                     0.47      14.18 f
+  U692/CO (CMPR32X2TS)                     0.47      14.65 f
+  U696/CO (CMPR32X2TS)                     0.47      15.12 f
+  U700/CO (CMPR32X2TS)                     0.47      15.60 f
+  U704/CO (CMPR32X2TS)                     0.47      16.07 f
+  U709/CO (CMPR32X2TS)                     0.47      16.54 f
+  U711/S (CMPR32X2TS)                      0.51      17.05 f
+  U710/Y (INVX2TS)                         0.11      17.16 r
+  totalSumOut[32] (out)                    0.00      17.16 r
+  data arrival time                                  17.16
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -437,47 +442,48 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/CO (CMPR32X2TS)                     0.47      11.41 f
-  U693/CO (CMPR32X2TS)                     0.47      11.88 f
-  U695/CO (CMPR32X2TS)                     0.47      12.35 f
-  U697/CO (CMPR32X2TS)                     0.47      12.83 f
-  U699/CO (CMPR32X2TS)                     0.47      13.30 f
-  U701/CO (CMPR32X2TS)                     0.47      13.77 f
-  U703/CO (CMPR32X2TS)                     0.47      14.25 f
-  U705/CO (CMPR32X2TS)                     0.47      14.72 f
-  U707/CO (CMPR32X2TS)                     0.47      15.19 f
-  U709/CO (CMPR32X2TS)                     0.67      15.87 f
-  U711/CO (CMPR32X2TS)                     0.47      16.34 f
-  U654/Y (INVX2TS)                         0.09      16.43 r
-  U738/S (CMPR32X2TS)                      0.49      16.92 f
-  totalSumOut[31] (out)                    0.00      16.92 f
-  data arrival time                                  16.92
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/CO (CMPR32X2TS)                     0.47      11.34 f
+  U668/CO (CMPR32X2TS)                     0.47      11.81 f
+  U672/CO (CMPR32X2TS)                     0.47      12.28 f
+  U676/CO (CMPR32X2TS)                     0.47      12.76 f
+  U680/CO (CMPR32X2TS)                     0.47      13.23 f
+  U684/CO (CMPR32X2TS)                     0.47      13.70 f
+  U688/CO (CMPR32X2TS)                     0.47      14.18 f
+  U692/CO (CMPR32X2TS)                     0.47      14.65 f
+  U696/CO (CMPR32X2TS)                     0.47      15.12 f
+  U700/CO (CMPR32X2TS)                     0.47      15.60 f
+  U704/CO (CMPR32X2TS)                     0.47      16.07 f
+  U709/S (CMPR32X2TS)                      0.51      16.58 f
+  U705/Y (INVX2TS)                         0.11      16.69 r
+  totalSumOut[31] (out)                    0.00      16.69 r
+  data arrival time                                  16.69
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -492,46 +498,47 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/CO (CMPR32X2TS)                     0.47      11.41 f
-  U693/CO (CMPR32X2TS)                     0.47      11.88 f
-  U695/CO (CMPR32X2TS)                     0.47      12.35 f
-  U697/CO (CMPR32X2TS)                     0.47      12.83 f
-  U699/CO (CMPR32X2TS)                     0.47      13.30 f
-  U701/CO (CMPR32X2TS)                     0.47      13.77 f
-  U703/CO (CMPR32X2TS)                     0.47      14.25 f
-  U705/CO (CMPR32X2TS)                     0.47      14.72 f
-  U707/CO (CMPR32X2TS)                     0.47      15.19 f
-  U709/CO (CMPR32X2TS)                     0.67      15.87 f
-  U711/S (CMPR32X2TS)                      0.51      16.37 f
-  U712/Y (INVX2TS)                         0.11      16.48 r
-  totalSumOut[30] (out)                    0.00      16.48 r
-  data arrival time                                  16.48
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/CO (CMPR32X2TS)                     0.47      11.34 f
+  U668/CO (CMPR32X2TS)                     0.47      11.81 f
+  U672/CO (CMPR32X2TS)                     0.47      12.28 f
+  U676/CO (CMPR32X2TS)                     0.47      12.76 f
+  U680/CO (CMPR32X2TS)                     0.47      13.23 f
+  U684/CO (CMPR32X2TS)                     0.47      13.70 f
+  U688/CO (CMPR32X2TS)                     0.47      14.18 f
+  U692/CO (CMPR32X2TS)                     0.47      14.65 f
+  U696/CO (CMPR32X2TS)                     0.47      15.12 f
+  U700/CO (CMPR32X2TS)                     0.47      15.60 f
+  U704/S (CMPR32X2TS)                      0.51      16.10 f
+  U701/Y (INVX2TS)                         0.11      16.21 r
+  totalSumOut[30] (out)                    0.00      16.21 r
+  data arrival time                                  16.21
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -546,45 +553,46 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/CO (CMPR32X2TS)                     0.47      11.41 f
-  U693/CO (CMPR32X2TS)                     0.47      11.88 f
-  U695/CO (CMPR32X2TS)                     0.47      12.35 f
-  U697/CO (CMPR32X2TS)                     0.47      12.83 f
-  U699/CO (CMPR32X2TS)                     0.47      13.30 f
-  U701/CO (CMPR32X2TS)                     0.47      13.77 f
-  U703/CO (CMPR32X2TS)                     0.47      14.25 f
-  U705/CO (CMPR32X2TS)                     0.47      14.72 f
-  U707/CO (CMPR32X2TS)                     0.47      15.19 f
-  U709/S (CMPR32X2TS)                      0.77      15.96 f
-  U710/Y (INVX2TS)                         0.11      16.07 r
-  totalSumOut[29] (out)                    0.00      16.07 r
-  data arrival time                                  16.07
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/CO (CMPR32X2TS)                     0.47      11.34 f
+  U668/CO (CMPR32X2TS)                     0.47      11.81 f
+  U672/CO (CMPR32X2TS)                     0.47      12.28 f
+  U676/CO (CMPR32X2TS)                     0.47      12.76 f
+  U680/CO (CMPR32X2TS)                     0.47      13.23 f
+  U684/CO (CMPR32X2TS)                     0.47      13.70 f
+  U688/CO (CMPR32X2TS)                     0.47      14.18 f
+  U692/CO (CMPR32X2TS)                     0.47      14.65 f
+  U696/CO (CMPR32X2TS)                     0.47      15.12 f
+  U700/S (CMPR32X2TS)                      0.51      15.63 f
+  U697/Y (INVX2TS)                         0.11      15.74 r
+  totalSumOut[29] (out)                    0.00      15.74 r
+  data arrival time                                  15.74
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -599,44 +607,45 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/CO (CMPR32X2TS)                     0.47      11.41 f
-  U693/CO (CMPR32X2TS)                     0.47      11.88 f
-  U695/CO (CMPR32X2TS)                     0.47      12.35 f
-  U697/CO (CMPR32X2TS)                     0.47      12.83 f
-  U699/CO (CMPR32X2TS)                     0.47      13.30 f
-  U701/CO (CMPR32X2TS)                     0.47      13.77 f
-  U703/CO (CMPR32X2TS)                     0.47      14.25 f
-  U705/CO (CMPR32X2TS)                     0.47      14.72 f
-  U707/S (CMPR32X2TS)                      0.51      15.23 f
-  U708/Y (INVX2TS)                         0.11      15.34 r
-  totalSumOut[28] (out)                    0.00      15.34 r
-  data arrival time                                  15.34
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/CO (CMPR32X2TS)                     0.47      11.34 f
+  U668/CO (CMPR32X2TS)                     0.47      11.81 f
+  U672/CO (CMPR32X2TS)                     0.47      12.28 f
+  U676/CO (CMPR32X2TS)                     0.47      12.76 f
+  U680/CO (CMPR32X2TS)                     0.47      13.23 f
+  U684/CO (CMPR32X2TS)                     0.47      13.70 f
+  U688/CO (CMPR32X2TS)                     0.47      14.18 f
+  U692/CO (CMPR32X2TS)                     0.47      14.65 f
+  U696/S (CMPR32X2TS)                      0.51      15.16 f
+  U693/Y (INVX2TS)                         0.11      15.27 r
+  totalSumOut[28] (out)                    0.00      15.27 r
+  data arrival time                                  15.27
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -651,43 +660,44 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/CO (CMPR32X2TS)                     0.47      11.41 f
-  U693/CO (CMPR32X2TS)                     0.47      11.88 f
-  U695/CO (CMPR32X2TS)                     0.47      12.35 f
-  U697/CO (CMPR32X2TS)                     0.47      12.83 f
-  U699/CO (CMPR32X2TS)                     0.47      13.30 f
-  U701/CO (CMPR32X2TS)                     0.47      13.77 f
-  U703/CO (CMPR32X2TS)                     0.47      14.25 f
-  U705/S (CMPR32X2TS)                      0.51      14.75 f
-  U706/Y (INVX2TS)                         0.11      14.86 r
-  totalSumOut[27] (out)                    0.00      14.86 r
-  data arrival time                                  14.86
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/CO (CMPR32X2TS)                     0.47      11.34 f
+  U668/CO (CMPR32X2TS)                     0.47      11.81 f
+  U672/CO (CMPR32X2TS)                     0.47      12.28 f
+  U676/CO (CMPR32X2TS)                     0.47      12.76 f
+  U680/CO (CMPR32X2TS)                     0.47      13.23 f
+  U684/CO (CMPR32X2TS)                     0.47      13.70 f
+  U688/CO (CMPR32X2TS)                     0.47      14.18 f
+  U692/S (CMPR32X2TS)                      0.51      14.68 f
+  U689/Y (INVX2TS)                         0.11      14.79 r
+  totalSumOut[27] (out)                    0.00      14.79 r
+  data arrival time                                  14.79
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -702,42 +712,43 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/CO (CMPR32X2TS)                     0.47      11.41 f
-  U693/CO (CMPR32X2TS)                     0.47      11.88 f
-  U695/CO (CMPR32X2TS)                     0.47      12.35 f
-  U697/CO (CMPR32X2TS)                     0.47      12.83 f
-  U699/CO (CMPR32X2TS)                     0.47      13.30 f
-  U701/CO (CMPR32X2TS)                     0.47      13.77 f
-  U703/S (CMPR32X2TS)                      0.51      14.28 f
-  U704/Y (INVX2TS)                         0.11      14.39 r
-  totalSumOut[26] (out)                    0.00      14.39 r
-  data arrival time                                  14.39
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/CO (CMPR32X2TS)                     0.47      11.34 f
+  U668/CO (CMPR32X2TS)                     0.47      11.81 f
+  U672/CO (CMPR32X2TS)                     0.47      12.28 f
+  U676/CO (CMPR32X2TS)                     0.47      12.76 f
+  U680/CO (CMPR32X2TS)                     0.47      13.23 f
+  U684/CO (CMPR32X2TS)                     0.47      13.70 f
+  U688/S (CMPR32X2TS)                      0.51      14.21 f
+  U685/Y (INVX2TS)                         0.11      14.32 r
+  totalSumOut[26] (out)                    0.00      14.32 r
+  data arrival time                                  14.32
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -752,41 +763,42 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/CO (CMPR32X2TS)                     0.47      11.41 f
-  U693/CO (CMPR32X2TS)                     0.47      11.88 f
-  U695/CO (CMPR32X2TS)                     0.47      12.35 f
-  U697/CO (CMPR32X2TS)                     0.47      12.83 f
-  U699/CO (CMPR32X2TS)                     0.47      13.30 f
-  U701/S (CMPR32X2TS)                      0.51      13.81 f
-  U702/Y (INVX2TS)                         0.11      13.92 r
-  totalSumOut[25] (out)                    0.00      13.92 r
-  data arrival time                                  13.92
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/CO (CMPR32X2TS)                     0.47      11.34 f
+  U668/CO (CMPR32X2TS)                     0.47      11.81 f
+  U672/CO (CMPR32X2TS)                     0.47      12.28 f
+  U676/CO (CMPR32X2TS)                     0.47      12.76 f
+  U680/CO (CMPR32X2TS)                     0.47      13.23 f
+  U684/S (CMPR32X2TS)                      0.51      13.74 f
+  U681/Y (INVX2TS)                         0.11      13.85 r
+  totalSumOut[25] (out)                    0.00      13.85 r
+  data arrival time                                  13.85
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -801,40 +813,41 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/CO (CMPR32X2TS)                     0.47      11.41 f
-  U693/CO (CMPR32X2TS)                     0.47      11.88 f
-  U695/CO (CMPR32X2TS)                     0.47      12.35 f
-  U697/CO (CMPR32X2TS)                     0.47      12.83 f
-  U699/S (CMPR32X2TS)                      0.51      13.34 f
-  U700/Y (INVX2TS)                         0.11      13.44 r
-  totalSumOut[24] (out)                    0.00      13.44 r
-  data arrival time                                  13.44
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/CO (CMPR32X2TS)                     0.47      11.34 f
+  U668/CO (CMPR32X2TS)                     0.47      11.81 f
+  U672/CO (CMPR32X2TS)                     0.47      12.28 f
+  U676/CO (CMPR32X2TS)                     0.47      12.76 f
+  U680/S (CMPR32X2TS)                      0.51      13.27 f
+  U677/Y (INVX2TS)                         0.11      13.37 r
+  totalSumOut[24] (out)                    0.00      13.37 r
+  data arrival time                                  13.37
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -849,39 +862,40 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/CO (CMPR32X2TS)                     0.47      11.41 f
-  U693/CO (CMPR32X2TS)                     0.47      11.88 f
-  U695/CO (CMPR32X2TS)                     0.47      12.35 f
-  U697/S (CMPR32X2TS)                      0.51      12.86 f
-  U698/Y (INVX2TS)                         0.11      12.97 r
-  totalSumOut[23] (out)                    0.00      12.97 r
-  data arrival time                                  12.97
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/CO (CMPR32X2TS)                     0.47      11.34 f
+  U668/CO (CMPR32X2TS)                     0.47      11.81 f
+  U672/CO (CMPR32X2TS)                     0.47      12.28 f
+  U676/S (CMPR32X2TS)                      0.51      12.79 f
+  U673/Y (INVX2TS)                         0.11      12.90 r
+  totalSumOut[23] (out)                    0.00      12.90 r
+  data arrival time                                  12.90
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -896,38 +910,39 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/CO (CMPR32X2TS)                     0.47      11.41 f
-  U693/CO (CMPR32X2TS)                     0.47      11.88 f
-  U695/S (CMPR32X2TS)                      0.51      12.39 f
-  U696/Y (INVX2TS)                         0.11      12.50 r
-  totalSumOut[22] (out)                    0.00      12.50 r
-  data arrival time                                  12.50
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/CO (CMPR32X2TS)                     0.47      11.34 f
+  U668/CO (CMPR32X2TS)                     0.47      11.81 f
+  U672/S (CMPR32X2TS)                      0.51      12.32 f
+  U669/Y (INVX2TS)                         0.11      12.43 r
+  totalSumOut[22] (out)                    0.00      12.43 r
+  data arrival time                                  12.43
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -942,37 +957,38 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/CO (CMPR32X2TS)                     0.47      11.41 f
-  U693/S (CMPR32X2TS)                      0.51      11.92 f
-  U694/Y (INVX2TS)                         0.11      12.02 r
-  totalSumOut[21] (out)                    0.00      12.02 r
-  data arrival time                                  12.02
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/CO (CMPR32X2TS)                     0.47      11.34 f
+  U668/S (CMPR32X2TS)                      0.51      11.85 f
+  U665/Y (INVX2TS)                         0.11      11.95 r
+  totalSumOut[21] (out)                    0.00      11.95 r
+  data arrival time                                  11.95
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -987,36 +1003,37 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/CO (CMPR32X2TS)                     0.47      10.93 f
-  U713/S (CMPR32X2TS)                      0.51      11.44 f
-  U714/Y (INVX2TS)                         0.11      11.55 r
-  totalSumOut[20] (out)                    0.00      11.55 r
-  data arrival time                                  11.55
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/CO (CMPR32X2TS)                     0.47      10.86 f
+  U664/S (CMPR32X2TS)                      0.51      11.37 f
+  U661/Y (INVX2TS)                         0.11      11.48 r
+  totalSumOut[20] (out)                    0.00      11.48 r
+  data arrival time                                  11.48
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -1031,35 +1048,36 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/CO (CMPR32X2TS)                     0.47      10.46 f
-  U691/S (CMPR32X2TS)                      0.51      10.97 f
-  U692/Y (INVX2TS)                         0.11      11.08 r
-  totalSumOut[19] (out)                    0.00      11.08 r
-  data arrival time                                  11.08
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/CO (CMPR32X2TS)                     0.47      10.39 f
+  U660/S (CMPR32X2TS)                      0.51      10.90 f
+  U657/Y (INVX2TS)                         0.11      11.01 r
+  totalSumOut[19] (out)                    0.00      11.01 r
+  data arrival time                                  11.01
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -1074,34 +1092,35 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/CO (CMPR32X2TS)                     0.47       9.99 f
-  U689/S (CMPR32X2TS)                      0.51      10.50 f
-  U690/Y (INVX2TS)                         0.11      10.60 r
-  totalSumOut[18] (out)                    0.00      10.60 r
-  data arrival time                                  10.60
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/CO (CMPR32X2TS)                     0.47       9.92 f
+  U656/S (CMPR32X2TS)                      0.51      10.43 f
+  U653/Y (INVX2TS)                         0.11      10.53 r
+  totalSumOut[18] (out)                    0.00      10.53 r
+  data arrival time                                  10.53
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -1116,33 +1135,34 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/CO (CMPR32X2TS)                     0.47       9.52 f
-  U687/S (CMPR32X2TS)                      0.51      10.02 f
-  U688/Y (INVX2TS)                         0.11      10.13 r
-  totalSumOut[17] (out)                    0.00      10.13 r
-  data arrival time                                  10.13
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/CO (CMPR32X2TS)                     0.47       9.45 f
+  U652/S (CMPR32X2TS)                      0.51       9.95 f
+  U649/Y (INVX2TS)                         0.11      10.06 r
+  totalSumOut[17] (out)                    0.00      10.06 r
+  data arrival time                                  10.06
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -1157,32 +1177,33 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/CO (CMPR32X2TS)                     0.47       9.04 f
-  U685/S (CMPR32X2TS)                      0.51       9.55 f
-  U686/Y (INVX2TS)                         0.11       9.66 r
-  totalSumOut[16] (out)                    0.00       9.66 r
-  data arrival time                                   9.66
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/CO (CMPR32X2TS)                     0.47       8.97 f
+  U648/S (CMPR32X2TS)                      0.51       9.48 f
+  U645/Y (INVX2TS)                         0.11       9.59 r
+  totalSumOut[16] (out)                    0.00       9.59 r
+  data arrival time                                   9.59
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -1197,31 +1218,32 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/CO (CMPR32X2TS)                     0.47       8.57 f
-  U683/S (CMPR32X2TS)                      0.51       9.08 f
-  U684/Y (INVX2TS)                         0.11       9.19 r
-  totalSumOut[15] (out)                    0.00       9.19 r
-  data arrival time                                   9.19
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/CO (CMPR32X2TS)                     0.47       8.50 f
+  U644/S (CMPR32X2TS)                      0.51       9.01 f
+  U641/Y (INVX2TS)                         0.11       9.11 r
+  totalSumOut[15] (out)                    0.00       9.11 r
+  data arrival time                                   9.11
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -1236,30 +1258,31 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/CO (CMPR32X2TS)                     0.47       8.10 f
-  U681/S (CMPR32X2TS)                      0.51       8.60 f
-  U682/Y (INVX2TS)                         0.11       8.71 r
-  totalSumOut[14] (out)                    0.00       8.71 r
-  data arrival time                                   8.71
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/CO (CMPR32X2TS)                     0.47       8.03 f
+  U640/S (CMPR32X2TS)                      0.51       8.53 f
+  U637/Y (INVX2TS)                         0.11       8.64 r
+  totalSumOut[14] (out)                    0.00       8.64 r
+  data arrival time                                   8.64
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -1274,29 +1297,30 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/CO (CMPR32X2TS)                     0.47       7.62 f
-  U679/S (CMPR32X2TS)                      0.51       8.13 f
-  U680/Y (INVX2TS)                         0.11       8.24 r
-  totalSumOut[13] (out)                    0.00       8.24 r
-  data arrival time                                   8.24
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/CO (CMPR32X2TS)                     0.47       7.55 f
+  U636/S (CMPR32X2TS)                      0.51       8.06 f
+  U633/Y (INVX2TS)                         0.11       8.17 r
+  totalSumOut[13] (out)                    0.00       8.17 r
+  data arrival time                                   8.17
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -1311,28 +1335,29 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/CO (CMPR32X2TS)                     0.47       7.15 f
-  U677/S (CMPR32X2TS)                      0.51       7.66 f
-  U678/Y (INVX2TS)                         0.11       7.77 r
-  totalSumOut[12] (out)                    0.00       7.77 r
-  data arrival time                                   7.77
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/CO (CMPR32X2TS)                     0.47       7.08 f
+  U632/S (CMPR32X2TS)                      0.51       7.59 f
+  U629/Y (INVX2TS)                         0.11       7.70 r
+  totalSumOut[12] (out)                    0.00       7.70 r
+  data arrival time                                   7.70
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -1347,27 +1372,28 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/CO (CMPR32X2TS)                     0.47       6.68 f
-  U675/S (CMPR32X2TS)                      0.51       7.18 f
-  U676/Y (INVX2TS)                         0.11       7.29 r
-  totalSumOut[11] (out)                    0.00       7.29 r
-  data arrival time                                   7.29
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/CO (CMPR32X2TS)                     0.47       6.61 f
+  U628/S (CMPR32X2TS)                      0.51       7.11 f
+  U625/Y (INVX2TS)                         0.11       7.22 r
+  totalSumOut[11] (out)                    0.00       7.22 r
+  data arrival time                                   7.22
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -1382,26 +1408,27 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/CO (CMPR32X2TS)                     0.47       6.20 f
-  U673/S (CMPR32X2TS)                      0.51       6.71 f
-  U674/Y (INVX2TS)                         0.11       6.82 r
-  totalSumOut[10] (out)                    0.00       6.82 r
-  data arrival time                                   6.82
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/CO (CMPR32X2TS)                     0.47       6.13 f
+  U624/S (CMPR32X2TS)                      0.51       6.64 f
+  U621/Y (INVX2TS)                         0.11       6.75 r
+  totalSumOut[10] (out)                    0.00       6.75 r
+  data arrival time                                   6.75
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -1416,25 +1443,26 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/CO (CMPR32X2TS)                     0.47       5.73 f
-  U671/S (CMPR32X2TS)                      0.51       6.24 f
-  U672/Y (INVX2TS)                         0.11       6.35 r
-  totalSumOut[9] (out)                     0.00       6.35 r
-  data arrival time                                   6.35
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/CO (CMPR32X2TS)                     0.47       5.66 f
+  U620/S (CMPR32X2TS)                      0.51       6.17 f
+  U617/Y (INVX2TS)                         0.11       6.28 r
+  totalSumOut[9] (out)                     0.00       6.28 r
+  data arrival time                                   6.28
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -1449,24 +1477,25 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/CO (CMPR32X2TS)                     0.47       5.26 f
-  U669/S (CMPR32X2TS)                      0.51       5.76 f
-  U670/Y (INVX2TS)                         0.11       5.87 r
-  totalSumOut[8] (out)                     0.00       5.87 r
-  data arrival time                                   5.87
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/CO (CMPR32X2TS)                     0.47       5.19 f
+  U721/S (CMPR32X2TS)                      0.51       5.69 f
+  U722/Y (INVX2TS)                         0.11       5.80 r
+  totalSumOut[8] (out)                     0.00       5.80 r
+  data arrival time                                   5.80
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -1481,23 +1510,24 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/CO (CMPR32X2TS)                     0.47       4.78 f
-  U667/S (CMPR32X2TS)                      0.51       5.29 f
-  U668/Y (INVX2TS)                         0.11       5.40 r
-  totalSumOut[7] (out)                     0.00       5.40 r
-  data arrival time                                   5.40
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/CO (CMPR32X2TS)                     0.47       4.71 f
+  U616/S (CMPR32X2TS)                      0.51       5.22 f
+  U609/Y (INVX2TS)                         0.11       5.33 r
+  totalSumOut[7] (out)                     0.00       5.33 r
+  data arrival time                                   5.33
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -1512,22 +1542,23 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/CO (CMPR32X2TS)                     0.64       3.36 f
-  U661/CO (CMPR32X2TS)                     0.47       3.84 f
-  U663/CO (CMPR32X2TS)                     0.47       4.31 f
-  U665/S (CMPR32X2TS)                      0.51       4.82 f
-  U666/Y (INVX2TS)                         0.11       4.93 r
-  totalSumOut[6] (out)                     0.00       4.93 r
-  data arrival time                                   4.93
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/CO (CMPR32X2TS)                     0.47       4.24 f
+  U608/S (CMPR32X2TS)                      0.51       4.75 f
+  U605/Y (INVX2TS)                         0.11       4.86 r
+  totalSumOut[6] (out)                     0.00       4.86 r
+  data arrival time                                   4.86
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -1538,27 +1569,27 @@ Wire Load Model Mode: top
   Path Group: (none)
   Path Type: max
 
-  Point                                       Incr       Path
-  --------------------------------------------------------------
-  input external delay                        0.00       0.00 r
-  inputX[1] (in)                              0.04       0.04 r
-  U507/Y (INVX2TS)                            0.09       0.13 f
-  U382/Y (INVX2TS)                            0.10       0.23 r
-  U345/Y (INVX2TS)                            0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                        0.38       0.69 f
-  U234/Y (NOR2XLTS)                           0.55       1.25 r
-  U200/Y (INVX2TS)                            0.34       1.59 f
-  U156/Y (INVX2TS)                            0.14       1.73 r
-  U903/Y (AOI22X1TS)                          0.14       1.87 f
-  U904/Y (OAI221XLTS)                         0.19       2.06 r
-  DP_OP_3J1_122_6055_U179/S (CMPR42X1TS)      1.16       3.21 f
-  U58/Y (INVX2TS)                             0.09       3.30 r
-  U661/CO (CMPR32X2TS)                        0.58       3.88 r
-  U663/S (CMPR32X2TS)                         0.50       4.38 f
-  U664/Y (INVX2TS)                            0.11       4.49 r
-  totalSumOut[5] (out)                        0.00       4.49 r
-  data arrival time                                      4.49
-  --------------------------------------------------------------
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  inputX[1] (in)                           0.04       0.04 r
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/CO (CMPR32X2TS)                     0.47       3.77 f
+  U604/S (CMPR32X2TS)                      0.51       4.27 f
+  U601/Y (INVX2TS)                         0.11       4.38 r
+  totalSumOut[5] (out)                     0.00       4.38 r
+  data arrival time                                   4.38
+  -----------------------------------------------------------
   (Path is unconstrained)
 
 
@@ -1568,26 +1599,26 @@ Wire Load Model Mode: top
   Path Group: (none)
   Path Type: max
 
-  Point                                       Incr       Path
-  --------------------------------------------------------------
-  input external delay                        0.00       0.00 r
-  inputX[1] (in)                              0.04       0.04 r
-  U507/Y (INVX2TS)                            0.09       0.13 f
-  U382/Y (INVX2TS)                            0.10       0.23 r
-  U345/Y (INVX2TS)                            0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                        0.38       0.69 f
-  U234/Y (NOR2XLTS)                           0.55       1.25 r
-  U200/Y (INVX2TS)                            0.34       1.59 f
-  U156/Y (INVX2TS)                            0.14       1.73 r
-  U903/Y (AOI22X1TS)                          0.14       1.87 f
-  U904/Y (OAI221XLTS)                         0.19       2.06 r
-  DP_OP_3J1_122_6055_U179/S (CMPR42X1TS)      1.16       3.21 f
-  U58/Y (INVX2TS)                             0.09       3.30 r
-  U661/S (CMPR32X2TS)                         0.67       3.97 f
-  U662/Y (INVX2TS)                            0.11       4.08 r
-  totalSumOut[4] (out)                        0.00       4.08 r
-  data arrival time                                      4.08
-  --------------------------------------------------------------
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  inputX[1] (in)                           0.04       0.04 r
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/CO (CMPR32X2TS)                     0.46       3.29 f
+  U600/S (CMPR32X2TS)                      0.51       3.80 f
+  U597/Y (INVX2TS)                         0.11       3.91 r
+  totalSumOut[4] (out)                     0.00       3.91 r
+  data arrival time                                   3.91
+  -----------------------------------------------------------
   (Path is unconstrained)
 
 
@@ -1601,19 +1632,20 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U554/Y (AOI2BB2X1TS)                     0.38       0.69 f
-  U234/Y (NOR2XLTS)                        0.55       1.25 r
-  U200/Y (INVX2TS)                         0.34       1.59 f
-  U156/Y (INVX2TS)                         0.14       1.73 r
-  U642/Y (AOI221XLTS)                      0.18       1.92 f
-  U643/S (CMPR32X2TS)                      0.80       2.72 f
-  U659/S (CMPR32X2TS)                      0.71       3.43 f
-  U660/Y (INVX2TS)                         0.11       3.54 r
-  totalSumOut[3] (out)                     0.00       3.54 r
-  data arrival time                                   3.54
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U596/Y (INVX2TS)                         0.20       2.83 f
+  U610/S (CMPR32X2TS)                      0.50       3.33 f
+  U611/Y (INVX2TS)                         0.11       3.44 r
+  totalSumOut[3] (out)                     0.00       3.44 r
+  data arrival time                                   3.44
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -1628,18 +1660,18 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U323/Y (NOR2XLTS)                        0.49       0.80 r
-  U89/Y (INVX2TS)                          0.32       1.12 f
-  U644/Y (OAI22X1TS)                       0.24       1.36 r
-  U645/Y (AOI21X1TS)                       0.13       1.49 f
-  U651/S (CMPR32X2TS)                      0.77       2.26 f
-  U5/Y (NOR2XLTS)                          0.38       2.64 r
-  U739/Y (AOI21X1TS)                       0.24       2.88 f
-  totalSumOut[2] (out)                     0.00       2.88 f
-  data arrival time                                   2.88
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U183/Y (INVX2TS)                         0.15       1.34 r
+  U591/Y (AOI21X1TS)                       0.14       1.48 f
+  U594/S (CMPR32X2TS)                      0.77       2.24 f
+  U595/Y (NOR2XLTS)                        0.38       2.63 r
+  U746/Y (AOI21X1TS)                       0.24       2.87 f
+  totalSumOut[2] (out)                     0.00       2.87 f
+  data arrival time                                   2.87
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -1654,17 +1686,17 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
   inputX[1] (in)                           0.04       0.04 r
-  U507/Y (INVX2TS)                         0.09       0.13 f
-  U382/Y (INVX2TS)                         0.10       0.23 r
-  U345/Y (INVX2TS)                         0.09       0.31 f
-  U323/Y (NOR2XLTS)                        0.49       0.80 r
-  U98/Y (INVX2TS)                          0.31       1.11 f
-  U646/Y (OAI22X1TS)                       0.20       1.32 r
-  U647/Y (AOI21X1TS)                       0.13       1.45 f
-  U657/S (CMPR32X2TS)                      0.77       2.21 f
-  U658/Y (INVX2TS)                         0.11       2.32 r
-  totalSumOut[1] (out)                     0.00       2.32 r
-  data arrival time                                   2.32
+  U304/Y (INVX2TS)                         0.09       0.13 f
+  U306/Y (INVX2TS)                         0.10       0.23 r
+  U444/Y (INVX2TS)                         0.09       0.32 f
+  U482/Y (NOR2XLTS)                        0.53       0.85 r
+  U181/Y (INVX2TS)                         0.34       1.19 f
+  U184/Y (INVX2TS)                         0.14       1.34 r
+  U574/Y (AOI21X1TS)                       0.14       1.47 f
+  U593/S (CMPR32X2TS)                      0.77       2.24 f
+  U578/Y (INVX2TS)                         0.11       2.35 r
+  totalSumOut[1] (out)                     0.00       2.35 r
+  data arrival time                                   2.35
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -1679,13 +1711,13 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   input external delay                     0.00       0.00 f
   inputB[0] (in)                           0.03       0.03 f
-  U462/Y (INVX2TS)                         0.13       0.15 r
-  U446/Y (INVX2TS)                         0.11       0.26 f
-  U648/Y (NAND2X1TS)                       0.14       0.40 r
-  U649/Y (INVX2TS)                         0.11       0.51 f
-  U731/Y (AOI2BB2XLTS)                     0.41       0.92 f
-  totalSumOut[0] (out)                     0.00       0.92 f
-  data arrival time                                   0.92
+  U393/Y (INVX2TS)                         0.13       0.15 r
+  U394/Y (INVX2TS)                         0.12       0.27 f
+  U575/Y (NAND2X1TS)                       0.14       0.41 r
+  U576/Y (INVX2TS)                         0.11       0.52 f
+  U742/Y (AOI2BB2XLTS)                     0.41       0.93 f
+  totalSumOut[0] (out)                     0.00       0.93 f
+  data arrival time                                   0.93
   -----------------------------------------------------------
   (Path is unconstrained)
 

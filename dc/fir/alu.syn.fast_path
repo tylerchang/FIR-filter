@@ -7,29 +7,11 @@ Report : timing
         -sort_by slack
 Design : alu
 Version: U-2022.12-SP7
-Date   : Sun Nov 17 14:37:58 2024
+Date   : Sun Nov 17 18:07:16 2024
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
-
-  Startpoint: totalSumIn[37]
-              (input port)
-  Endpoint: totalSumOut[38]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  input external delay                     0.00       0.00 f
-  totalSumIn[37] (in)                      0.03       0.03 f
-  ...
-  totalSumOut[38] (out)                    0.22       0.25 f
-  data arrival time                                   0.25
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
 
   Startpoint: totalSumIn[0]
               (input port)
@@ -49,128 +31,20 @@ Wire Load Model Mode: top
   (Path is unconstrained)
 
 
-  Startpoint: totalSumIn[37]
+  Startpoint: totalSumIn[38]
               (input port)
-  Endpoint: totalSumOut[37]
+  Endpoint: totalSumOut[38]
             (output port)
   Path Group: (none)
   Path Type: min
 
   Point                                    Incr       Path
   -----------------------------------------------------------
-  input external delay                     0.00       0.00 f
-  totalSumIn[37] (in)                      0.03       0.03 f
+  input external delay                     0.00       0.00 r
+  totalSumIn[38] (in)                      0.02       0.02 r
   ...
-  totalSumOut[37] (out)                    0.54       0.57 r
-  data arrival time                                   0.57
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: totalSumIn[31]
-              (input port)
-  Endpoint: totalSumOut[31]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  input external delay                     0.00       0.00 f
-  totalSumIn[31] (in)                      0.03       0.03 f
-  ...
-  totalSumOut[31] (out)                    0.55       0.58 r
-  data arrival time                                   0.58
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: totalSumIn[36]
-              (input port)
-  Endpoint: totalSumOut[36]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  input external delay                     0.00       0.00 f
-  totalSumIn[36] (in)                      0.03       0.03 f
-  ...
-  totalSumOut[36] (out)                    0.59       0.61 r
-  data arrival time                                   0.61
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: totalSumIn[35]
-              (input port)
-  Endpoint: totalSumOut[35]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  input external delay                     0.00       0.00 f
-  totalSumIn[35] (in)                      0.03       0.03 f
-  ...
-  totalSumOut[35] (out)                    0.59       0.61 r
-  data arrival time                                   0.61
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: totalSumIn[34]
-              (input port)
-  Endpoint: totalSumOut[34]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  input external delay                     0.00       0.00 f
-  totalSumIn[34] (in)                      0.03       0.03 f
-  ...
-  totalSumOut[34] (out)                    0.59       0.61 r
-  data arrival time                                   0.61
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: totalSumIn[33]
-              (input port)
-  Endpoint: totalSumOut[33]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  input external delay                     0.00       0.00 f
-  totalSumIn[33] (in)                      0.03       0.03 f
-  ...
-  totalSumOut[33] (out)                    0.59       0.61 r
-  data arrival time                                   0.61
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: totalSumIn[32]
-              (input port)
-  Endpoint: totalSumOut[32]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  input external delay                     0.00       0.00 f
-  totalSumIn[32] (in)                      0.03       0.03 f
-  ...
-  totalSumOut[32] (out)                    0.59       0.61 r
-  data arrival time                                   0.61
+  totalSumOut[38] (out)                    0.51       0.52 f
+  data arrival time                                   0.52
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -193,6 +67,78 @@ Wire Load Model Mode: top
   (Path is unconstrained)
 
 
+  Startpoint: totalSumIn[35]
+              (input port)
+  Endpoint: totalSumOut[36]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  totalSumIn[35] (in)                      0.03       0.03 f
+  ...
+  totalSumOut[36] (out)                    0.62       0.65 f
+  data arrival time                                   0.65
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: totalSumIn[34]
+              (input port)
+  Endpoint: totalSumOut[35]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  totalSumIn[34] (in)                      0.03       0.03 f
+  ...
+  totalSumOut[35] (out)                    0.62       0.65 f
+  data arrival time                                   0.65
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: totalSumIn[33]
+              (input port)
+  Endpoint: totalSumOut[34]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  totalSumIn[33] (in)                      0.03       0.03 f
+  ...
+  totalSumOut[34] (out)                    0.62       0.65 f
+  data arrival time                                   0.65
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: totalSumIn[36]
+              (input port)
+  Endpoint: totalSumOut[37]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  totalSumIn[36] (in)                      0.03       0.03 f
+  ...
+  totalSumOut[37] (out)                    0.65       0.68 f
+  data arrival time                                   0.68
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
   Startpoint: totalSumIn[2]
               (input port)
   Endpoint: totalSumOut[2]
@@ -211,9 +157,9 @@ Wire Load Model Mode: top
   (Path is unconstrained)
 
 
-  Startpoint: totalSumIn[29]
+  Startpoint: totalSumIn[33]
               (input port)
-  Endpoint: totalSumOut[29]
+  Endpoint: totalSumOut[33]
             (output port)
   Path Group: (none)
   Path Type: min
@@ -221,10 +167,28 @@ Wire Load Model Mode: top
   Point                                    Incr       Path
   -----------------------------------------------------------
   input external delay                     0.00       0.00 r
-  totalSumIn[29] (in)                      0.04       0.04 r
+  totalSumIn[33] (in)                      0.04       0.04 r
   ...
-  totalSumOut[29] (out)                    0.95       0.99 f
-  data arrival time                                   0.99
+  totalSumOut[33] (out)                    0.68       0.72 f
+  data arrival time                                   0.72
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: totalSumIn[32]
+              (input port)
+  Endpoint: totalSumOut[32]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  totalSumIn[32] (in)                      0.03       0.03 f
+  ...
+  totalSumOut[32] (out)                    0.78       0.80 f
+  data arrival time                                   0.80
   -----------------------------------------------------------
   (Path is unconstrained)
 
@@ -265,24 +229,6 @@ Wire Load Model Mode: top
   (Path is unconstrained)
 
 
-  Startpoint: totalSumIn[30]
-              (input port)
-  Endpoint: totalSumOut[30]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  input external delay                     0.00       0.00 r
-  totalSumIn[30] (in)                      0.05       0.05 r
-  ...
-  totalSumOut[30] (out)                    1.09       1.13 f
-  data arrival time                                   1.13
-  -----------------------------------------------------------
-  (Path is unconstrained)
-
-
   Startpoint: totalSumIn[3]
               (input port)
   Endpoint: totalSumOut[5]
@@ -311,17 +257,17 @@ Wire Load Model Mode: top
   Point                                        Incr       Path
   ---------------------------------------------------------------
   input external delay                         0.00       0.00 r
-  totalSumIn[5] (in)                           0.03       0.03 r
+  totalSumIn[5] (in)                           0.04       0.04 r
   ...
-  totalSumOut[6] (out)                         1.24       1.28 f
-  data arrival time                                       1.28
+  totalSumOut[6] (out)                         1.14       1.18 f
+  data arrival time                                       1.18
   ---------------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: totalSumIn[27]
+  Startpoint: totalSumIn[30]
               (input port)
-  Endpoint: totalSumOut[28]
+  Endpoint: totalSumOut[31]
             (output port)
   Path Group: (none)
   Path Type: min
@@ -329,83 +275,11 @@ Wire Load Model Mode: top
   Point                                         Incr       Path
   ----------------------------------------------------------------
   input external delay                          0.00       0.00 f
-  totalSumIn[27] (in)                           0.03       0.03 f
+  totalSumIn[30] (in)                           0.03       0.03 f
   ...
-  totalSumOut[28] (out)                         1.32       1.34 f
+  totalSumOut[31] (out)                         1.32       1.34 f
   data arrival time                                        1.34
   ----------------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: totalSumIn[5]
-              (input port)
-  Endpoint: totalSumOut[8]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                         Incr       Path
-  ----------------------------------------------------------------
-  input external delay                          0.00       0.00 r
-  totalSumIn[5] (in)                            0.03       0.03 r
-  ...
-  totalSumOut[8] (out)                          1.37       1.40 f
-  data arrival time                                        1.40
-  ----------------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: totalSumIn[7]
-              (input port)
-  Endpoint: totalSumOut[10]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                         Incr       Path
-  ----------------------------------------------------------------
-  input external delay                          0.00       0.00 r
-  totalSumIn[7] (in)                            0.03       0.03 r
-  ...
-  totalSumOut[10] (out)                         1.42       1.45 f
-  data arrival time                                        1.45
-  ----------------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: totalSumIn[7]
-              (input port)
-  Endpoint: totalSumOut[9]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                         Incr       Path
-  ----------------------------------------------------------------
-  input external delay                          0.00       0.00 r
-  totalSumIn[7] (in)                            0.03       0.03 r
-  ...
-  totalSumOut[9] (out)                          1.48       1.51 f
-  data arrival time                                        1.51
-  ----------------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: totalSumIn[27]
-              (input port)
-  Endpoint: totalSumOut[27]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                       Incr       Path
-  --------------------------------------------------------------
-  input external delay                        0.00       0.00 r
-  totalSumIn[27] (in)                         0.04       0.04 r
-  ...
-  totalSumOut[27] (out)                       1.47       1.51 f
-  data arrival time                                      1.51
-  --------------------------------------------------------------
   (Path is unconstrained)
 
 
@@ -419,11 +293,117 @@ Wire Load Model Mode: top
   Point                                        Incr       Path
   ---------------------------------------------------------------
   input external delay                         0.00       0.00 r
-  totalSumIn[13] (in)                          0.03       0.03 r
+  totalSumIn[13] (in)                          0.04       0.04 r
   ...
-  totalSumOut[14] (out)                        1.49       1.52 f
-  data arrival time                                       1.52
+  totalSumOut[14] (out)                        1.39       1.43 f
+  data arrival time                                       1.43
   ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: inputX[9] (input port)
+  Endpoint: totalSumOut[27]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                        Incr       Path
+  ---------------------------------------------------------------
+  input external delay                         0.00       0.00 f
+  inputX[9] (in)                               0.03       0.03 f
+  ...
+  totalSumOut[27] (out)                        1.41       1.44 f
+  data arrival time                                       1.44
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: totalSumIn[9]
+              (input port)
+  Endpoint: totalSumOut[10]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                        Incr       Path
+  ---------------------------------------------------------------
+  input external delay                         0.00       0.00 r
+  totalSumIn[9] (in)                           0.04       0.04 r
+  ...
+  totalSumOut[10] (out)                        1.40       1.44 f
+  data arrival time                                       1.44
+  ---------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: totalSumIn[30]
+              (input port)
+  Endpoint: totalSumOut[30]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                       Incr       Path
+  --------------------------------------------------------------
+  input external delay                        0.00       0.00 r
+  totalSumIn[30] (in)                         0.04       0.04 r
+  ...
+  totalSumOut[30] (out)                       1.44       1.48 f
+  data arrival time                                      1.48
+  --------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: totalSumIn[7]
+              (input port)
+  Endpoint: totalSumOut[9]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  input external delay                          0.00       0.00 r
+  totalSumIn[7] (in)                            0.04       0.04 r
+  ...
+  totalSumOut[9] (out)                          1.47       1.51 f
+  data arrival time                                        1.51
+  ----------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: totalSumIn[5]
+              (input port)
+  Endpoint: totalSumOut[8]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  input external delay                          0.00       0.00 f
+  totalSumIn[5] (in)                            0.03       0.03 f
+  ...
+  totalSumOut[8] (out)                          1.48       1.51 f
+  data arrival time                                        1.51
+  ----------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: inputX[11] (input port)
+  Endpoint: totalSumOut[28]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  input external delay                          0.00       0.00 f
+  inputX[11] (in)                               0.03       0.03 f
+  ...
+  totalSumOut[28] (out)                         1.50       1.53 f
+  data arrival time                                        1.53
+  ----------------------------------------------------------------
   (Path is unconstrained)
 
 
@@ -437,17 +417,16 @@ Wire Load Model Mode: top
   Point                                        Incr       Path
   ---------------------------------------------------------------
   input external delay                         0.00       0.00 f
-  totalSumIn[5] (in)                           0.02       0.02 f
+  totalSumIn[5] (in)                           0.03       0.03 f
   ...
-  totalSumOut[7] (out)                         1.53       1.55 f
-  data arrival time                                       1.55
+  totalSumOut[7] (out)                         1.50       1.53 f
+  data arrival time                                       1.53
   ---------------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: totalSumIn[23]
-              (input port)
-  Endpoint: totalSumOut[25]
+  Startpoint: inputX[11] (input port)
+  Endpoint: totalSumOut[29]
             (output port)
   Path Group: (none)
   Path Type: min
@@ -455,9 +434,9 @@ Wire Load Model Mode: top
   Point                                         Incr       Path
   ----------------------------------------------------------------
   input external delay                          0.00       0.00 f
-  totalSumIn[23] (in)                           0.03       0.03 f
+  inputX[11] (in)                               0.03       0.03 f
   ...
-  totalSumOut[25] (out)                         1.56       1.58 f
+  totalSumOut[29] (out)                         1.56       1.58 f
   data arrival time                                        1.58
   ----------------------------------------------------------------
   (Path is unconstrained)
@@ -481,7 +460,60 @@ Wire Load Model Mode: top
   (Path is unconstrained)
 
 
-  Startpoint: totalSumIn[23]
+  Startpoint: totalSumIn[9]
+              (input port)
+  Endpoint: totalSumOut[12]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  input external delay                          0.00       0.00 r
+  totalSumIn[9] (in)                            0.04       0.04 r
+  ...
+  totalSumOut[12] (out)                         1.65       1.69 f
+  data arrival time                                        1.69
+  ----------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: totalSumIn[13]
+              (input port)
+  Endpoint: totalSumOut[16]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  input external delay                          0.00       0.00 r
+  totalSumIn[13] (in)                           0.04       0.04 r
+  ...
+  totalSumOut[16] (out)                         1.69       1.74 f
+  data arrival time                                        1.74
+  ----------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: inputX[3] (input port)
+  Endpoint: totalSumOut[22]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  input external delay                          0.00       0.00 f
+  inputX[3] (in)                                0.03       0.03 f
+  ...
+  totalSumOut[22] (out)                         1.71       1.74 f
+  data arrival time                                        1.74
+  ----------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: totalSumIn[22]
               (input port)
   Endpoint: totalSumOut[26]
             (output port)
@@ -491,106 +523,16 @@ Wire Load Model Mode: top
   Point                                         Incr       Path
   ----------------------------------------------------------------
   input external delay                          0.00       0.00 f
-  totalSumIn[23] (in)                           0.03       0.03 f
+  totalSumIn[22] (in)                           0.03       0.03 f
   ...
-  totalSumOut[26] (out)                         1.61       1.64 f
-  data arrival time                                        1.64
-  ----------------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: totalSumIn[9]
-              (input port)
-  Endpoint: totalSumOut[13]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                         Incr       Path
-  ----------------------------------------------------------------
-  input external delay                          0.00       0.00 r
-  totalSumIn[9] (in)                            0.03       0.03 r
-  ...
-  totalSumOut[13] (out)                         1.63       1.66 f
-  data arrival time                                        1.66
-  ----------------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: totalSumIn[13]
-              (input port)
-  Endpoint: totalSumOut[17]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                         Incr       Path
-  ----------------------------------------------------------------
-  input external delay                          0.00       0.00 r
-  totalSumIn[13] (in)                           0.03       0.03 r
-  ...
-  totalSumOut[17] (out)                         1.64       1.68 f
-  data arrival time                                        1.68
-  ----------------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: totalSumIn[22]
-              (input port)
-  Endpoint: totalSumOut[24]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                         Incr       Path
-  ----------------------------------------------------------------
-  input external delay                          0.00       0.00 r
-  totalSumIn[22] (in)                           0.05       0.05 r
-  ...
-  totalSumOut[24] (out)                         1.65       1.70 f
-  data arrival time                                        1.70
-  ----------------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: totalSumIn[11]
-              (input port)
-  Endpoint: totalSumOut[15]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                         Incr       Path
-  ----------------------------------------------------------------
-  input external delay                          0.00       0.00 r
-  totalSumIn[11] (in)                           0.03       0.03 r
-  ...
-  totalSumOut[15] (out)                         1.68       1.71 f
-  data arrival time                                        1.71
-  ----------------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: inputB[4] (input port)
-  Endpoint: totalSumOut[12]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                         Incr       Path
-  ----------------------------------------------------------------
-  input external delay                          0.00       0.00 r
-  inputB[4] (in)                                0.04       0.04 r
-  ...
-  totalSumOut[12] (out)                         1.71       1.75 f
+  totalSumOut[26] (out)                         1.72       1.75 f
   data arrival time                                        1.75
   ----------------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: totalSumIn[19]
-              (input port)
-  Endpoint: totalSumOut[23]
+  Startpoint: inputX[1] (input port)
+  Endpoint: totalSumOut[20]
             (output port)
   Path Group: (none)
   Path Type: min
@@ -598,10 +540,27 @@ Wire Load Model Mode: top
   Point                                         Incr       Path
   ----------------------------------------------------------------
   input external delay                          0.00       0.00 f
-  totalSumIn[19] (in)                           0.03       0.03 f
+  inputX[1] (in)                                0.03       0.03 f
   ...
-  totalSumOut[23] (out)                         1.72       1.75 f
-  data arrival time                                        1.75
+  totalSumOut[20] (out)                         1.73       1.76 f
+  data arrival time                                        1.76
+  ----------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: inputX[5] (input port)
+  Endpoint: totalSumOut[24]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  input external delay                          0.00       0.00 f
+  inputX[5] (in)                                0.03       0.03 f
+  ...
+  totalSumOut[24] (out)                         1.73       1.76 f
+  data arrival time                                        1.76
   ----------------------------------------------------------------
   (Path is unconstrained)
 
@@ -617,13 +576,49 @@ Wire Load Model Mode: top
   input external delay                          0.00       0.00 f
   inputX[1] (in)                                0.03       0.03 f
   ...
-  totalSumOut[19] (out)                         1.77       1.79 f
-  data arrival time                                        1.79
+  totalSumOut[19] (out)                         1.74       1.77 f
+  data arrival time                                        1.77
   ----------------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: inputX[2] (input port)
+  Startpoint: totalSumIn[11]
+              (input port)
+  Endpoint: totalSumOut[13]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  input external delay                          0.00       0.00 r
+  totalSumIn[11] (in)                           0.04       0.04 r
+  ...
+  totalSumOut[13] (out)                         1.73       1.77 f
+  data arrival time                                        1.77
+  ----------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: totalSumIn[13]
+              (input port)
+  Endpoint: totalSumOut[15]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  input external delay                          0.00       0.00 r
+  totalSumIn[13] (in)                           0.04       0.04 r
+  ...
+  totalSumOut[15] (out)                         1.78       1.83 f
+  data arrival time                                        1.83
+  ----------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: inputX[3] (input port)
   Endpoint: totalSumOut[21]
             (output port)
   Path Group: (none)
@@ -632,35 +627,17 @@ Wire Load Model Mode: top
   Point                                         Incr       Path
   ----------------------------------------------------------------
   input external delay                          0.00       0.00 f
-  inputX[2] (in)                                0.03       0.03 f
+  inputX[3] (in)                                0.03       0.03 f
   ...
-  totalSumOut[21] (out)                         1.78       1.81 f
-  data arrival time                                        1.81
-  ----------------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: totalSumIn[13]
-              (input port)
-  Endpoint: totalSumOut[16]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                         Incr       Path
-  ----------------------------------------------------------------
-  input external delay                          0.00       0.00 r
-  totalSumIn[13] (in)                           0.03       0.03 r
-  ...
-  totalSumOut[16] (out)                         1.80       1.83 f
+  totalSumOut[21] (out)                         1.80       1.83 f
   data arrival time                                        1.83
   ----------------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: totalSumIn[19]
+  Startpoint: totalSumIn[22]
               (input port)
-  Endpoint: totalSumOut[22]
+  Endpoint: totalSumOut[25]
             (output port)
   Path Group: (none)
   Path Type: min
@@ -668,15 +645,50 @@ Wire Load Model Mode: top
   Point                                         Incr       Path
   ----------------------------------------------------------------
   input external delay                          0.00       0.00 f
-  totalSumIn[19] (in)                           0.03       0.03 f
+  totalSumIn[22] (in)                           0.03       0.03 f
   ...
-  totalSumOut[22] (out)                         1.81       1.84 f
+  totalSumOut[25] (out)                         1.81       1.84 f
   data arrival time                                        1.84
   ----------------------------------------------------------------
   (Path is unconstrained)
 
 
-  Startpoint: inputX[1] (input port)
+  Startpoint: inputX[5] (input port)
+  Endpoint: totalSumOut[23]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  input external delay                          0.00       0.00 f
+  inputX[5] (in)                                0.03       0.03 f
+  ...
+  totalSumOut[23] (out)                         1.82       1.85 f
+  data arrival time                                        1.85
+  ----------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: totalSumIn[13]
+              (input port)
+  Endpoint: totalSumOut[17]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Point                                         Incr       Path
+  ----------------------------------------------------------------
+  input external delay                          0.00       0.00 f
+  totalSumIn[13] (in)                           0.03       0.03 f
+  ...
+  totalSumOut[17] (out)                         1.85       1.88 f
+  data arrival time                                        1.88
+  ----------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: inputB[2] (input port)
   Endpoint: totalSumOut[18]
             (output port)
   Path Group: (none)
@@ -684,28 +696,11 @@ Wire Load Model Mode: top
 
   Point                                         Incr       Path
   ----------------------------------------------------------------
-  input external delay                          0.00       0.00 f
-  inputX[1] (in)                                0.03       0.03 f
+  input external delay                          0.00       0.00 r
+  inputB[2] (in)                                0.04       0.04 r
   ...
-  totalSumOut[18] (out)                         1.86       1.88 f
-  data arrival time                                        1.88
-  ----------------------------------------------------------------
-  (Path is unconstrained)
-
-
-  Startpoint: inputX[2] (input port)
-  Endpoint: totalSumOut[20]
-            (output port)
-  Path Group: (none)
-  Path Type: min
-
-  Point                                         Incr       Path
-  ----------------------------------------------------------------
-  input external delay                          0.00       0.00 f
-  inputX[2] (in)                                0.03       0.03 f
-  ...
-  totalSumOut[20] (out)                         1.87       1.90 f
-  data arrival time                                        1.90
+  totalSumOut[18] (out)                         1.90       1.94 f
+  data arrival time                                        1.94
   ----------------------------------------------------------------
   (Path is unconstrained)
 

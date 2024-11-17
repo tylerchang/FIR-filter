@@ -8,7 +8,7 @@
 #########################################
 set top_level alu
 source -verbose "../common_script/common.tcl"
-read_verilog "../../rtl/$top_level/$top_level.v"
+read_verilog "../../rtl/fir/$top_level.v"
 set set_fix_multiple_port_nets "true"
 list_designs
 

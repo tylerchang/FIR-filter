@@ -14,6 +14,6 @@
 
 #Run Simulator 
 #SDF from DC is annotated for the timing check 
-vsim -voptargs=+acc -t ps -lib work -sdftyp lfsr_0=../../dc/fir/alu.syn.sdf testbench 
+vsim -voptargs=+acc -t ps -lib work -sdftyp dut=../../dc/fir/alu.syn.sdf alu_tb 
  do waveformat.do   
  run -all
