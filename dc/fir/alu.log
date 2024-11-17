@@ -1,0 +1,883 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version U-2022.12-SP7 for linux64 - Oct 10, 2023 
+
+                    Copyright (c) 1988 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Current time:       Sun Nov 17 14:37:09 2024
+Hostname:           cadpc07
+CPU Model:          11th Gen Intel(R) Core(TM) i9-11900 @ 2.50GHz
+CPU Details:        Cores = 16 : Sockets = 1 : Cache Size = 16384 KB : Freq = 2.50 GHz
+OS:                 Linux 4.18.0-553.27.1.el8_10.x86_64
+RAM:                 62 GB (Free  31 GB)
+Swap:                31 GB (Free  31 GB)
+Work Filesystem:    /homes mounted to auto.homes
+Tmp Filesystem:     /tmp mounted to tmpfs
+Work Disk:          18974 GB (Free 6836 GB)
+Tmp Disk:            31 GB (Free  31 GB)
+
+CPU Load: 7%, Ram Free: 31 GB, Swap Free: 31 GB, Work Disk Free: 6836 GB, Tmp Disk Free: 31 GB
+#########################################
+# TCL script for Design Compiler        #
+# MS 2015                               #
+#########################################
+#########################################
+# READ Design and Library               #
+#########################################
+set top_level alu
+alu
+source -verbose "../common_script/common.tcl"
+. /tools4/syn2007.12/libraries/syn/
+dw_foundation.sldb
+* /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db dw_foundation.sldb
+/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+read_verilog "../../rtl/$top_level/$top_level.v"
+Loading db file '/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
+Loading db file '/tools/synopsys/syn/U-2022.12-SP7/libraries/syn/dw_foundation.sldb'
+Loading db file '/tools/synopsys/syn/U-2022.12-SP7/libraries/syn/gtech.db'
+Loading db file '/tools/synopsys/syn/U-2022.12-SP7/libraries/syn/standard.sldb'
+  Loading link library 'scx3_cmos8rf_lpvt_tt_1p2v_25c'
+  Loading link library 'gtech'
+Loading verilog file '/homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/rtl/alu/alu.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/rtl/alu/alu.v
+Warning:  /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/rtl/alu/alu.v:6: signed to unsigned conversion occurs. (VER-318)
+Presto compilation completed successfully.
+Current design is now '/homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/rtl/alu/alu.db:alu'
+Loaded 1 design.
+Current design is 'alu'.
+alu
+set set_fix_multiple_port_nets "true"
+true
+list_designs
+alu (*)
+1
+if { [check_error -v] == 1 } { exit 1 }
+#########################################
+# Design Constraints                    #
+#########################################
+current_design $top_level
+Current design is 'alu'.
+{alu}
+link
+
+  Linking design 'alu'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  alu                         /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/rtl/alu/alu.db
+  scx3_cmos8rf_lpvt_tt_1p2v_25c (library) /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+  dw_foundation.sldb (library) /tools/synopsys/syn/U-2022.12-SP7/libraries/syn/dw_foundation.sldb
+
+1
+check_design
+1
+source -verbose "./timing.tcl"
+2.00
+0
+0.010
+0.05
+0.05
+0.005
+Warning: Can't find port 'clk' in design 'alu'. (UID-95)
+Error: can't read "clk_name": no such variable
+	Use error_info for more info. (CMD-013)
+Error: can't read "clk_name": no such variable
+	Use error_info for more info. (CMD-013)
+Error: Value for list '<clock_list>' must have 1 elements. (CMD-036)
+0
+Error: can't read "clk_port": no such variable
+	Use error_info for more info. (CMD-013)
+Error: can't read "clk_port": no such variable
+	Use error_info for more info. (CMD-013)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputX[15]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputX[14]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputX[13]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputX[12]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputX[11]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputX[10]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputX[9]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputX[8]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputX[7]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputX[6]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputX[5]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputX[4]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputX[3]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputX[2]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputX[1]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputX[0]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputB[15]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputB[14]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputB[13]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputB[12]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputB[11]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputB[10]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputB[9]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputB[8]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputB[7]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputB[6]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputB[5]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputB[4]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputB[3]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputB[2]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputB[1]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'inputB[0]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[38]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[37]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[36]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[35]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[34]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[33]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[32]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[31]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[30]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[29]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[28]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[27]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[26]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[25]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[24]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[23]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[22]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[21]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[20]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[19]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[18]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[17]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[16]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[15]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[14]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[13]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[12]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[11]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[10]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[9]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[8]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[7]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[6]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[5]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[4]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[3]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[2]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[1]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'totalSumIn[0]'. (UID-401)
+1
+Error: can't read "clk_name": no such variable
+	Use error_info for more info. (CMD-013)
+Error: can't read "clk_name": no such variable
+	Use error_info for more info. (CMD-013)
+Error: can't read "clk_name": no such variable
+	Use error_info for more info. (CMD-013)
+1
+1
+set_max_capacitance 0.005 [all_inputs]
+1
+set_max_fanout 4 $top_level
+1
+set_max_fanout 4 [all_inputs]
+1
+set_max_area 0 
+1
+set_fix_multiple_port_nets -all -buffer_constants
+1
+#########################################
+# Compile                               #
+#########################################
+check_design
+1
+#uniquify
+current_design $top_level
+Current design is 'alu'.
+{alu}
+link
+
+  Linking design 'alu'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  alu                         /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/rtl/alu/alu.db
+  scx3_cmos8rf_lpvt_tt_1p2v_25c (library)
+                              /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+  dw_foundation.sldb (library)
+                              /tools/synopsys/syn/U-2022.12-SP7/libraries/syn/dw_foundation.sldb
+
+1
+compile_ultra
+Information: Performing leakage power optimization. (PWR-850)
+CPU Load: 7%, Ram Free: 31 GB, Swap Free: 31 GB, Work Disk Free: 6836 GB, Tmp Disk Free: 31 GB
+Analyzing: "/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | U-2022.12-DWBB_202212.5 |     *     |
+| Licensed DW Building Blocks        | U-2022.12-DWBB_202212.5 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Command Line | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 2                                      |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 0                                      |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 1                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 0                                      |
+| Number of Dont Touch Cells                              | 0                                      |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+  Simplifying Design 'alu'
+
+Loaded alib file './alib-52/scx3_cmos8rf_lpvt_tt_1p2v_25c.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+CPU Load: 8%, Ram Free: 33 GB, Swap Free: 31 GB, Work Disk Free: 6835 GB, Tmp Disk Free: 31 GB
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'alu'
+ Implement Synthetic for 'alu'.
+Information: Command 'do_operand_isolation' is obsolete and is being ignored.  Please refer to the replacement command 'set power_enable_datapath_gating true' instead. (INFO-118)
+CPU Load: 8%, Ram Free: 33 GB, Swap Free: 31 GB, Work Disk Free: 6835 GB, Tmp Disk Free: 31 GB
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1TS' in the library 'scx3_cmos8rf_lpvt_tt_1p2v_25c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'alu'. (DDB-72)
+Information: There is no timing violation in design alu. Delay-based auto_ungroup will not be performed. (OPT-780)
+Information: Command 'do_operand_isolation' is obsolete and is being ignored.  Please refer to the replacement command 'set power_enable_datapath_gating true' instead. (INFO-118)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:02    8357.8      0.00       0.0    1528.0                           10663.3164
+    0:00:02    8357.8      0.00       0.0    1528.0                           10663.3164
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:02    8357.8      0.00       0.0    1528.0                           10663.3164
+    0:00:02    8357.8      0.00       0.0    1528.0                           10663.3164
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:03    8357.8      0.00       0.0    1468.6                           10622.6416
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+    0:00:04   10311.8      0.00       0.0       0.0                           12102.2764
+    0:00:04   10311.8      0.00       0.0       0.0                           12102.2764
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:04   10311.8      0.00       0.0       0.0                           12102.2764
+    0:00:04   10311.8      0.00       0.0       0.0                           12102.2764
+    0:00:04   10311.8      0.00       0.0       0.0                           12102.2764
+    0:00:04   10311.8      0.00       0.0       0.0                           12102.2764
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:00:04   10311.8      0.00       0.0       0.0                           12099.1211
+    0:00:04   10271.5      0.00       0.0       0.0                           11842.9229
+    0:00:04   10271.5      0.00       0.0       0.0                           11842.9229
+    0:00:04   10271.5      0.00       0.0       0.0                           11842.9229
+    0:00:04   10271.5      0.00       0.0       0.0                           11842.9229
+    0:00:04    9914.4      0.00       0.0       0.0                           11606.9219
+    0:00:04    9914.4      0.00       0.0       0.0                           11606.9219
+    0:00:04    9914.4      0.00       0.0       0.0                           11606.9219
+    0:00:04    9914.4      0.00       0.0       0.0                           11606.9219
+    0:00:04    9914.4      0.00       0.0       0.0                           11606.9219
+    0:00:04    9914.4      0.00       0.0       0.0                           11606.9219
+CPU Load: 8%, Ram Free: 33 GB, Swap Free: 31 GB, Work Disk Free: 6835 GB, Tmp Disk Free: 31 GB
+Loading db file '/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+CPU Load: 8%, Ram Free: 33 GB, Swap Free: 31 GB, Work Disk Free: 6835 GB, Tmp Disk Free: 31 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+#########################################
+# Optimize design                       #
+# Some pointers for possible optimizatio# 
+# Check the DC reference manual         #
+#########################################
+#set_transform_for_retiming {temp_reg[6] temp_reg[5] temp_reg[4] temp_reg[3] temp_reg[2] temp_reg[1] temp_reg[0]} dont_retime
+#optimize_registers -clock clk -edge rise -justification_effort high 
+#balance_registers
+#source -verbose "../script/timing.1.2ns.tcl"
+#pipeline_design -stages 8 -clock_port_name $clk_name -check_design -verbose -print_critical_loop
+#set_max_capacitance 1 [all_inputs] 
+#compile_ultra -no_autoungroup -no_boundary_optimization
+#remove_clock -all
+#pipeline_design -stages 8 -clock_port_name $clk_name -async_reset reset -check_design -verbose -minimum_period_only
+#########################################
+# Write outputs                         #
+#########################################
+source -verbose "../common_script/namingrules.tcl"
+1
+
+Design          Type    Object                  New Name
+--------------------------------------------------------------------------------
+alu             cell    DP_OP_3J1_122_6055/U179 DP_OP_3J1_122_6055_U179
+alu             cell    DP_OP_3J1_122_6055/U177 DP_OP_3J1_122_6055_U177
+alu             cell    DP_OP_3J1_122_6055/U175 DP_OP_3J1_122_6055_U175
+alu             cell    DP_OP_3J1_122_6055/U172 DP_OP_3J1_122_6055_U172
+alu             cell    DP_OP_3J1_122_6055/U171 DP_OP_3J1_122_6055_U171
+alu             cell    DP_OP_3J1_122_6055/U170 DP_OP_3J1_122_6055_U170
+alu             cell    DP_OP_3J1_122_6055/U168 DP_OP_3J1_122_6055_U168
+alu             cell    DP_OP_3J1_122_6055/U167 DP_OP_3J1_122_6055_U167
+alu             cell    DP_OP_3J1_122_6055/U165 DP_OP_3J1_122_6055_U165
+alu             cell    DP_OP_3J1_122_6055/U164 DP_OP_3J1_122_6055_U164
+alu             cell    DP_OP_3J1_122_6055/U161 DP_OP_3J1_122_6055_U161
+alu             cell    DP_OP_3J1_122_6055/U160 DP_OP_3J1_122_6055_U160
+alu             cell    DP_OP_3J1_122_6055/U159 DP_OP_3J1_122_6055_U159
+alu             cell    DP_OP_3J1_122_6055/U158 DP_OP_3J1_122_6055_U158
+alu             cell    DP_OP_3J1_122_6055/U157 DP_OP_3J1_122_6055_U157
+alu             cell    DP_OP_3J1_122_6055/U155 DP_OP_3J1_122_6055_U155
+alu             cell    DP_OP_3J1_122_6055/U154 DP_OP_3J1_122_6055_U154
+alu             cell    DP_OP_3J1_122_6055/U153 DP_OP_3J1_122_6055_U153
+alu             cell    DP_OP_3J1_122_6055/U151 DP_OP_3J1_122_6055_U151
+alu             cell    DP_OP_3J1_122_6055/U150 DP_OP_3J1_122_6055_U150
+alu             cell    DP_OP_3J1_122_6055/U149 DP_OP_3J1_122_6055_U149
+alu             cell    DP_OP_3J1_122_6055/U146 DP_OP_3J1_122_6055_U146
+alu             cell    DP_OP_3J1_122_6055/U145 DP_OP_3J1_122_6055_U145
+alu             cell    DP_OP_3J1_122_6055/U144 DP_OP_3J1_122_6055_U144
+alu             cell    DP_OP_3J1_122_6055/U140 DP_OP_3J1_122_6055_U140
+alu             cell    DP_OP_3J1_122_6055/U139 DP_OP_3J1_122_6055_U139
+alu             cell    DP_OP_3J1_122_6055/U138 DP_OP_3J1_122_6055_U138
+alu             cell    DP_OP_3J1_122_6055/U135 DP_OP_3J1_122_6055_U135
+alu             cell    DP_OP_3J1_122_6055/U134 DP_OP_3J1_122_6055_U134
+alu             cell    DP_OP_3J1_122_6055/U133 DP_OP_3J1_122_6055_U133
+alu             cell    DP_OP_3J1_122_6055/U131 DP_OP_3J1_122_6055_U131
+alu             cell    DP_OP_3J1_122_6055/U130 DP_OP_3J1_122_6055_U130
+alu             cell    DP_OP_3J1_122_6055/U129 DP_OP_3J1_122_6055_U129
+alu             cell    DP_OP_3J1_122_6055/U127 DP_OP_3J1_122_6055_U127
+alu             cell    DP_OP_3J1_122_6055/U126 DP_OP_3J1_122_6055_U126
+alu             cell    DP_OP_3J1_122_6055/U125 DP_OP_3J1_122_6055_U125
+alu             cell    DP_OP_3J1_122_6055/U124 DP_OP_3J1_122_6055_U124
+alu             cell    DP_OP_3J1_122_6055/U123 DP_OP_3J1_122_6055_U123
+alu             cell    DP_OP_3J1_122_6055/U122 DP_OP_3J1_122_6055_U122
+alu             cell    DP_OP_3J1_122_6055/U119 DP_OP_3J1_122_6055_U119
+alu             cell    DP_OP_3J1_122_6055/U118 DP_OP_3J1_122_6055_U118
+alu             cell    DP_OP_3J1_122_6055/U116 DP_OP_3J1_122_6055_U116
+alu             cell    DP_OP_3J1_122_6055/U115 DP_OP_3J1_122_6055_U115
+alu             cell    DP_OP_3J1_122_6055/U113 DP_OP_3J1_122_6055_U113
+alu             cell    DP_OP_3J1_122_6055/U112 DP_OP_3J1_122_6055_U112
+alu             cell    DP_OP_3J1_122_6055/U111 DP_OP_3J1_122_6055_U111
+alu             cell    DP_OP_3J1_122_6055/U110 DP_OP_3J1_122_6055_U110
+alu             cell    DP_OP_3J1_122_6055/U107 DP_OP_3J1_122_6055_U107
+alu             cell    DP_OP_3J1_122_6055/U105 DP_OP_3J1_122_6055_U105
+alu             cell    DP_OP_3J1_122_6055/U103 DP_OP_3J1_122_6055_U103
+alu             cell    DP_OP_3J1_122_6055/U102 DP_OP_3J1_122_6055_U102
+alu             net     DP_OP_3J1_122_6055/n463 DP_OP_3J1_122_6055_n463
+alu             net     DP_OP_3J1_122_6055/n459 DP_OP_3J1_122_6055_n459
+alu             net     DP_OP_3J1_122_6055/n455 DP_OP_3J1_122_6055_n455
+alu             net     DP_OP_3J1_122_6055/n451 DP_OP_3J1_122_6055_n451
+alu             net     DP_OP_3J1_122_6055/n448 DP_OP_3J1_122_6055_n448
+alu             net     DP_OP_3J1_122_6055/n447 DP_OP_3J1_122_6055_n447
+alu             net     DP_OP_3J1_122_6055/n446 DP_OP_3J1_122_6055_n446
+alu             net     DP_OP_3J1_122_6055/n445 DP_OP_3J1_122_6055_n445
+alu             net     DP_OP_3J1_122_6055/n444 DP_OP_3J1_122_6055_n444
+alu             net     DP_OP_3J1_122_6055/n443 DP_OP_3J1_122_6055_n443
+alu             net     DP_OP_3J1_122_6055/n442 DP_OP_3J1_122_6055_n442
+alu             net     DP_OP_3J1_122_6055/n440 DP_OP_3J1_122_6055_n440
+alu             net     DP_OP_3J1_122_6055/n439 DP_OP_3J1_122_6055_n439
+alu             net     DP_OP_3J1_122_6055/n438 DP_OP_3J1_122_6055_n438
+alu             net     DP_OP_3J1_122_6055/n436 DP_OP_3J1_122_6055_n436
+alu             net     DP_OP_3J1_122_6055/n434 DP_OP_3J1_122_6055_n434
+alu             net     DP_OP_3J1_122_6055/n433 DP_OP_3J1_122_6055_n433
+alu             net     DP_OP_3J1_122_6055/n432 DP_OP_3J1_122_6055_n432
+alu             net     DP_OP_3J1_122_6055/n431 DP_OP_3J1_122_6055_n431
+alu             net     DP_OP_3J1_122_6055/n429 DP_OP_3J1_122_6055_n429
+alu             net     DP_OP_3J1_122_6055/n428 DP_OP_3J1_122_6055_n428
+alu             net     DP_OP_3J1_122_6055/n427 DP_OP_3J1_122_6055_n427
+alu             net     DP_OP_3J1_122_6055/n426 DP_OP_3J1_122_6055_n426
+alu             net     DP_OP_3J1_122_6055/n425 DP_OP_3J1_122_6055_n425
+alu             net     DP_OP_3J1_122_6055/n424 DP_OP_3J1_122_6055_n424
+alu             net     DP_OP_3J1_122_6055/n423 DP_OP_3J1_122_6055_n423
+alu             net     DP_OP_3J1_122_6055/n421 DP_OP_3J1_122_6055_n421
+alu             net     DP_OP_3J1_122_6055/n420 DP_OP_3J1_122_6055_n420
+alu             net     DP_OP_3J1_122_6055/n419 DP_OP_3J1_122_6055_n419
+alu             net     DP_OP_3J1_122_6055/n418 DP_OP_3J1_122_6055_n418
+alu             net     DP_OP_3J1_122_6055/n417 DP_OP_3J1_122_6055_n417
+alu             net     DP_OP_3J1_122_6055/n414 DP_OP_3J1_122_6055_n414
+alu             net     DP_OP_3J1_122_6055/n413 DP_OP_3J1_122_6055_n413
+alu             net     DP_OP_3J1_122_6055/n412 DP_OP_3J1_122_6055_n412
+alu             net     DP_OP_3J1_122_6055/n411 DP_OP_3J1_122_6055_n411
+alu             net     DP_OP_3J1_122_6055/n410 DP_OP_3J1_122_6055_n410
+alu             net     DP_OP_3J1_122_6055/n409 DP_OP_3J1_122_6055_n409
+alu             net     DP_OP_3J1_122_6055/n408 DP_OP_3J1_122_6055_n408
+alu             net     DP_OP_3J1_122_6055/n407 DP_OP_3J1_122_6055_n407
+alu             net     DP_OP_3J1_122_6055/n405 DP_OP_3J1_122_6055_n405
+alu             net     DP_OP_3J1_122_6055/n404 DP_OP_3J1_122_6055_n404
+alu             net     DP_OP_3J1_122_6055/n403 DP_OP_3J1_122_6055_n403
+alu             net     DP_OP_3J1_122_6055/n402 DP_OP_3J1_122_6055_n402
+alu             net     DP_OP_3J1_122_6055/n400 DP_OP_3J1_122_6055_n400
+alu             net     DP_OP_3J1_122_6055/n399 DP_OP_3J1_122_6055_n399
+alu             net     DP_OP_3J1_122_6055/n398 DP_OP_3J1_122_6055_n398
+alu             net     DP_OP_3J1_122_6055/n397 DP_OP_3J1_122_6055_n397
+alu             net     DP_OP_3J1_122_6055/n395 DP_OP_3J1_122_6055_n395
+alu             net     DP_OP_3J1_122_6055/n394 DP_OP_3J1_122_6055_n394
+alu             net     DP_OP_3J1_122_6055/n393 DP_OP_3J1_122_6055_n393
+alu             net     DP_OP_3J1_122_6055/n392 DP_OP_3J1_122_6055_n392
+alu             net     DP_OP_3J1_122_6055/n391 DP_OP_3J1_122_6055_n391
+alu             net     DP_OP_3J1_122_6055/n390 DP_OP_3J1_122_6055_n390
+alu             net     DP_OP_3J1_122_6055/n388 DP_OP_3J1_122_6055_n388
+alu             net     DP_OP_3J1_122_6055/n387 DP_OP_3J1_122_6055_n387
+alu             net     DP_OP_3J1_122_6055/n386 DP_OP_3J1_122_6055_n386
+alu             net     DP_OP_3J1_122_6055/n385 DP_OP_3J1_122_6055_n385
+alu             net     DP_OP_3J1_122_6055/n384 DP_OP_3J1_122_6055_n384
+alu             net     DP_OP_3J1_122_6055/n383 DP_OP_3J1_122_6055_n383
+alu             net     DP_OP_3J1_122_6055/n381 DP_OP_3J1_122_6055_n381
+alu             net     DP_OP_3J1_122_6055/n380 DP_OP_3J1_122_6055_n380
+alu             net     DP_OP_3J1_122_6055/n379 DP_OP_3J1_122_6055_n379
+alu             net     DP_OP_3J1_122_6055/n378 DP_OP_3J1_122_6055_n378
+alu             net     DP_OP_3J1_122_6055/n374 DP_OP_3J1_122_6055_n374
+alu             net     DP_OP_3J1_122_6055/n373 DP_OP_3J1_122_6055_n373
+alu             net     DP_OP_3J1_122_6055/n372 DP_OP_3J1_122_6055_n372
+alu             net     DP_OP_3J1_122_6055/n371 DP_OP_3J1_122_6055_n371
+alu             net     DP_OP_3J1_122_6055/n369 DP_OP_3J1_122_6055_n369
+alu             net     DP_OP_3J1_122_6055/n368 DP_OP_3J1_122_6055_n368
+alu             net     DP_OP_3J1_122_6055/n366 DP_OP_3J1_122_6055_n366
+alu             net     DP_OP_3J1_122_6055/n365 DP_OP_3J1_122_6055_n365
+alu             net     DP_OP_3J1_122_6055/n364 DP_OP_3J1_122_6055_n364
+alu             net     DP_OP_3J1_122_6055/n363 DP_OP_3J1_122_6055_n363
+alu             net     DP_OP_3J1_122_6055/n362 DP_OP_3J1_122_6055_n362
+alu             net     DP_OP_3J1_122_6055/n361 DP_OP_3J1_122_6055_n361
+alu             net     DP_OP_3J1_122_6055/n360 DP_OP_3J1_122_6055_n360
+alu             net     DP_OP_3J1_122_6055/n359 DP_OP_3J1_122_6055_n359
+alu             net     DP_OP_3J1_122_6055/n358 DP_OP_3J1_122_6055_n358
+alu             net     DP_OP_3J1_122_6055/n357 DP_OP_3J1_122_6055_n357
+alu             net     DP_OP_3J1_122_6055/n355 DP_OP_3J1_122_6055_n355
+alu             net     DP_OP_3J1_122_6055/n354 DP_OP_3J1_122_6055_n354
+alu             net     DP_OP_3J1_122_6055/n353 DP_OP_3J1_122_6055_n353
+alu             net     DP_OP_3J1_122_6055/n350 DP_OP_3J1_122_6055_n350
+alu             net     DP_OP_3J1_122_6055/n349 DP_OP_3J1_122_6055_n349
+alu             net     DP_OP_3J1_122_6055/n347 DP_OP_3J1_122_6055_n347
+alu             net     DP_OP_3J1_122_6055/n345 DP_OP_3J1_122_6055_n345
+alu             net     DP_OP_3J1_122_6055/n344 DP_OP_3J1_122_6055_n344
+alu             net     DP_OP_3J1_122_6055/n343 DP_OP_3J1_122_6055_n343
+alu             net     DP_OP_3J1_122_6055/n342 DP_OP_3J1_122_6055_n342
+alu             net     DP_OP_3J1_122_6055/n341 DP_OP_3J1_122_6055_n341
+alu             net     DP_OP_3J1_122_6055/n340 DP_OP_3J1_122_6055_n340
+alu             net     DP_OP_3J1_122_6055/n339 DP_OP_3J1_122_6055_n339
+alu             net     DP_OP_3J1_122_6055/n338 DP_OP_3J1_122_6055_n338
+alu             net     DP_OP_3J1_122_6055/n337 DP_OP_3J1_122_6055_n337
+alu             net     DP_OP_3J1_122_6055/n336 DP_OP_3J1_122_6055_n336
+alu             net     DP_OP_3J1_122_6055/n335 DP_OP_3J1_122_6055_n335
+alu             net     DP_OP_3J1_122_6055/n334 DP_OP_3J1_122_6055_n334
+alu             net     DP_OP_3J1_122_6055/n329 DP_OP_3J1_122_6055_n329
+alu             net     DP_OP_3J1_122_6055/n327 DP_OP_3J1_122_6055_n327
+alu             net     DP_OP_3J1_122_6055/n325 DP_OP_3J1_122_6055_n325
+alu             net     DP_OP_3J1_122_6055/n324 DP_OP_3J1_122_6055_n324
+alu             net     DP_OP_3J1_122_6055/n318 DP_OP_3J1_122_6055_n318
+alu             net     DP_OP_3J1_122_6055/n315 DP_OP_3J1_122_6055_n315
+alu             net     DP_OP_3J1_122_6055/n314 DP_OP_3J1_122_6055_n314
+alu             net     DP_OP_3J1_122_6055/n313 DP_OP_3J1_122_6055_n313
+alu             net     DP_OP_3J1_122_6055/n312 DP_OP_3J1_122_6055_n312
+alu             net     DP_OP_3J1_122_6055/n311 DP_OP_3J1_122_6055_n311
+alu             net     DP_OP_3J1_122_6055/n310 DP_OP_3J1_122_6055_n310
+alu             net     DP_OP_3J1_122_6055/n309 DP_OP_3J1_122_6055_n309
+alu             net     DP_OP_3J1_122_6055/n308 DP_OP_3J1_122_6055_n308
+alu             net     DP_OP_3J1_122_6055/n307 DP_OP_3J1_122_6055_n307
+alu             net     DP_OP_3J1_122_6055/n306 DP_OP_3J1_122_6055_n306
+alu             net     DP_OP_3J1_122_6055/n305 DP_OP_3J1_122_6055_n305
+alu             net     DP_OP_3J1_122_6055/n304 DP_OP_3J1_122_6055_n304
+alu             net     DP_OP_3J1_122_6055/n303 DP_OP_3J1_122_6055_n303
+alu             net     DP_OP_3J1_122_6055/n302 DP_OP_3J1_122_6055_n302
+alu             net     DP_OP_3J1_122_6055/n301 DP_OP_3J1_122_6055_n301
+alu             net     DP_OP_3J1_122_6055/n300 DP_OP_3J1_122_6055_n300
+alu             net     DP_OP_3J1_122_6055/n299 DP_OP_3J1_122_6055_n299
+alu             net     DP_OP_3J1_122_6055/n298 DP_OP_3J1_122_6055_n298
+alu             net     DP_OP_3J1_122_6055/n297 DP_OP_3J1_122_6055_n297
+alu             net     DP_OP_3J1_122_6055/n296 DP_OP_3J1_122_6055_n296
+alu             net     DP_OP_3J1_122_6055/n295 DP_OP_3J1_122_6055_n295
+alu             net     DP_OP_3J1_122_6055/n294 DP_OP_3J1_122_6055_n294
+alu             net     DP_OP_3J1_122_6055/n293 DP_OP_3J1_122_6055_n293
+alu             net     DP_OP_3J1_122_6055/n292 DP_OP_3J1_122_6055_n292
+alu             net     DP_OP_3J1_122_6055/n291 DP_OP_3J1_122_6055_n291
+alu             net     DP_OP_3J1_122_6055/n290 DP_OP_3J1_122_6055_n290
+alu             net     DP_OP_3J1_122_6055/n289 DP_OP_3J1_122_6055_n289
+alu             net     DP_OP_3J1_122_6055/n288 DP_OP_3J1_122_6055_n288
+alu             net     DP_OP_3J1_122_6055/n287 DP_OP_3J1_122_6055_n287
+alu             net     DP_OP_3J1_122_6055/n286 DP_OP_3J1_122_6055_n286
+alu             net     DP_OP_3J1_122_6055/n285 DP_OP_3J1_122_6055_n285
+alu             net     DP_OP_3J1_122_6055/n284 DP_OP_3J1_122_6055_n284
+alu             net     DP_OP_3J1_122_6055/n283 DP_OP_3J1_122_6055_n283
+alu             net     DP_OP_3J1_122_6055/n282 DP_OP_3J1_122_6055_n282
+alu             net     DP_OP_3J1_122_6055/n281 DP_OP_3J1_122_6055_n281
+alu             net     DP_OP_3J1_122_6055/n280 DP_OP_3J1_122_6055_n280
+alu             net     DP_OP_3J1_122_6055/n279 DP_OP_3J1_122_6055_n279
+alu             net     DP_OP_3J1_122_6055/n278 DP_OP_3J1_122_6055_n278
+alu             net     DP_OP_3J1_122_6055/n277 DP_OP_3J1_122_6055_n277
+alu             net     DP_OP_3J1_122_6055/n276 DP_OP_3J1_122_6055_n276
+alu             net     DP_OP_3J1_122_6055/n275 DP_OP_3J1_122_6055_n275
+alu             net     DP_OP_3J1_122_6055/n274 DP_OP_3J1_122_6055_n274
+alu             net     DP_OP_3J1_122_6055/n273 DP_OP_3J1_122_6055_n273
+alu             net     DP_OP_3J1_122_6055/n272 DP_OP_3J1_122_6055_n272
+alu             net     DP_OP_3J1_122_6055/n271 DP_OP_3J1_122_6055_n271
+alu             net     DP_OP_3J1_122_6055/n270 DP_OP_3J1_122_6055_n270
+alu             net     DP_OP_3J1_122_6055/n269 DP_OP_3J1_122_6055_n269
+alu             net     DP_OP_3J1_122_6055/n268 DP_OP_3J1_122_6055_n268
+alu             net     DP_OP_3J1_122_6055/n267 DP_OP_3J1_122_6055_n267
+alu             net     DP_OP_3J1_122_6055/n266 DP_OP_3J1_122_6055_n266
+alu             net     DP_OP_3J1_122_6055/n265 DP_OP_3J1_122_6055_n265
+alu             net     DP_OP_3J1_122_6055/n264 DP_OP_3J1_122_6055_n264
+alu             net     DP_OP_3J1_122_6055/n263 DP_OP_3J1_122_6055_n263
+alu             net     DP_OP_3J1_122_6055/n262 DP_OP_3J1_122_6055_n262
+alu             net     DP_OP_3J1_122_6055/n261 DP_OP_3J1_122_6055_n261
+alu             net     DP_OP_3J1_122_6055/n260 DP_OP_3J1_122_6055_n260
+alu             net     DP_OP_3J1_122_6055/n259 DP_OP_3J1_122_6055_n259
+alu             net     DP_OP_3J1_122_6055/n258 DP_OP_3J1_122_6055_n258
+alu             net     DP_OP_3J1_122_6055/n257 DP_OP_3J1_122_6055_n257
+alu             net     DP_OP_3J1_122_6055/n256 DP_OP_3J1_122_6055_n256
+alu             net     DP_OP_3J1_122_6055/n255 DP_OP_3J1_122_6055_n255
+alu             net     DP_OP_3J1_122_6055/n254 DP_OP_3J1_122_6055_n254
+alu             net     DP_OP_3J1_122_6055/n253 DP_OP_3J1_122_6055_n253
+alu             net     DP_OP_3J1_122_6055/n252 DP_OP_3J1_122_6055_n252
+alu             net     DP_OP_3J1_122_6055/n251 DP_OP_3J1_122_6055_n251
+alu             net     DP_OP_3J1_122_6055/n250 DP_OP_3J1_122_6055_n250
+alu             net     DP_OP_3J1_122_6055/n249 DP_OP_3J1_122_6055_n249
+alu             net     DP_OP_3J1_122_6055/n248 DP_OP_3J1_122_6055_n248
+alu             net     DP_OP_3J1_122_6055/n247 DP_OP_3J1_122_6055_n247
+alu             net     DP_OP_3J1_122_6055/n246 DP_OP_3J1_122_6055_n246
+alu             net     DP_OP_3J1_122_6055/n245 DP_OP_3J1_122_6055_n245
+alu             net     DP_OP_3J1_122_6055/n244 DP_OP_3J1_122_6055_n244
+alu             net     DP_OP_3J1_122_6055/n243 DP_OP_3J1_122_6055_n243
+alu             net     DP_OP_3J1_122_6055/n242 DP_OP_3J1_122_6055_n242
+alu             net     DP_OP_3J1_122_6055/n241 DP_OP_3J1_122_6055_n241
+alu             net     DP_OP_3J1_122_6055/n240 DP_OP_3J1_122_6055_n240
+alu             net     DP_OP_3J1_122_6055/n239 DP_OP_3J1_122_6055_n239
+alu             net     DP_OP_3J1_122_6055/n238 DP_OP_3J1_122_6055_n238
+alu             net     DP_OP_3J1_122_6055/n237 DP_OP_3J1_122_6055_n237
+alu             net     DP_OP_3J1_122_6055/n236 DP_OP_3J1_122_6055_n236
+alu             net     DP_OP_3J1_122_6055/n235 DP_OP_3J1_122_6055_n235
+alu             net     DP_OP_3J1_122_6055/n234 DP_OP_3J1_122_6055_n234
+alu             net     DP_OP_3J1_122_6055/n233 DP_OP_3J1_122_6055_n233
+alu             net     DP_OP_3J1_122_6055/n232 DP_OP_3J1_122_6055_n232
+alu             net     DP_OP_3J1_122_6055/n230 DP_OP_3J1_122_6055_n230
+alu             net     DP_OP_3J1_122_6055/n229 DP_OP_3J1_122_6055_n229
+alu             net     DP_OP_3J1_122_6055/n228 DP_OP_3J1_122_6055_n228
+alu             net     DP_OP_3J1_122_6055/n227 DP_OP_3J1_122_6055_n227
+alu             net     DP_OP_3J1_122_6055/n226 DP_OP_3J1_122_6055_n226
+alu             net     DP_OP_3J1_122_6055/n225 DP_OP_3J1_122_6055_n225
+alu             net     DP_OP_3J1_122_6055/n224 DP_OP_3J1_122_6055_n224
+alu             net     DP_OP_3J1_122_6055/n223 DP_OP_3J1_122_6055_n223
+alu             net     DP_OP_3J1_122_6055/n222 DP_OP_3J1_122_6055_n222
+alu             net     DP_OP_3J1_122_6055/n221 DP_OP_3J1_122_6055_n221
+alu             net     DP_OP_3J1_122_6055/n220 DP_OP_3J1_122_6055_n220
+alu             net     DP_OP_3J1_122_6055/n219 DP_OP_3J1_122_6055_n219
+alu             net     DP_OP_3J1_122_6055/n218 DP_OP_3J1_122_6055_n218
+alu             net     DP_OP_3J1_122_6055/n217 DP_OP_3J1_122_6055_n217
+alu             net     DP_OP_3J1_122_6055/n216 DP_OP_3J1_122_6055_n216
+alu             net     DP_OP_3J1_122_6055/n215 DP_OP_3J1_122_6055_n215
+alu             net     DP_OP_3J1_122_6055/n214 DP_OP_3J1_122_6055_n214
+alu             net     DP_OP_3J1_122_6055/n213 DP_OP_3J1_122_6055_n213
+alu             net     DP_OP_3J1_122_6055/n212 DP_OP_3J1_122_6055_n212
+alu             net     DP_OP_3J1_122_6055/n211 DP_OP_3J1_122_6055_n211
+alu             net     DP_OP_3J1_122_6055/n210 DP_OP_3J1_122_6055_n210
+alu             net     DP_OP_3J1_122_6055/n209 DP_OP_3J1_122_6055_n209
+alu             net     DP_OP_3J1_122_6055/n208 DP_OP_3J1_122_6055_n208
+alu             net     DP_OP_3J1_122_6055/n207 DP_OP_3J1_122_6055_n207
+alu             net     DP_OP_3J1_122_6055/n204 DP_OP_3J1_122_6055_n204
+alu             net     DP_OP_3J1_122_6055/n203 DP_OP_3J1_122_6055_n203
+alu             net     DP_OP_3J1_122_6055/n202 DP_OP_3J1_122_6055_n202
+alu             net     DP_OP_3J1_122_6055/n201 DP_OP_3J1_122_6055_n201
+alu             net     DP_OP_3J1_122_6055/n200 DP_OP_3J1_122_6055_n200
+alu             net     DP_OP_3J1_122_6055/n199 DP_OP_3J1_122_6055_n199
+alu             net     DP_OP_3J1_122_6055/n198 DP_OP_3J1_122_6055_n198
+alu             net     DP_OP_3J1_122_6055/n197 DP_OP_3J1_122_6055_n197
+alu             net     DP_OP_3J1_122_6055/n196 DP_OP_3J1_122_6055_n196
+alu             net     DP_OP_3J1_122_6055/n195 DP_OP_3J1_122_6055_n195
+alu             net     DP_OP_3J1_122_6055/n194 DP_OP_3J1_122_6055_n194
+alu             net     DP_OP_3J1_122_6055/n193 DP_OP_3J1_122_6055_n193
+alu             net     DP_OP_3J1_122_6055/n192 DP_OP_3J1_122_6055_n192
+alu             net     DP_OP_3J1_122_6055/n191 DP_OP_3J1_122_6055_n191
+alu             net     DP_OP_3J1_122_6055/n190 DP_OP_3J1_122_6055_n190
+alu             net     DP_OP_3J1_122_6055/n189 DP_OP_3J1_122_6055_n189
+alu             net     DP_OP_3J1_122_6055/n188 DP_OP_3J1_122_6055_n188
+alu             net     DP_OP_3J1_122_6055/n187 DP_OP_3J1_122_6055_n187
+alu             net     DP_OP_3J1_122_6055/n186 DP_OP_3J1_122_6055_n186
+alu             net     DP_OP_3J1_122_6055/n185 DP_OP_3J1_122_6055_n185
+alu             net     DP_OP_3J1_122_6055/n184 DP_OP_3J1_122_6055_n184
+alu             net     DP_OP_3J1_122_6055/n183 DP_OP_3J1_122_6055_n183
+alu             net     DP_OP_3J1_122_6055/n180 DP_OP_3J1_122_6055_n180
+alu             net     DP_OP_3J1_122_6055/n179 DP_OP_3J1_122_6055_n179
+alu             net     DP_OP_3J1_122_6055/n178 DP_OP_3J1_122_6055_n178
+alu             net     DP_OP_3J1_122_6055/n177 DP_OP_3J1_122_6055_n177
+alu             net     DP_OP_3J1_122_6055/n176 DP_OP_3J1_122_6055_n176
+alu             net     DP_OP_3J1_122_6055/n175 DP_OP_3J1_122_6055_n175
+alu             net     DP_OP_3J1_122_6055/n174 DP_OP_3J1_122_6055_n174
+alu             net     DP_OP_3J1_122_6055/n173 DP_OP_3J1_122_6055_n173
+alu             net     DP_OP_3J1_122_6055/n172 DP_OP_3J1_122_6055_n172
+alu             net     DP_OP_3J1_122_6055/n171 DP_OP_3J1_122_6055_n171
+alu             net     DP_OP_3J1_122_6055/n170 DP_OP_3J1_122_6055_n170
+alu             net     DP_OP_3J1_122_6055/n169 DP_OP_3J1_122_6055_n169
+alu             net     DP_OP_3J1_122_6055/n168 DP_OP_3J1_122_6055_n168
+alu             net     DP_OP_3J1_122_6055/n167 DP_OP_3J1_122_6055_n167
+alu             net     DP_OP_3J1_122_6055/n166 DP_OP_3J1_122_6055_n166
+alu             net     DP_OP_3J1_122_6055/n165 DP_OP_3J1_122_6055_n165
+alu             net     DP_OP_3J1_122_6055/n164 DP_OP_3J1_122_6055_n164
+alu             net     DP_OP_3J1_122_6055/n163 DP_OP_3J1_122_6055_n163
+alu             net     DP_OP_3J1_122_6055/n160 DP_OP_3J1_122_6055_n160
+alu             net     DP_OP_3J1_122_6055/n159 DP_OP_3J1_122_6055_n159
+alu             net     DP_OP_3J1_122_6055/n158 DP_OP_3J1_122_6055_n158
+alu             net     DP_OP_3J1_122_6055/n157 DP_OP_3J1_122_6055_n157
+alu             net     DP_OP_3J1_122_6055/n156 DP_OP_3J1_122_6055_n156
+alu             net     DP_OP_3J1_122_6055/n155 DP_OP_3J1_122_6055_n155
+alu             net     DP_OP_3J1_122_6055/n154 DP_OP_3J1_122_6055_n154
+alu             net     DP_OP_3J1_122_6055/n153 DP_OP_3J1_122_6055_n153
+alu             net     DP_OP_3J1_122_6055/n152 DP_OP_3J1_122_6055_n152
+alu             net     DP_OP_3J1_122_6055/n151 DP_OP_3J1_122_6055_n151
+alu             net     DP_OP_3J1_122_6055/n150 DP_OP_3J1_122_6055_n150
+alu             net     DP_OP_3J1_122_6055/n149 DP_OP_3J1_122_6055_n149
+alu             net     DP_OP_3J1_122_6055/n148 DP_OP_3J1_122_6055_n148
+alu             net     DP_OP_3J1_122_6055/n147 DP_OP_3J1_122_6055_n147
+alu             net     DP_OP_3J1_122_6055/n146 DP_OP_3J1_122_6055_n146
+alu             net     DP_OP_3J1_122_6055/n145 DP_OP_3J1_122_6055_n145
+alu             net     DP_OP_3J1_122_6055/n142 DP_OP_3J1_122_6055_n142
+alu             net     DP_OP_3J1_122_6055/n141 DP_OP_3J1_122_6055_n141
+alu             net     DP_OP_3J1_122_6055/n140 DP_OP_3J1_122_6055_n140
+alu             net     DP_OP_3J1_122_6055/n139 DP_OP_3J1_122_6055_n139
+alu             net     DP_OP_3J1_122_6055/n138 DP_OP_3J1_122_6055_n138
+alu             net     DP_OP_3J1_122_6055/n137 DP_OP_3J1_122_6055_n137
+alu             net     DP_OP_3J1_122_6055/n136 DP_OP_3J1_122_6055_n136
+alu             net     DP_OP_3J1_122_6055/n135 DP_OP_3J1_122_6055_n135
+alu             net     DP_OP_3J1_122_6055/n134 DP_OP_3J1_122_6055_n134
+alu             net     DP_OP_3J1_122_6055/n133 DP_OP_3J1_122_6055_n133
+alu             net     DP_OP_3J1_122_6055/n132 DP_OP_3J1_122_6055_n132
+alu             net     DP_OP_3J1_122_6055/n131 DP_OP_3J1_122_6055_n131
+alu             net     DP_OP_3J1_122_6055/n128 DP_OP_3J1_122_6055_n128
+alu             net     DP_OP_3J1_122_6055/n127 DP_OP_3J1_122_6055_n127
+alu             net     DP_OP_3J1_122_6055/n126 DP_OP_3J1_122_6055_n126
+alu             net     DP_OP_3J1_122_6055/n125 DP_OP_3J1_122_6055_n125
+alu             net     DP_OP_3J1_122_6055/n124 DP_OP_3J1_122_6055_n124
+alu             net     DP_OP_3J1_122_6055/n123 DP_OP_3J1_122_6055_n123
+alu             net     DP_OP_3J1_122_6055/n122 DP_OP_3J1_122_6055_n122
+alu             net     DP_OP_3J1_122_6055/n121 DP_OP_3J1_122_6055_n121
+alu             net     DP_OP_3J1_122_6055/n120 DP_OP_3J1_122_6055_n120
+alu             net     DP_OP_3J1_122_6055/n119 DP_OP_3J1_122_6055_n119
+alu             net     DP_OP_3J1_122_6055/n116 DP_OP_3J1_122_6055_n116
+alu             net     DP_OP_3J1_122_6055/n115 DP_OP_3J1_122_6055_n115
+alu             net     DP_OP_3J1_122_6055/n114 DP_OP_3J1_122_6055_n114
+alu             net     DP_OP_3J1_122_6055/n113 DP_OP_3J1_122_6055_n113
+alu             net     DP_OP_3J1_122_6055/n112 DP_OP_3J1_122_6055_n112
+alu             net     DP_OP_3J1_122_6055/n111 DP_OP_3J1_122_6055_n111
+1
+1
+set verilogout_no_tri TRUE
+TRUE
+write -hierarchy -format verilog -output "${top_level}.nl.v"
+Writing verilog file '/homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/dc/fir/alu.nl.v'.
+1
+#write_sdf -context verilog "${top_level}.temp.sdf"
+write_sdc "${top_level}.syn.sdc" -version 1.7
+1
+write_sdf "${top_level}.syn.sdf"
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/dc/fir/alu.syn.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+# Generate report file
+set maxpaths 20
+20
+set rpt_file "${top_level}.dc.rpt"
+alu.dc.rpt
+check_design > $rpt_file
+report_area  >> ${rpt_file}
+report_power -hier -analysis_effort medium >> ${rpt_file}
+report_design >> ${rpt_file}
+report_cell >> ${rpt_file}
+report_port -verbose >> ${rpt_file}
+report_compile_options >> ${rpt_file}
+report_constraint -all_violators -verbose >> ${rpt_file}
+report_timing -path full -delay max -max_paths $maxpaths -nworst 100 >> ${rpt_file}
+report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack > ${top_level}.syn.critical_regs
+report_timing -delay max -nworst 1 -max_paths 10000 -path full -nosplit -unique -sort_by slack > ${top_level}.syn.critical_regs.full
+report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack -to [all_outputs] > ${top_level}.syn.critical_regs.output
+report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack -to [all_registers -data_pins] > ${top_level}.syn.critical_regs.regs
+report_timing -delay min -nworst 1 -max_paths 10000 -path short -nosplit -unique -sort_by slack > ${top_level}.syn.fast_path
+quit
+
+Memory usage for this session 254 Mbytes.
+Memory usage for this session including child processes 254 Mbytes.
+CPU usage for this session 48 seconds ( 0.01 hours ).
+Elapsed time for this session 55 seconds ( 0.02 hours ).
+
+Thank you...
