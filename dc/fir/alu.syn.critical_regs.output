@@ -7,7 +7,7 @@ Report : timing
         -sort_by slack
 Design : alu
 Version: U-2022.12-SP7
-Date   : Sun Nov 17 18:53:33 2024
+Date   : Sun Nov 17 19:41:13 2024
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c

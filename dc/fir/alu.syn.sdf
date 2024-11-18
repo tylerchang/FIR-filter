@@ -1,7 +1,7 @@
 (DELAYFILE
 (SDFVERSION "OVI 2.1")
 (DESIGN "alu")
-(DATE "Sun Nov 17 18:53:32 2024")
+(DATE "Sun Nov 17 19:41:12 2024")
 (VENDOR "scx3_cmos8rf_lpvt_tt_1p2v_25c")
 (PROGRAM "Synopsys Design Compiler cmos")
 (VERSION "U-2022.12-SP7")

@@ -1,5 +1,5 @@
 $date
-	Sun Nov 17 18:56:39 2024
+	Sun Nov 17 19:42:39 2024
 $end
 $version
 	ModelSim Version 2024.2
@@ -8,9 +8,9 @@ $timescale
 	1ps
 $end
 
-$scope module alu_tb $end
+$scope module testbench $end
 
-$scope module dut $end
+$scope module alu $end
 $var wire 1 ! inputX [15] $end
 $var wire 1 " inputX [14] $end
 $var wire 1 # inputX [13] $end

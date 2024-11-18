@@ -41,7 +41,7 @@ report_timing -significant_digits 4 -delay_type min_max >> ${rpt_file}
 
 ## Power analysis
 set power_analysis_mode "time_based"
-read_vcd "../../qsim_dc/fir/alu.vcd" -strip_path"alu_tb/dut"
+read_vcd "../../qsim_dc/fir/alu.vcd" -strip_path "testbench/alu"
 report_switching_activity >> ${rpt_file}
 report_switching_activity -list_not_annotated >> ${rpt_file}
 update_power

@@ -5,7 +5,7 @@
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim DE vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 18:56:23 on Nov 17,2024
+# Start time: 19:42:22 on Nov 17,2024
 # vlog -reportprogress 300 "+acc" -incr /courses/ee6321/share/ibm13rflpvt/verilog/ibm13rflpvt.v 
 # -- Skipping module BUFX2TS
 # -- Skipping module BUFX3TS
@@ -1075,28 +1075,28 @@
 # 	DLY4X4TS
 # 	TIEHITS
 # 	TIELOTS
-# End time: 18:56:24 on Nov 17,2024, Elapsed time: 0:00:01
+# End time: 19:42:23 on Nov 17,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim DE vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 18:56:24 on Nov 17,2024
+# Start time: 19:42:23 on Nov 17,2024
 # vlog -reportprogress 300 "+acc" -incr ../../dc/fir/alu.nl.v 
 # -- Skipping module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 18:56:26 on Nov 17,2024, Elapsed time: 0:00:02
+# End time: 19:42:24 on Nov 17,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim DE vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 18:56:26 on Nov 17,2024
+# Start time: 19:42:24 on Nov 17,2024
 # vlog -reportprogress 300 "+acc" -incr test_alu.v 
-# -- Compiling module alu_tb
+# -- Compiling module testbench
 # 
 # Top level modules:
-# 	alu_tb
-# End time: 18:56:26 on Nov 17,2024, Elapsed time: 0:00:00
+# 	testbench
+# End time: 19:42:25 on Nov 17,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vsim -voptargs="+acc" -t ps -lib work -sdftyp "dut=../../dc/fir/alu.syn.sdf" alu_tb 
-# Start time: 18:56:26 on Nov 17,2024
+# vsim -voptargs="+acc" -t ps -lib work -sdftyp "alu=../../dc/fir/alu.syn.sdf" testbench 
+# Start time: 19:42:25 on Nov 17,2024
 # //  ModelSim DE 2024.2 May 20 2024 Linux 4.18.0-553.27.1.el8_10.x86_64
 # //
 # // Unpublished work. Copyright 2024 Siemens
@@ -1110,7 +1110,7 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-# Loading work.alu_tb
+# Loading work.testbench
 # Loading work.alu
 # Loading work.DFFQX1TS
 # Loading work.DFFHQX8TS
@@ -1196,30 +1196,19 @@
 # Loading work.OA22X4TS
 # Loading work.ADDHX1TS
 # Loading work.AO21X2TS
+# SDF 2024.2 Compiler 2024.05 May 20 2024
 # Loading instances from ../../dc/fir/alu.syn.sdf
 # Loading work.udp_dff
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'totalSumOut_reg_0_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /alu_tb/dut/totalSumOut_reg_0_ File: ../../dc/fir/alu.nl.v Line: 216
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/alu/totalSumOut_reg_0_ File: ../../dc/fir/alu.nl.v Line: 216
 # ** Warning: (vsim-3722) ../../dc/fir/alu.nl.v(216): [TFMPC] - Missing connection for port 'QN'.
 # Loading work.udp_edfft
 # Loading work.udp_mux2
 # Loading timing data from ../../dc/fir/alu.syn.sdf
-# ** Warning: (vsim-8756) Instance 'alu_tb.dut.totalSumOut_reg_22_' - Negative timing check limits detected in simulation with cells modeled without delayed copies of data or reference signals.
-#    Time: 0 ps  Iteration: 0  Instance: /alu_tb File: /courses/ee6321/share/ibm13rflpvt/verilog/ibm13rflpvt.v Line: 30286
+# ** Warning: (vsim-8756) Instance 'testbench.alu.totalSumOut_reg_22_' - Negative timing check limits detected in simulation with cells modeled without delayed copies of data or reference signals.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench File: /courses/ee6321/share/ibm13rflpvt/verilog/ibm13rflpvt.v Line: 30286
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /alu_tb File: test_alu.v
-# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/clk'.
-# Executing ONERROR command at macro ./waveformat.do line 3
-# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/resetn'.
-# Executing ONERROR command at macro ./waveformat.do line 4
-# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/lfsr_out'.
-# Executing ONERROR command at macro ./waveformat.do line 5
-# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/lfsr_out_qsim'.
-# Executing ONERROR command at macro ./waveformat.do line 6
-# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/lfsr_out_matlab'.
-# Executing ONERROR command at macro ./waveformat.do line 7
-# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/error_count'.
-# Executing ONERROR command at macro ./waveformat.do line 8
+#    Time: 0 ps  Iteration: 0  Instance: /testbench File: test_alu.v
 # Starting ALU testbench
 # inputX = 13604, inputB = 24193, totalSumIn = 0
 # Expected: 329121572, Got: 329121572
@@ -1232,13 +1221,8 @@
 # inputX = 58113, inputB = 52493, totalSumIn = 3491233506
 # Expected: 6541759215, Got: 6541759215
 # ** Note: $finish    : test_alu.v(53)
-#    Time: 230 ns  Iteration: 1  Instance: /alu_tb
+#    Time: 230 ns  Iteration: 1  Instance: /testbench
 # 1
-# Break in Module alu_tb at test_alu.v line 53
-add wave -position insertpoint  \
-sim:/alu_tb/dut/inputX \
-sim:/alu_tb/dut/inputB \
-sim:/alu_tb/dut/totalSumIn \
-sim:/alu_tb/dut/totalSumOut
-# End time: 18:57:25 on Nov 17,2024, Elapsed time: 0:00:59
+# Break in Module testbench at test_alu.v line 53
+# End time: 19:43:11 on Nov 17,2024, Elapsed time: 0:00:46
 # Errors: 0, Warnings: 3

@@ -29,19 +29,19 @@
             Inclusivity and Diversity" (Refer to article 000036315 at
                         https://solvnetplus.synopsys.com)
 Initializing...
-Current time:       Sun Nov 17 18:52:01 2024
-Hostname:           cadpc07
+Current time:       Sun Nov 17 19:37:02 2024
+Hostname:           cadpc06
 CPU Model:          11th Gen Intel(R) Core(TM) i9-11900 @ 2.50GHz
-CPU Details:        Cores = 16 : Sockets = 1 : Cache Size = 16384 KB : Freq = 2.50 GHz
+CPU Details:        Cores = 16 : Sockets = 1 : Cache Size = 16384 KB : Freq = 3.61 GHz
 OS:                 Linux 4.18.0-553.27.1.el8_10.x86_64
-RAM:                 62 GB (Free  31 GB)
+RAM:                 62 GB (Free  28 GB)
 Swap:                31 GB (Free  31 GB)
 Work Filesystem:    /homes mounted to auto.homes
 Tmp Filesystem:     /tmp mounted to tmpfs
-Work Disk:          18974 GB (Free 6835 GB)
+Work Disk:          18974 GB (Free 6815 GB)
 Tmp Disk:            31 GB (Free  31 GB)
 
-CPU Load: 2%, Ram Free: 31 GB, Swap Free: 31 GB, Work Disk Free: 6835 GB, Tmp Disk Free: 31 GB
+CPU Load: 63%, Ram Free: 28 GB, Swap Free: 31 GB, Work Disk Free: 6815 GB, Tmp Disk Free: 31 GB
 #########################################
 # TCL script for Design Compiler        #
 # MS 2015                               #
@@ -64,22 +64,22 @@ Loading db file '/tools/synopsys/syn/U-2022.12-SP7/libraries/syn/gtech.db'
 Loading db file '/tools/synopsys/syn/U-2022.12-SP7/libraries/syn/standard.sldb'
   Loading link library 'scx3_cmos8rf_lpvt_tt_1p2v_25c'
   Loading link library 'gtech'
-Loading verilog file '/homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/rtl/fir/alu.v'
+Loading verilog file '/homes/user/stud/fall24/hz3000/Desktop/fall24/FIR-filter/rtl/fir/alu.v'
 Detecting input file type automatically (-rtl or -netlist).
 Reading with Presto HDL Compiler (equivalent to -rtl option).
 Running PRESTO HDLC
-Compiling source file /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/rtl/fir/alu.v
+Compiling source file /homes/user/stud/fall24/hz3000/Desktop/fall24/FIR-filter/rtl/fir/alu.v
 
 Inferred memory devices in process
 	in routine alu line 14 in file
-		'/homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/rtl/fir/alu.v'.
+		'/homes/user/stud/fall24/hz3000/Desktop/fall24/FIR-filter/rtl/fir/alu.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===============================================================================
 |   totalSumOut_reg   | Flip-flop |  39   |  Y  | N  | N  | N  | N  | N  | N  |
 ===============================================================================
 Presto compilation completed successfully.
-Current design is now '/homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/rtl/fir/alu.db:alu'
+Current design is now '/homes/user/stud/fall24/hz3000/Desktop/fall24/FIR-filter/rtl/fir/alu.db:alu'
 Loaded 1 design.
 Current design is 'alu'.
 alu
@@ -100,7 +100,7 @@ link
   Linking design 'alu'
   Using the following designs and libraries:
   --------------------------------------------------------------------------
-  alu                         /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/rtl/fir/alu.db
+  alu                         /homes/user/stud/fall24/hz3000/Desktop/fall24/FIR-filter/rtl/fir/alu.db
   scx3_cmos8rf_lpvt_tt_1p2v_25c (library) /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
   dw_foundation.sldb (library) /tools/synopsys/syn/U-2022.12-SP7/libraries/syn/dw_foundation.sldb
 
@@ -223,7 +223,7 @@ link
   Linking design 'alu'
   Using the following designs and libraries:
   --------------------------------------------------------------------------
-  alu                         /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/rtl/fir/alu.db
+  alu                         /homes/user/stud/fall24/hz3000/Desktop/fall24/FIR-filter/rtl/fir/alu.db
   scx3_cmos8rf_lpvt_tt_1p2v_25c (library)
                               /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
   dw_foundation.sldb (library)
@@ -232,7 +232,7 @@ link
 1
 compile_ultra
 Information: Performing leakage power optimization. (PWR-850)
-CPU Load: 2%, Ram Free: 31 GB, Swap Free: 31 GB, Work Disk Free: 6835 GB, Tmp Disk Free: 31 GB
+CPU Load: 63%, Ram Free: 28 GB, Swap Free: 31 GB, Work Disk Free: 6815 GB, Tmp Disk Free: 31 GB
 Analyzing: "/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db"
 Library analysis succeeded.
 Information: Evaluating DesignWare library utilization. (UISN-27)
@@ -276,7 +276,7 @@ Information: Sequential output inversion is enabled.  SVF file must be used for 
 Loaded alib file './alib-52/scx3_cmos8rf_lpvt_tt_1p2v_25c.db.alib'
   Building model 'DW01_NAND2'
 Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
-CPU Load: 5%, Ram Free: 31 GB, Swap Free: 31 GB, Work Disk Free: 6834 GB, Tmp Disk Free: 31 GB
+CPU Load: 66%, Ram Free: 28 GB, Swap Free: 31 GB, Work Disk Free: 6815 GB, Tmp Disk Free: 31 GB
 Information: State dependent leakage is now switched from on to off.
 
   Beginning Pass 1 Mapping
@@ -284,7 +284,7 @@ Information: State dependent leakage is now switched from on to off.
   Processing 'alu'
  Implement Synthetic for 'alu'.
 Information: Command 'do_operand_isolation' is obsolete and is being ignored.  Please refer to the replacement command 'set power_enable_datapath_gating true' instead. (INFO-118)
-CPU Load: 5%, Ram Free: 31 GB, Swap Free: 31 GB, Work Disk Free: 6834 GB, Tmp Disk Free: 31 GB
+CPU Load: 66%, Ram Free: 28 GB, Swap Free: 31 GB, Work Disk Free: 6815 GB, Tmp Disk Free: 31 GB
 
   Updating timing information
 Information: Updating design information... (UID-85)
@@ -300,13 +300,13 @@ Information: Command 'do_operand_isolation' is obsolete and is being ignored.  P
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:00:04   27056.2      2.66      81.7    1146.1                           44818.9102      0.00  
-    0:00:04   27015.8      2.66      81.7    1144.1                           44778.8398      0.00  
+    0:00:09   27056.2      2.66      81.7    1146.1                           44818.9102      0.00  
+    0:00:10   27015.8      2.66      81.7    1144.1                           44778.8398      0.00  
 
   Beginning Constant Register Removal
   -----------------------------------
-    0:00:04   27015.8      2.66      81.7    1144.1                           44778.8398      0.00  
-    0:00:04   27015.8      2.66      81.7    1144.1                           44778.8398      0.00  
+    0:00:10   27015.8      2.66      81.7    1144.1                           44778.8398      0.00  
+    0:00:10   27015.8      2.66      81.7    1144.1                           44778.8398      0.00  
 
   Beginning Global Optimizations
   ------------------------------
@@ -349,39 +349,39 @@ Information: Command 'do_operand_isolation' is obsolete and is being ignored.  P
 
   Beginning Delay Optimization
   ----------------------------
-    0:00:04   12572.6      4.29     126.8     495.4                           18303.7852      0.00  
+    0:00:11   12572.6      4.29     126.8     495.4                           18303.7852      0.00  
   Mapping 'alu_DP_OP_4J1_122_6055_2'
 Information: Added key list 'DesignWare' to design 'alu'. (DDB-72)
-    0:00:05   14104.8      3.38     109.1     541.7                           21007.8418      0.00  
-    0:00:05   14104.8      3.38     109.1     541.7                           21007.8418      0.00  
-    0:00:05   14146.6      3.38     108.7     540.8                           21088.9316      0.00  
-    0:00:05   14123.5      3.38     108.7     536.8                           21057.3438      0.00  
-    0:00:05   14123.5      3.38     108.7     536.8                           21057.3438      0.00  
+    0:00:13   14104.8      3.38     109.1     541.7                           21007.8418      0.00  
+    0:00:13   14104.8      3.38     109.1     541.7                           21007.8418      0.00  
+    0:00:14   14146.6      3.38     108.7     540.8                           21088.9316      0.00  
+    0:00:14   14123.5      3.38     108.7     536.8                           21057.3438      0.00  
+    0:00:14   14123.5      3.38     108.7     536.8                           21057.3438      0.00  
 
   Beginning WLM Backend Optimization
   --------------------------------------
-    0:00:05   14078.9      3.37     108.0     536.8                           20998.1934      0.00  
-    0:00:06   16672.3      2.92      91.8     578.9                           25571.0703      0.00  
-    0:00:06   16672.3      2.92      91.8     578.9                           25571.0703      0.00  
-    0:00:06   16663.7      2.92      91.8     578.9                           25554.8770      0.00  
-    0:00:06   16663.7      2.92      91.8     578.9                           25554.8770      0.00  
-    0:00:07   17530.6      2.79      89.3     624.5                           26673.7070      0.00  
-    0:00:07   17530.6      2.79      89.3     624.5                           26673.7070      0.00  
-    0:00:07   17690.4      2.76      88.8     624.5                           26976.5820      0.00  
-    0:00:07   17690.4      2.76      88.8     624.5                           26976.5820      0.00  
-    0:00:08   18737.3      2.72      87.5     672.7                           28497.0586      0.00  
-    0:00:08   18737.3      2.72      87.5     672.7                           28497.0586      0.00  
-    0:00:11   20993.8      2.36      75.9     685.7                           31628.0137      0.00  
-    0:00:11   20993.8      2.36      75.9     685.7                           31628.0137      0.00  
-    0:00:14   21258.7      2.35      75.4     713.1                           32057.6875      0.00  
-    0:00:14   21258.7      2.35      75.4     713.1                           32057.6875      0.00  
-    0:00:16   21944.2      2.28      73.1     671.3                           33021.7852      0.00  
-    0:00:16   21944.2      2.28      73.1     671.3                           33021.7852      0.00  
-    0:00:16   21944.2      2.28      73.1     671.3                           33021.7852      0.00  
-    0:00:16   21944.2      2.28      73.1     671.3                           33021.7852      0.00  
-    0:00:16   21944.2      2.28      73.1     671.3                           33021.7852      0.00  
-    0:00:16   21944.2      2.28      73.1     671.3                           33021.7852      0.00  
-    0:00:17   21944.2      2.28      73.1     671.3                           33021.7852      0.00  
+    0:00:15   14078.9      3.37     108.0     536.8                           20998.1934      0.00  
+    0:00:16   16672.3      2.92      91.8     578.9                           25571.0703      0.00  
+    0:00:16   16672.3      2.92      91.8     578.9                           25571.0703      0.00  
+    0:00:16   16663.7      2.92      91.8     578.9                           25554.8770      0.00  
+    0:00:16   16663.7      2.92      91.8     578.9                           25554.8770      0.00  
+    0:00:19   17530.6      2.79      89.3     624.5                           26673.7070      0.00  
+    0:00:19   17530.6      2.79      89.3     624.5                           26673.7070      0.00  
+    0:00:19   17690.4      2.76      88.8     624.5                           26976.5820      0.00  
+    0:00:19   17690.4      2.76      88.8     624.5                           26976.5820      0.00  
+    0:00:23   18737.3      2.72      87.5     672.7                           28497.0586      0.00  
+    0:00:23   18737.3      2.72      87.5     672.7                           28497.0586      0.00  
+    0:00:32   20993.8      2.36      75.9     685.7                           31628.0137      0.00  
+    0:00:32   20993.8      2.36      75.9     685.7                           31628.0137      0.00  
+    0:00:39   21258.7      2.35      75.4     713.1                           32057.6875      0.00  
+    0:00:39   21258.7      2.35      75.4     713.1                           32057.6875      0.00  
+    0:00:44   21944.2      2.28      73.1     671.3                           33021.7852      0.00  
+    0:00:44   21944.2      2.28      73.1     671.3                           33021.7852      0.00  
+    0:00:45   21944.2      2.28      73.1     671.3                           33021.7852      0.00  
+    0:00:45   21944.2      2.28      73.1     671.3                           33021.7852      0.00  
+    0:00:46   21944.2      2.28      73.1     671.3                           33021.7852      0.00  
+    0:00:46   21944.2      2.28      73.1     671.3                           33021.7852      0.00  
+    0:00:47   21944.2      2.28      73.1     671.3                           33021.7852      0.00  
 
 
   Beginning Design Rule Fixing  (max_transition)  (max_fanout)  (max_capacitance)
@@ -391,22 +391,22 @@ Information: Added key list 'DesignWare' to design 'alu'. (DDB-72)
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:00:17   21944.2      2.28      73.1     671.3                           33021.7852      0.00  
+    0:00:47   21944.2      2.28      73.1     671.3                           33021.7852      0.00  
   Global Optimization (Phase 32)
   Global Optimization (Phase 33)
   Global Optimization (Phase 34)
-    0:00:17   22553.3      2.52      78.2     273.9 net4428                   33585.7070      0.00  
-    0:00:18   22873.0      2.31      75.2     255.0 totalSumOut_reg[30]/D     34118.4453      0.00  
-    0:00:18   23076.0      2.26      74.6     241.1 totalSumOut_reg[30]/D     34424.5898      0.00  
-    0:00:19   23084.6      2.23      73.8     239.9 totalSumOut_reg[32]/D     34449.0664      0.00  
-    0:00:19   23244.5      2.20      72.5     234.9 totalSumOut_reg[30]/D     34697.4570      0.00  
-    0:00:20   23271.8      2.19      72.3     228.4 inputX[14]                34700.8828      0.00  
-    0:00:20   23953.0      2.28      75.9      42.0 totalSumOut_reg[29]/D     35353.3672      0.00  
-    0:00:20   24063.8      2.26      75.1      40.0 totalSumOut_reg[30]/D     35528.4453      0.00  
-    0:00:21   24242.4      2.27      75.3       0.0 net5700                   35702.3906      0.00  
-    0:00:21   24181.9      2.23      74.1       0.0 totalSumOut_reg[32]/D     35559.0898      0.00  
-    0:00:21   24156.0      2.23      74.0       0.0                           35503.2461      0.00  
-    0:00:23   24089.8      2.24      73.9      12.6                           35419.0547      0.00  
+    0:00:49   22553.3      2.52      78.2     273.9 net4428                   33585.7070      0.00  
+    0:00:51   22873.0      2.31      75.2     255.0 totalSumOut_reg[30]/D     34118.4453      0.00  
+    0:00:52   23076.0      2.26      74.6     241.1 totalSumOut_reg[30]/D     34424.5898      0.00  
+    0:00:53   23084.6      2.23      73.8     239.9 totalSumOut_reg[32]/D     34449.0664      0.00  
+    0:00:54   23244.5      2.20      72.5     234.9 totalSumOut_reg[30]/D     34697.4570      0.00  
+    0:00:56   23271.8      2.19      72.3     228.4 inputX[14]                34700.8828      0.00  
+    0:00:57   23953.0      2.28      75.9      42.0 totalSumOut_reg[29]/D     35353.3672      0.00  
+    0:00:58   24063.8      2.26      75.1      40.0 totalSumOut_reg[30]/D     35528.4453      0.00  
+    0:00:59   24242.4      2.27      75.3       0.0 net5700                   35702.3906      0.00  
+    0:01:01   24181.9      2.23      74.1       0.0 totalSumOut_reg[32]/D     35559.0898      0.00  
+    0:01:01   24156.0      2.23      74.0       0.0                           35503.2461      0.00  
+    0:01:04   24089.8      2.24      73.9      12.6                           35419.0547      0.00  
 
 
   Beginning Leakage Power Optimization  (max_leakage_power 0)
@@ -416,56 +416,56 @@ Information: Added key list 'DesignWare' to design 'alu'. (DDB-72)
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:00:23   24089.8      2.24      73.9      12.6                           35419.0547      0.00  
-    0:00:23   24082.6      2.20      73.1      12.6 totalSumOut_reg[37]/D     35422.1289      0.00  
-    0:00:23   24088.3      2.20      73.0      12.6                           35433.4023      0.00  
-    0:00:24   24115.7      2.20      72.7      45.1                           35508.9062      0.00  
-    0:00:24   24115.7      2.20      72.7      45.1                           35508.9062      0.00  
-    0:00:24   24088.3      2.20      72.7      45.1                           35447.4453      0.00  
-    0:00:24   24088.3      2.20      72.7      45.1                           35447.4453      0.00  
-    0:00:25   24088.3      2.20      72.7      45.1                           35447.4453      0.00  
-    0:00:25   24088.3      2.20      72.7      45.1                           35447.4453      0.00  
-    0:00:25   24219.4      2.19      72.7      52.1                           35692.5391      0.00  
-    0:00:25   24219.4      2.19      72.7      52.1                           35692.5391      0.00  
-    0:00:25   24274.1      2.19      72.7      53.1                           35751.3086      0.00  
-    0:00:25   24274.1      2.19      72.7      53.1                           35751.3086      0.00  
-    0:00:30   25398.7      2.08      67.8     168.8                           37571.5117      0.00  
-    0:00:30   25398.7      2.08      67.8     168.8                           37571.5117      0.00  
-    0:00:32   25571.5      2.09      68.5     187.8                           37868.3125      0.00  
-    0:00:32   25571.5      2.09      68.5     187.8                           37868.3125      0.00  
-    0:00:35   25787.5      2.06      67.7     196.8                           38240.4844      0.00  
-    0:00:35   25787.5      2.06      67.7     196.8                           38240.4844      0.00  
-    0:00:36   26042.4      2.09      68.4     205.8                           38646.3906      0.00  
-    0:00:36   26042.4      2.09      68.4     205.8                           38646.3906      0.00  
-    0:00:39   26331.8      2.05      67.6     202.4                           39067.0430      0.00  
-    0:00:39   26331.8      2.05      67.6     202.4                           39067.0430      0.00  
-    0:00:40   26331.8      2.05      67.6     202.4                           39067.0430      0.00  
+    0:01:04   24089.8      2.24      73.9      12.6                           35419.0547      0.00  
+    0:01:06   24082.6      2.20      73.1      12.6 totalSumOut_reg[37]/D     35422.1289      0.00  
+    0:01:06   24088.3      2.20      73.0      12.6                           35433.4023      0.00  
+    0:01:09   24115.7      2.20      72.7      45.1                           35508.9062      0.00  
+    0:01:09   24115.7      2.20      72.7      45.1                           35508.9062      0.00  
+    0:01:09   24088.3      2.20      72.7      45.1                           35447.4453      0.00  
+    0:01:10   24088.3      2.20      72.7      45.1                           35447.4453      0.00  
+    0:01:10   24088.3      2.20      72.7      45.1                           35447.4453      0.00  
+    0:01:11   24088.3      2.20      72.7      45.1                           35447.4453      0.00  
+    0:01:11   24219.4      2.19      72.7      52.1                           35692.5391      0.00  
+    0:01:11   24219.4      2.19      72.7      52.1                           35692.5391      0.00  
+    0:01:12   24274.1      2.19      72.7      53.1                           35751.3086      0.00  
+    0:01:12   24274.1      2.19      72.7      53.1                           35751.3086      0.00  
+    0:01:26   25398.7      2.08      67.8     168.8                           37571.5117      0.00  
+    0:01:26   25398.7      2.08      67.8     168.8                           37571.5117      0.00  
+    0:01:32   25571.5      2.09      68.5     187.8                           37868.3125      0.00  
+    0:01:32   25571.5      2.09      68.5     187.8                           37868.3125      0.00  
+    0:01:38   25787.5      2.06      67.7     196.8                           38240.4844      0.00  
+    0:01:38   25787.5      2.06      67.7     196.8                           38240.4844      0.00  
+    0:01:41   26042.4      2.09      68.4     205.8                           38646.3906      0.00  
+    0:01:41   26042.4      2.09      68.4     205.8                           38646.3906      0.00  
+    0:01:50   26331.8      2.05      67.6     202.4                           39067.0430      0.00  
+    0:01:50   26331.8      2.05      67.6     202.4                           39067.0430      0.00  
+    0:01:53   26331.8      2.05      67.6     202.4                           39067.0430      0.00  
 
                                   TOTAL                                                            
    ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
   --------- --------- --------- --------- --------- ------------------------- --------- -----------
-    0:00:40   26331.8      2.05      67.6     202.4                           39067.0430      0.00  
-    0:00:40   25081.9      2.06      66.7     172.5                           37052.0469      0.00  
-    0:00:41   25014.2      2.05      66.6     175.5                           36979.3320      0.00  
-    0:00:41   25014.2      2.05      66.6     175.5                           36979.3320      0.00  
-    0:00:41   25012.8      2.05      66.6     175.5                           36975.2383      0.00  
-    0:00:41   24796.8      2.05      66.3     121.7 net6480                   36624.4258      0.00  
-    0:00:42   24942.2      2.03      66.4     120.7 totalSumOut_reg[37]/D     36876.5156      0.00  
-    0:00:42   25035.8      2.20      72.6      93.9 totalSumOut_reg[37]/D     37017.9258      0.00  
-    0:00:42   25102.1      2.17      72.2      93.9 totalSumOut_reg[33]/D     37096.2852      0.00  
-    0:00:43   25368.5      2.20      72.3      45.0 net6273                   37460.7500      0.00  
-    0:00:43   25630.6      2.16      71.5      13.0 totalSumOut_reg[37]/D     37782.4609      0.00  
-    0:00:44   25807.7      2.13      70.8      13.0 totalSumOut_reg[37]/D     38046.2539      0.00  
-    0:00:44   25954.6      2.12      70.6      13.0 totalSumOut_reg[37]/D     38257.8945      0.00  
-    0:00:44   26101.4      2.13      70.9       0.0                           38466.3594      0.00  
-    0:00:46   26411.0      2.06      68.0      78.1                           38952.3477      0.00  
-    0:00:46   26411.0      2.06      68.0      78.1                           38952.3477      0.00  
-    0:00:46   26455.7      2.08      68.4      73.6                           39068.0547      0.00  
-    0:00:46   26455.7      2.08      68.4      73.6                           39068.0547      0.00  
-    0:00:46   26478.7      2.06      67.6      78.1                           39109.9453      0.00  
-    0:00:47   25224.5      2.06      67.5      78.1                           36783.0430      0.00  
-CPU Load: 6%, Ram Free: 31 GB, Swap Free: 31 GB, Work Disk Free: 6834 GB, Tmp Disk Free: 31 GB
+    0:01:53   26331.8      2.05      67.6     202.4                           39067.0430      0.00  
+    0:01:54   25081.9      2.06      66.7     172.5                           37052.0469      0.00  
+    0:01:54   25014.2      2.05      66.6     175.5                           36979.3320      0.00  
+    0:01:54   25014.2      2.05      66.6     175.5                           36979.3320      0.00  
+    0:01:55   25012.8      2.05      66.6     175.5                           36975.2383      0.00  
+    0:01:56   24796.8      2.05      66.3     121.7 net6480                   36624.4258      0.00  
+    0:01:57   24942.2      2.03      66.4     120.7 totalSumOut_reg[37]/D     36876.5156      0.00  
+    0:01:58   25035.8      2.20      72.6      93.9 totalSumOut_reg[37]/D     37017.9258      0.00  
+    0:01:59   25102.1      2.17      72.2      93.9 totalSumOut_reg[33]/D     37096.2852      0.00  
+    0:02:01   25368.5      2.20      72.3      45.0 net6273                   37460.7500      0.00  
+    0:02:02   25630.6      2.16      71.5      13.0 totalSumOut_reg[37]/D     37782.4609      0.00  
+    0:02:03   25807.7      2.13      70.8      13.0 totalSumOut_reg[37]/D     38046.2539      0.00  
+    0:02:04   25954.6      2.12      70.6      13.0 totalSumOut_reg[37]/D     38257.8945      0.00  
+    0:02:05   26101.4      2.13      70.9       0.0                           38466.3594      0.00  
+    0:02:10   26411.0      2.06      68.0      78.1                           38952.3477      0.00  
+    0:02:10   26411.0      2.06      68.0      78.1                           38952.3477      0.00  
+    0:02:10   26455.7      2.08      68.4      73.6                           39068.0547      0.00  
+    0:02:11   26455.7      2.08      68.4      73.6                           39068.0547      0.00  
+    0:02:11   26478.7      2.06      67.6      78.1                           39109.9453      0.00  
+    0:02:12   25224.5      2.06      67.5      78.1                           36783.0430      0.00  
+CPU Load: 67%, Ram Free: 28 GB, Swap Free: 31 GB, Work Disk Free: 6814 GB, Tmp Disk Free: 31 GB
 Loading db file '/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
 
 
@@ -476,7 +476,7 @@ Note: Symbol # after min delay cost means estimated hold TNS across all active s
   ---------------------
 Information: State dependent leakage is now switched from off to on.
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
-CPU Load: 6%, Ram Free: 31 GB, Swap Free: 31 GB, Work Disk Free: 6834 GB, Tmp Disk Free: 31 GB
+CPU Load: 68%, Ram Free: 28 GB, Swap Free: 31 GB, Work Disk Free: 6814 GB, Tmp Disk Free: 31 GB
 Information: Total number of MV cells in the design.
 ----------------------------------------------------------------------------------------------------
  MV Cells                                           Total Number                                   
@@ -641,14 +641,14 @@ alu             net     n1800                   n18001
 set verilogout_no_tri TRUE
 TRUE
 write -hierarchy -format verilog -output "${top_level}.nl.v"
-Writing verilog file '/homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/dc/fir/alu.nl.v'.
+Writing verilog file '/homes/user/stud/fall24/hz3000/Desktop/fall24/FIR-filter/dc/fir/alu.nl.v'.
 1
 #write_sdf -context verilog "${top_level}.temp.sdf"
 write_sdc "${top_level}.syn.sdc" -version 1.7
 1
 write_sdf "${top_level}.syn.sdf"
 Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
-Information: Writing timing information to file '/homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/dc/fir/alu.syn.sdf'. (WT-3)
+Information: Writing timing information to file '/homes/user/stud/fall24/hz3000/Desktop/fall24/FIR-filter/dc/fir/alu.syn.sdf'. (WT-3)
 Information: Updating design information... (UID-85)
 1
 # Generate report file
@@ -674,7 +674,7 @@ quit
 
 Memory usage for this session 260 Mbytes.
 Memory usage for this session including child processes 260 Mbytes.
-CPU usage for this session 89 seconds ( 0.02 hours ).
-Elapsed time for this session 96 seconds ( 0.03 hours ).
+CPU usage for this session 252 seconds ( 0.07 hours ).
+Elapsed time for this session 267 seconds ( 0.07 hours ).
 
 Thank you...

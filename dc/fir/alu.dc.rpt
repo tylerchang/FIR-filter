@@ -4,7 +4,7 @@
 Report : area
 Design : alu
 Version: U-2022.12-SP7
-Date   : Sun Nov 17 18:53:32 2024
+Date   : Sun Nov 17 19:41:12 2024
 ****************************************
 
 Library(s) Used:
@@ -39,7 +39,7 @@ Report : power
         -analysis_effort medium
 Design : alu
 Version: U-2022.12-SP7
-Date   : Sun Nov 17 18:53:32 2024
+Date   : Sun Nov 17 19:41:12 2024
 ****************************************
 
 
@@ -72,7 +72,7 @@ alu                                       2.204    5.198 3.70e+04    7.402 100.0
 Report : design
 Design : alu
 Version: U-2022.12-SP7
-Date   : Sun Nov 17 18:53:32 2024
+Date   : Sun Nov 17 19:41:12 2024
 ****************************************
 
 Design allows ideal nets on clock nets.
@@ -139,7 +139,7 @@ Design Parameters:
 Report : cell
 Design : alu
 Version: U-2022.12-SP7
-Date   : Sun Nov 17 18:53:32 2024
+Date   : Sun Nov 17 19:41:12 2024
 ****************************************
 
 Attributes:
@@ -3772,7 +3772,7 @@ Report : port
         -verbose
 Design : alu
 Version: U-2022.12-SP7
-Date   : Sun Nov 17 18:53:32 2024
+Date   : Sun Nov 17 19:41:12 2024
 ****************************************
 
 
@@ -4670,7 +4670,7 @@ totalSumOut[38]
 Report : compile_options
 Design : alu
 Version: U-2022.12-SP7
-Date   : Sun Nov 17 18:53:32 2024
+Date   : Sun Nov 17 19:41:12 2024
 ****************************************
 
 Design                                   Compile Option         Value
@@ -4697,7 +4697,7 @@ Report : constraint
         -verbose
 Design : alu
 Version: U-2022.12-SP7
-Date   : Sun Nov 17 18:53:32 2024
+Date   : Sun Nov 17 19:41:12 2024
 ****************************************
 
 
@@ -6701,7 +6701,7 @@ Report : timing
         -max_paths 20
 Design : alu
 Version: U-2022.12-SP7
-Date   : Sun Nov 17 18:53:32 2024
+Date   : Sun Nov 17 19:41:12 2024
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c

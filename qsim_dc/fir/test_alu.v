@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
 `define SD #0.010
 `define HALF_CLOCK_PERIOD #10
-module alu_tb();
+module testbench();
 
     reg [15:0] inputX, inputB;
     reg [38:0] totalSumIn;
@@ -9,7 +9,7 @@ module alu_tb();
     reg clk;
     reg rstn;
     // Instantiate the ALU
-    alu dut (
+    alu alu (
         .inputX(inputX),
         .inputB(inputB),
 	.clk(clk),
@@ -26,7 +26,7 @@ module alu_tb();
 
     initial begin
         $dumpfile("./alu.vcd");
-        $dumpvars(0,alu_tb.dut);
+        $dumpvars(0,testbench.alu);
 	clk = 0;
 	rstn = 0;
         totalSumIn = 0;
