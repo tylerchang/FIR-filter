@@ -1,0 +1,1048 @@
+ 
+****************************************
+Report : timing
+        -path short
+        -delay min
+        -max_paths 10000
+        -sort_by slack
+Design : cmem_large
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 16:46:09 2024
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: d[0] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 f
+  d[0] (in)                                0.02       0.07 f
+  memory/D[0] (cmem)                       0.00       0.07 f
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: d[10] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 f
+  d[10] (in)                               0.02       0.07 f
+  memory/D[10] (cmem)                      0.00       0.07 f
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: d[11] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 f
+  d[11] (in)                               0.02       0.07 f
+  memory/D[11] (cmem)                      0.00       0.07 f
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: d[12] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 f
+  d[12] (in)                               0.02       0.07 f
+  memory/D[12] (cmem)                      0.00       0.07 f
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: d[13] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 f
+  d[13] (in)                               0.02       0.07 f
+  memory/D[13] (cmem)                      0.00       0.07 f
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: d[14] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 f
+  d[14] (in)                               0.02       0.07 f
+  memory/D[14] (cmem)                      0.00       0.07 f
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: d[15] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 f
+  d[15] (in)                               0.02       0.07 f
+  memory/D[15] (cmem)                      0.00       0.07 f
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: d[1] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 f
+  d[1] (in)                                0.02       0.07 f
+  memory/D[1] (cmem)                       0.00       0.07 f
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: d[2] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 f
+  d[2] (in)                                0.02       0.07 f
+  memory/D[2] (cmem)                       0.00       0.07 f
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: d[3] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 f
+  d[3] (in)                                0.02       0.07 f
+  memory/D[3] (cmem)                       0.00       0.07 f
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: d[4] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 f
+  d[4] (in)                                0.02       0.07 f
+  memory/D[4] (cmem)                       0.00       0.07 f
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: d[5] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 f
+  d[5] (in)                                0.02       0.07 f
+  memory/D[5] (cmem)                       0.00       0.07 f
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: d[6] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 f
+  d[6] (in)                                0.02       0.07 f
+  memory/D[6] (cmem)                       0.00       0.07 f
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: d[7] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 f
+  d[7] (in)                                0.02       0.07 f
+  memory/D[7] (cmem)                       0.00       0.07 f
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: d[8] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 f
+  d[8] (in)                                0.02       0.07 f
+  memory/D[8] (cmem)                       0.00       0.07 f
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: d[9] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 f
+  d[9] (in)                                0.02       0.07 f
+  memory/D[9] (cmem)                       0.00       0.07 f
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: cen (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  cen (in)                                 0.02       0.07 r
+  ...
+  memory/CEN (cmem)                        0.18       0.25 r
+  data arrival time                                   0.25
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.25
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: a[0] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  a[0] (in)                                0.02       0.07 r
+  ...
+  memory/A[0] (cmem)                       0.21       0.27 r
+  data arrival time                                   0.27
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.27
+  -----------------------------------------------------------
+  slack (MET)                                         0.27
+
+
+  Startpoint: a[1] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  a[1] (in)                                0.02       0.07 r
+  ...
+  memory/A[1] (cmem)                       0.21       0.27 r
+  data arrival time                                   0.27
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.27
+  -----------------------------------------------------------
+  slack (MET)                                         0.27
+
+
+  Startpoint: a[2] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  a[2] (in)                                0.02       0.07 r
+  ...
+  memory/A[2] (cmem)                       0.21       0.27 r
+  data arrival time                                   0.27
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.27
+  -----------------------------------------------------------
+  slack (MET)                                         0.27
+
+
+  Startpoint: a[3] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  a[3] (in)                                0.02       0.07 r
+  ...
+  memory/A[3] (cmem)                       0.21       0.27 r
+  data arrival time                                   0.27
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.27
+  -----------------------------------------------------------
+  slack (MET)                                         0.27
+
+
+  Startpoint: a[4] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  a[4] (in)                                0.02       0.07 r
+  ...
+  memory/A[4] (cmem)                       0.21       0.27 r
+  data arrival time                                   0.27
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.27
+  -----------------------------------------------------------
+  slack (MET)                                         0.27
+
+
+  Startpoint: a[5] (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  a[5] (in)                                0.02       0.07 r
+  ...
+  memory/A[5] (cmem)                       0.21       0.27 r
+  data arrival time                                   0.27
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.27
+  -----------------------------------------------------------
+  slack (MET)                                         0.27
+
+
+  Startpoint: wen (input port clocked by clk)
+  Endpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.05       0.05 r
+  wen (in)                                 0.02       0.07 r
+  ...
+  memory/WEN (cmem)                        0.23       0.30 r
+  data arrival time                                   0.30
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.30
+  -----------------------------------------------------------
+  slack (MET)                                         0.30
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[15] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[15] (cmem)                      1.53       1.53 r
+  q[15] (out)                              0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         1.58
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[14] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[14] (cmem)                      1.53       1.53 r
+  q[14] (out)                              0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         1.58
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[13] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[13] (cmem)                      1.53       1.53 r
+  q[13] (out)                              0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         1.58
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[12] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[12] (cmem)                      1.53       1.53 r
+  q[12] (out)                              0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         1.58
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[11] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[11] (cmem)                      1.53       1.53 r
+  q[11] (out)                              0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         1.58
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[10] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[10] (cmem)                      1.53       1.53 r
+  q[10] (out)                              0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         1.58
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[9] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[9] (cmem)                       1.53       1.53 r
+  q[9] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         1.58
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[8] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[8] (cmem)                       1.53       1.53 r
+  q[8] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         1.58
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[7] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[7] (cmem)                       1.53       1.53 r
+  q[7] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         1.58
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[6] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[6] (cmem)                       1.53       1.53 r
+  q[6] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         1.58
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[5] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[5] (cmem)                       1.53       1.53 r
+  q[5] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         1.58
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[4] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[4] (cmem)                       1.53       1.53 r
+  q[4] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         1.58
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[3] (cmem)                       1.53       1.53 r
+  q[3] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         1.58
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[2] (cmem)                       1.53       1.53 r
+  q[2] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         1.58
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[1] (cmem)                       1.53       1.53 r
+  q[1] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         1.58
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[0] (cmem)                       1.53       1.53 r
+  q[0] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  output external delay                   -0.05      -0.05
+  data required time                                 -0.05
+  -----------------------------------------------------------
+  data required time                                 -0.05
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         1.58
+
+
+1

@@ -5,7 +5,7 @@
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim DE vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 19:42:22 on Nov 17,2024
+# Start time: 16:53:15 on Nov 23,2024
 # vlog -reportprogress 300 "+acc" -incr /courses/ee6321/share/ibm13rflpvt/verilog/ibm13rflpvt.v 
 # -- Skipping module BUFX2TS
 # -- Skipping module BUFX3TS
@@ -1075,28 +1075,37 @@
 # 	DLY4X4TS
 # 	TIEHITS
 # 	TIELOTS
-# End time: 19:42:23 on Nov 17,2024, Elapsed time: 0:00:01
+# End time: 16:53:16 on Nov 23,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim DE vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 19:42:23 on Nov 17,2024
-# vlog -reportprogress 300 "+acc" -incr ../../dc/fir/alu.nl.v 
-# -- Skipping module alu
+# Start time: 16:53:18 on Nov 23,2024
+# vlog -reportprogress 300 "+acc" -incr ../../dc/fir/cmem_large.nl.v 
+# -- Skipping module cmem_large
 # 
 # Top level modules:
-# 	alu
-# End time: 19:42:24 on Nov 17,2024, Elapsed time: 0:00:01
+# 	cmem_large
+# End time: 16:53:19 on Nov 23,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim DE vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 19:42:24 on Nov 17,2024
-# vlog -reportprogress 300 "+acc" -incr test_alu.v 
+# Start time: 16:53:19 on Nov 23,2024
+# vlog -reportprogress 300 "+acc" -incr test_cmem.v 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 19:42:25 on Nov 17,2024, Elapsed time: 0:00:01
+# End time: 16:53:20 on Nov 23,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vsim -voptargs="+acc" -t ps -lib work -sdftyp "alu=../../dc/fir/alu.syn.sdf" testbench 
-# Start time: 19:42:25 on Nov 17,2024
+# Model Technology ModelSim DE vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 16:53:20 on Nov 23,2024
+# vlog -reportprogress 300 "+acc" -incr ../../rtl/fir/cmem.v 
+# -- Skipping module cmem
+# 
+# Top level modules:
+# 	cmem
+# End time: 16:53:20 on Nov 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -t ps -lib work -sdftyp "cmem_large=../../dc/fir/cmem_large.syn.sdf" testbench 
+# Start time: 16:53:20 on Nov 23,2024
 # //  ModelSim DE 2024.2 May 20 2024 Linux 4.18.0-553.27.1.el8_10.x86_64
 # //
 # // Unpublished work. Copyright 2024 Siemens
@@ -1111,118 +1120,41 @@
 # // and may not be used in any way not expressly authorized by SISW.
 # //
 # Loading work.testbench
-# Loading work.alu
-# Loading work.DFFQX1TS
-# Loading work.DFFHQX8TS
-# Loading work.DFFTRX1TS
-# Loading work.MDFFHQX4TS
-# Loading work.DFFHQX4TS
+# Loading work.cmem_large
+# Loading work.cmem
 # Loading work.CLKBUFX2TS
-# Loading work.XNOR2X1TS
-# Loading work.XOR2X1TS
-# Loading work.NAND2XLTS
-# Loading work.NAND2BX1TS
-# Loading work.CLKAND2X2TS
-# Loading work.NOR2X1TS
-# Loading work.OA21XLTS
-# Loading work.NOR2X6TS
-# Loading work.INVX3TS
-# Loading work.NAND2X1TS
-# Loading work.BUFX2TS
-# Loading work.CLKINVX1TS
-# Loading work.BUFX3TS
-# Loading work.CLKINVX6TS
-# Loading work.NOR2XLTS
-# Loading work.NAND2X2TS
-# Loading work.NAND2X4TS
-# Loading work.OR2X1TS
-# Loading work.INVX4TS
-# Loading work.OAI21X1TS
-# Loading work.INVX2TS
-# Loading work.OAI2BB1X2TS
-# Loading work.CLKINVX2TS
-# Loading work.OAI2BB1X1TS
-# Loading work.NOR2X2TS
-# Loading work.OAI21X2TS
-# Loading work.XOR2X2TS
-# Loading work.BUFX4TS
-# Loading work.AO22X2TS
-# Loading work.ADDFHX1TS
-# Loading work.NOR2BX2TS
-# Loading work.AOI21X2TS
-# Loading work.XNOR2X2TS
-# Loading work.ADDFHX2TS
-# Loading work.OR2X2TS
-# Loading work.AO21X1TS
-# Loading work.OAI22X1TS
-# Loading work.CMPR32X2TS
-# Loading work.OAI22X2TS
-# Loading work.NOR2BX1TS
-# Loading work.NAND2BX2TS
-# Loading work.OR2X6TS
-# Loading work.NOR2X4TS
-# Loading work.INVX6TS
-# Loading work.OR2X4TS
-# Loading work.CLKINVX3TS
-# Loading work.INVX8TS
-# Loading work.BUFX6TS
-# Loading work.INVX12TS
-# Loading work.BUFX12TS
-# Loading work.OAI22X4TS
-# Loading work.XNOR2X4TS
-# Loading work.NOR2BX4TS
-# Loading work.XOR2X4TS
-# Loading work.ADDFHX4TS
-# Loading work.OAI2BB1X4TS
-# Loading work.NAND2X6TS
-# Loading work.OAI21X4TS
-# Loading work.NAND2X8TS
-# Loading work.AND2X8TS
-# Loading work.BUFX8TS
-# Loading work.OAI2BB2X4TS
-# Loading work.OR2X8TS
-# Loading work.CLKINVX12TS
-# Loading work.OAI21XLTS
-# Loading work.AO21X4TS
-# Loading work.NAND2BX4TS
-# Loading work.NAND3X2TS
-# Loading work.AOI21X4TS
-# Loading work.AND2X2TS
-# Loading work.AOI21X1TS
-# Loading work.INVX1TS
-# Loading work.NOR2X8TS
-# Loading work.OA21X2TS
-# Loading work.CMPR22X2TS
-# Loading work.OA22X4TS
-# Loading work.ADDHX1TS
-# Loading work.AO21X2TS
-# SDF 2024.2 Compiler 2024.05 May 20 2024
-# Loading instances from ../../dc/fir/alu.syn.sdf
-# Loading work.udp_dff
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'totalSumOut_reg_0_'.  Expected 5, found 4.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/alu/totalSumOut_reg_0_ File: ../../dc/fir/alu.nl.v Line: 216
-# ** Warning: (vsim-3722) ../../dc/fir/alu.nl.v(216): [TFMPC] - Missing connection for port 'QN'.
-# Loading work.udp_edfft
-# Loading work.udp_mux2
-# Loading timing data from ../../dc/fir/alu.syn.sdf
-# ** Warning: (vsim-8756) Instance 'testbench.alu.totalSumOut_reg_22_' - Negative timing check limits detected in simulation with cells modeled without delayed copies of data or reference signals.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench File: /courses/ee6321/share/ibm13rflpvt/verilog/ibm13rflpvt.v Line: 30286
+# Loading instances from ../../dc/fir/cmem_large.syn.sdf
+# Loading timing data from ../../dc/fir/cmem_large.syn.sdf
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench File: test_alu.v
-# Starting ALU testbench
-# inputX = 13604, inputB = 24193, totalSumIn = 0
-# Expected: 329121572, Got: 329121572
-# inputX = 54793, inputB = 22115, totalSumIn = 329121572
-# Expected: 1540868767, Got: 1540868767
-# inputX = 31501, inputB = 39309, totalSumIn = 1540868767
-# Expected: 2779141576, Got: 2779141576
-# inputX = 33893, inputB = 21010, totalSumIn = 2779141576
-# Expected: 3491233506, Got: 3491233506
-# inputX = 58113, inputB = 52493, totalSumIn = 3491233506
-# Expected: 6541759215, Got: 6541759215
-# ** Note: $finish    : test_alu.v(53)
-#    Time: 230 ns  Iteration: 1  Instance: /testbench
+#    Time: 0 ps  Iteration: 0  Instance: /testbench File: test_cmem.v
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/testbench/q'.
+# Executing ONERROR command at macro ./waveformat.do line 8
+# Starting cmem testbench
+# dataIn = 0, Address = 0
+# Expected: 0, Got: 0
+# dataIn = 1, Address = 1
+# Expected: 1, Got: 1
+# dataIn = 2, Address = 2
+# Expected: 2, Got: 2
+# dataIn = 3, Address = 3
+# Expected: 3, Got: 3
+# dataIn = 4, Address = 4
+# Expected: 4, Got: 4
+# dataIn = 5, Address = 5
+# Expected: 5, Got: 5
+# dataIn = 6, Address = 6
+# Expected: 6, Got: 6
+# dataIn = 7, Address = 7
+# Expected: 7, Got: 7
+# dataIn = 8, Address = 8
+# Expected: 8, Got: 8
+# dataIn = 9, Address = 9
+# Expected: 9, Got: 9
+# ** Note: $finish    : test_cmem.v(58)
+#    Time: 9200 ns  Iteration: 1  Instance: /testbench
 # 1
-# Break in Module testbench at test_alu.v line 53
-# End time: 19:43:11 on Nov 17,2024, Elapsed time: 0:00:46
-# Errors: 0, Warnings: 3
+# Break in Module testbench at test_cmem.v line 58
+add wave -position insertpoint  \
+sim:/testbench/Q
+# End time: 16:59:22 on Nov 23,2024, Elapsed time: 0:06:02
+# Errors: 0, Warnings: 0

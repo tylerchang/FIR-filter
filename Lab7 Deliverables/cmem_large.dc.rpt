@@ -1,0 +1,1006 @@
+1
+ 
+****************************************
+Report : area
+Design : cmem_large
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 16:46:09 2024
+****************************************
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+    USERLIB (File: /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/dc/fir/memory_tt_1p2v_25c_syn.db)
+
+Number of ports:                           41
+Number of nets:                            49
+Number of cells:                            9
+Number of combinational cells:              8
+Number of sequential cells:                 0
+Number of macros/black boxes:               1
+Number of buf/inv:                          8
+Number of references:                       2
+
+Combinational area:                 46.080002
+Buf/Inv area:                       46.080002
+Noncombinational area:               0.000000
+Macro/Black Box area:            12671.385742
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 12717.465744
+Total area:                 undefined
+1
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort medium
+Design : cmem_large
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 16:46:09 2024
+****************************************
+
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+    USERLIB (File: /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/dc/fir/memory_tt_1p2v_25c_syn.db)
+
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.2  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+cmem_large                             6.62e-03    2.658 3.22e+04    2.665 100.0
+1
+ 
+****************************************
+Report : design
+Design : cmem_large
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 16:46:09 2024
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    scx3_cmos8rf_lpvt_tt_1p2v_25c (File: /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db)
+    USERLIB (File: /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/dc/fir/memory_tt_1p2v_25c_syn.db)
+
+Local Link Library:
+
+    {/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : tt_1p2v_25c
+    Library : scx3_cmos8rf_lpvt_tt_1p2v_25c
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   1.20
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    No wire loading specified.
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1
+ 
+****************************************
+Report : cell
+Design : cmem_large
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 16:46:09 2024
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    d - dont_touch
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U1                        CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U2                        CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U3                        CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U4                        CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U5                        CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U6                        CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U7                        CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+U8                        CLKBUFX2TS      scx3_cmos8rf_lpvt_tt_1p2v_25c
+                                                          5.760000  
+memory                    cmem            USERLIB         12671.385742
+                                                                    b, d
+--------------------------------------------------------------------------------
+Total 9 cells                                             12717.465744
+1
+ 
+****************************************
+Report : port
+        -verbose
+Design : cmem_large
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 16:46:09 2024
+****************************************
+
+
+
+Attributes:
+    d - dont_touch_network
+    i - ideal_network
+
+                       Pin      Wire     Max     Max     Connection
+Port           Dir     Load     Load     Trans   Cap     Class      Attrs
+--------------------------------------------------------------------------------
+a[0]           in      0.0000   0.0000    1.02    0.00   --         
+a[1]           in      0.0000   0.0000    1.02    0.00   --         
+a[2]           in      0.0000   0.0000    1.02    0.00   --         
+a[3]           in      0.0000   0.0000    1.02    0.00   --         
+a[4]           in      0.0000   0.0000    1.02    0.00   --         
+a[5]           in      0.0000   0.0000    1.02    0.00   --         
+cen            in      0.0000   0.0000    1.02    0.00   --         
+clk            in      0.0000   0.0000    1.02    0.00   --         d, i
+d[0]           in      0.0000   0.0000    1.02    0.00   --         
+d[1]           in      0.0000   0.0000    1.02    0.00   --         
+d[2]           in      0.0000   0.0000    1.02    0.00   --         
+d[3]           in      0.0000   0.0000    1.02    0.00   --         
+d[4]           in      0.0000   0.0000    1.02    0.00   --         
+d[5]           in      0.0000   0.0000    1.02    0.00   --         
+d[6]           in      0.0000   0.0000    1.02    0.00   --         
+d[7]           in      0.0000   0.0000    1.02    0.00   --         
+d[8]           in      0.0000   0.0000    1.02    0.00   --         
+d[9]           in      0.0000   0.0000    1.02    0.00   --         
+d[10]          in      0.0000   0.0000    1.02    0.00   --         
+d[11]          in      0.0000   0.0000    1.02    0.00   --         
+d[12]          in      0.0000   0.0000    1.02    0.00   --         
+d[13]          in      0.0000   0.0000    1.02    0.00   --         
+d[14]          in      0.0000   0.0000    1.02    0.00   --         
+d[15]          in      0.0000   0.0000    1.02    0.00   --         
+wen            in      0.0000   0.0000    1.02    0.00   --         
+q[0]           out     0.0050   0.0000   --      --      --         
+q[1]           out     0.0050   0.0000   --      --      --         
+q[2]           out     0.0050   0.0000   --      --      --         
+q[3]           out     0.0050   0.0000   --      --      --         
+q[4]           out     0.0050   0.0000   --      --      --         
+q[5]           out     0.0050   0.0000   --      --      --         
+q[6]           out     0.0050   0.0000   --      --      --         
+q[7]           out     0.0050   0.0000   --      --      --         
+q[8]           out     0.0050   0.0000   --      --      --         
+q[9]           out     0.0050   0.0000   --      --      --         
+q[10]          out     0.0050   0.0000   --      --      --         
+q[11]          out     0.0050   0.0000   --      --      --         
+q[12]          out     0.0050   0.0000   --      --      --         
+q[13]          out     0.0050   0.0000   --      --      --         
+q[14]          out     0.0050   0.0000   --      --      --         
+q[15]          out     0.0050   0.0000   --      --      --         
+
+
+              External  Max             Min                Min       Min
+              Number    Wireload        Wireload           Pin       Wire
+Port          Points    Model           Model              Load      Load
+--------------------------------------------------------------------------------
+a[0]               1      --              --              --        -- 
+a[1]               1      --              --              --        -- 
+a[2]               1      --              --              --        -- 
+a[3]               1      --              --              --        -- 
+a[4]               1      --              --              --        -- 
+a[5]               1      --              --              --        -- 
+cen                1      --              --              --        -- 
+clk                1      --              --              --        -- 
+d[0]               1      --              --              --        -- 
+d[1]               1      --              --              --        -- 
+d[2]               1      --              --              --        -- 
+d[3]               1      --              --              --        -- 
+d[4]               1      --              --              --        -- 
+d[5]               1      --              --              --        -- 
+d[6]               1      --              --              --        -- 
+d[7]               1      --              --              --        -- 
+d[8]               1      --              --              --        -- 
+d[9]               1      --              --              --        -- 
+d[10]              1      --              --              --        -- 
+d[11]              1      --              --              --        -- 
+d[12]              1      --              --              --        -- 
+d[13]              1      --              --              --        -- 
+d[14]              1      --              --              --        -- 
+d[15]              1      --              --              --        -- 
+wen                1      --              --              --        -- 
+q[0]               1      --              --              --        -- 
+q[1]               1      --              --              --        -- 
+q[2]               1      --              --              --        -- 
+q[3]               1      --              --              --        -- 
+q[4]               1      --              --              --        -- 
+q[5]               1      --              --              --        -- 
+q[6]               1      --              --              --        -- 
+q[7]               1      --              --              --        -- 
+q[8]               1      --              --              --        -- 
+q[9]               1      --              --              --        -- 
+q[10]              1      --              --              --        -- 
+q[11]              1      --              --              --        -- 
+q[12]              1      --              --              --        -- 
+q[13]              1      --              --              --        -- 
+q[14]              1      --              --              --        -- 
+q[15]              1      --              --              --        -- 
+
+                    Input Delay
+                  Min             Max       Related   Max
+Input Port    Rise    Fall    Rise    Fall   Clock  Fanout
+--------------------------------------------------------------------------------
+a[0]          0.05    0.05    0.05    0.05  clk       4.00  
+a[1]          0.05    0.05    0.05    0.05  clk       4.00  
+a[2]          0.05    0.05    0.05    0.05  clk       4.00  
+a[3]          0.05    0.05    0.05    0.05  clk       4.00  
+a[4]          0.05    0.05    0.05    0.05  clk       4.00  
+a[5]          0.05    0.05    0.05    0.05  clk       4.00  
+cen           0.05    0.05    0.05    0.05  clk       4.00  
+clk           --      --      --      --      --      4.00
+d[0]          0.05    0.05    0.05    0.05  clk       4.00  
+d[1]          0.05    0.05    0.05    0.05  clk       4.00  
+d[2]          0.05    0.05    0.05    0.05  clk       4.00  
+d[3]          0.05    0.05    0.05    0.05  clk       4.00  
+d[4]          0.05    0.05    0.05    0.05  clk       4.00  
+d[5]          0.05    0.05    0.05    0.05  clk       4.00  
+d[6]          0.05    0.05    0.05    0.05  clk       4.00  
+d[7]          0.05    0.05    0.05    0.05  clk       4.00  
+d[8]          0.05    0.05    0.05    0.05  clk       4.00  
+d[9]          0.05    0.05    0.05    0.05  clk       4.00  
+d[10]         0.05    0.05    0.05    0.05  clk       4.00  
+d[11]         0.05    0.05    0.05    0.05  clk       4.00  
+d[12]         0.05    0.05    0.05    0.05  clk       4.00  
+d[13]         0.05    0.05    0.05    0.05  clk       4.00  
+d[14]         0.05    0.05    0.05    0.05  clk       4.00  
+d[15]         0.05    0.05    0.05    0.05  clk       4.00  
+wen           0.05    0.05    0.05    0.05  clk       4.00  
+
+
+                    Driving Cell
+Input Port   Rise(min/max)      Fall(min/max)      Mult(min/max)  Attrs(min/max)
+--------------------------------------------------------------------------------
+a[0]         INVX1TS            INVX1TS              -- /  --     
+a[1]         INVX1TS            INVX1TS              -- /  --     
+a[2]         INVX1TS            INVX1TS              -- /  --     
+a[3]         INVX1TS            INVX1TS              -- /  --     
+a[4]         INVX1TS            INVX1TS              -- /  --     
+a[5]         INVX1TS            INVX1TS              -- /  --     
+cen          INVX1TS            INVX1TS              -- /  --     
+clk          INVX1TS            INVX1TS              -- /  --     
+d[0]         INVX1TS            INVX1TS              -- /  --     
+d[1]         INVX1TS            INVX1TS              -- /  --     
+d[2]         INVX1TS            INVX1TS              -- /  --     
+d[3]         INVX1TS            INVX1TS              -- /  --     
+d[4]         INVX1TS            INVX1TS              -- /  --     
+d[5]         INVX1TS            INVX1TS              -- /  --     
+d[6]         INVX1TS            INVX1TS              -- /  --     
+d[7]         INVX1TS            INVX1TS              -- /  --     
+d[8]         INVX1TS            INVX1TS              -- /  --     
+d[9]         INVX1TS            INVX1TS              -- /  --     
+d[10]        INVX1TS            INVX1TS              -- /  --     
+d[11]        INVX1TS            INVX1TS              -- /  --     
+d[12]        INVX1TS            INVX1TS              -- /  --     
+d[13]        INVX1TS            INVX1TS              -- /  --     
+d[14]        INVX1TS            INVX1TS              -- /  --     
+d[15]        INVX1TS            INVX1TS              -- /  --     
+wen          INVX1TS            INVX1TS              -- /  --     
+
+
+               Max Drive      Min Drive      Resistance    Min    Min       Cell
+Input Port    Rise    Fall   Rise    Fall   Max     Min    Cap    Fanout    Deg
+--------------------------------------------------------------------------------
+a[0]          --      --     --      --     --      --     --     --        -- 
+a[1]          --      --     --      --     --      --     --     --        -- 
+a[2]          --      --     --      --     --      --     --     --        -- 
+a[3]          --      --     --      --     --      --     --     --        -- 
+a[4]          --      --     --      --     --      --     --     --        -- 
+a[5]          --      --     --      --     --      --     --     --        -- 
+cen           --      --     --      --     --      --     --     --        -- 
+clk           --      --     --      --     --      --     --     --        -- 
+d[0]          --      --     --      --     --      --     --     --        -- 
+d[1]          --      --     --      --     --      --     --     --        -- 
+d[2]          --      --     --      --     --      --     --     --        -- 
+d[3]          --      --     --      --     --      --     --     --        -- 
+d[4]          --      --     --      --     --      --     --     --        -- 
+d[5]          --      --     --      --     --      --     --     --        -- 
+d[6]          --      --     --      --     --      --     --     --        -- 
+d[7]          --      --     --      --     --      --     --     --        -- 
+d[8]          --      --     --      --     --      --     --     --        -- 
+d[9]          --      --     --      --     --      --     --     --        -- 
+d[10]         --      --     --      --     --      --     --     --        -- 
+d[11]         --      --     --      --     --      --     --     --        -- 
+d[12]         --      --     --      --     --      --     --     --        -- 
+d[13]         --      --     --      --     --      --     --     --        -- 
+d[14]         --      --     --      --     --      --     --     --        -- 
+d[15]         --      --     --      --     --      --     --     --        -- 
+wen           --      --     --      --     --      --     --     --        -- 
+
+
+               Max Tran        Min Tran
+Input Port    Rise    Fall    Rise    Fall
+--------------------------------------------------------------------------------
+a[0]          --      --      --      -- 
+a[1]          --      --      --      -- 
+a[2]          --      --      --      -- 
+a[3]          --      --      --      -- 
+a[4]          --      --      --      -- 
+a[5]          --      --      --      -- 
+cen           --      --      --      -- 
+clk           --      --      --      -- 
+d[0]          --      --      --      -- 
+d[1]          --      --      --      -- 
+d[2]          --      --      --      -- 
+d[3]          --      --      --      -- 
+d[4]          --      --      --      -- 
+d[5]          --      --      --      -- 
+d[6]          --      --      --      -- 
+d[7]          --      --      --      -- 
+d[8]          --      --      --      -- 
+d[9]          --      --      --      -- 
+d[10]         --      --      --      -- 
+d[11]         --      --      --      -- 
+d[12]         --      --      --      -- 
+d[13]         --      --      --      -- 
+d[14]         --      --      --      -- 
+d[15]         --      --      --      -- 
+wen           --      --      --      -- 
+
+
+                    Output Delay
+                  Min             Max      Related  Fanout
+Output Port   Rise    Fall    Rise    Fall  Clock     Load
+--------------------------------------------------------------------------------
+q[0]          0.05    0.05    0.05    0.05  clk       0.00  
+q[1]          0.05    0.05    0.05    0.05  clk       0.00  
+q[2]          0.05    0.05    0.05    0.05  clk       0.00  
+q[3]          0.05    0.05    0.05    0.05  clk       0.00  
+q[4]          0.05    0.05    0.05    0.05  clk       0.00  
+q[5]          0.05    0.05    0.05    0.05  clk       0.00  
+q[6]          0.05    0.05    0.05    0.05  clk       0.00  
+q[7]          0.05    0.05    0.05    0.05  clk       0.00  
+q[8]          0.05    0.05    0.05    0.05  clk       0.00  
+q[9]          0.05    0.05    0.05    0.05  clk       0.00  
+q[10]         0.05    0.05    0.05    0.05  clk       0.00  
+q[11]         0.05    0.05    0.05    0.05  clk       0.00  
+q[12]         0.05    0.05    0.05    0.05  clk       0.00  
+q[13]         0.05    0.05    0.05    0.05  clk       0.00  
+q[14]         0.05    0.05    0.05    0.05  clk       0.00  
+q[15]         0.05    0.05    0.05    0.05  clk       0.00  
+
+1
+ 
+****************************************
+Report : compile_options
+Design : cmem_large
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 16:46:09 2024
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+cmem_large                               flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         fix_multiple_port_nets feedthroughs
+                                                                constants
+                                                                outputs
+                                                                buffer_constants
+                                         isolate_port           disabled
+                                         multibit_options
+                                           optimization_mode    non_timing_driven
+                                           minimum_width        2
+                                           exclude_registers_with_timing_exceptions false
+--------------------------------------------------------------------------------
+1
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : cmem_large
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 16:46:09 2024
+****************************************
+
+
+    Design: cmem_large
+
+    max_area               0.00
+  - Current Area       12717.47
+  ------------------------------
+    Slack              -12717.47  (VIOLATED)
+
+
+    Pin: memory/CLK(high)
+
+    Period              2.00
+  - min_period          3.06
+  ------------------------------
+    Slack              -1.06 (VIOLATED)
+
+
+    Pin: memory/CLK(low)
+
+    Period              2.00
+  - min_period          3.06
+  ------------------------------
+    Slack              -1.06 (VIOLATED)
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 100
+        -max_paths 20
+Design : cmem_large
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 16:46:09 2024
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[15] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[15] (cmem)                      1.53       1.53 r
+  q[15] (out)                              0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[14] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[14] (cmem)                      1.53       1.53 r
+  q[14] (out)                              0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[13] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[13] (cmem)                      1.53       1.53 r
+  q[13] (out)                              0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[12] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[12] (cmem)                      1.53       1.53 r
+  q[12] (out)                              0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[11] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[11] (cmem)                      1.53       1.53 r
+  q[11] (out)                              0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[10] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[10] (cmem)                      1.53       1.53 r
+  q[10] (out)                              0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[9] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[9] (cmem)                       1.53       1.53 r
+  q[9] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[8] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[8] (cmem)                       1.53       1.53 r
+  q[8] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[7] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[7] (cmem)                       1.53       1.53 r
+  q[7] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[6] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[6] (cmem)                       1.53       1.53 r
+  q[6] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[5] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[5] (cmem)                       1.53       1.53 r
+  q[5] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[4] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[4] (cmem)                       1.53       1.53 r
+  q[4] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[3] (cmem)                       1.53       1.53 r
+  q[3] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[2] (cmem)                       1.53       1.53 r
+  q[2] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[1] (cmem)                       1.53       1.53 r
+  q[1] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[0] (cmem)                       1.53       1.53 r
+  q[0] (out)                               0.00       1.53 r
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[12] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[12] (cmem)                      1.53       1.53 f
+  q[12] (out)                              0.00       1.53 f
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[11] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[11] (cmem)                      1.53       1.53 f
+  q[11] (out)                              0.00       1.53 f
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[10] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[10] (cmem)                      1.53       1.53 f
+  q[10] (out)                              0.00       1.53 f
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+  Startpoint: memory (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: q[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  memory/CLK (cmem)                        0.00       0.00 r
+  memory/Q[0] (cmem)                       1.53       1.53 f
+  q[0] (out)                               0.00       1.53 f
+  data arrival time                                   1.53
+
+  clock clk (rise edge)                    2.00       2.00
+  clock network delay (ideal)              0.00       2.00
+  output external delay                   -0.05       1.95
+  data required time                                  1.95
+  -----------------------------------------------------------
+  data required time                                  1.95
+  data arrival time                                  -1.53
+  -----------------------------------------------------------
+  slack (MET)                                         0.42
+
+
+1

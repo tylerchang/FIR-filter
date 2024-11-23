@@ -1,11 +1,11 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /testbench/clk
-add wave -noupdate /testbench/rstn
-add wave -noupdate -radix unsigned /testbench/inputX
-add wave -noupdate -radix unsigned /testbench/inputB
-add wave -noupdate -radix unsigned /testbench/totalSumIn
-add wave -noupdate -radix unsigned /testbench/totalSumOut
+add wave -noupdate -radix unsigned /testbench/Data
+add wave -noupdate -radix unsigned /testbench/Address
+add wave -noupdate -radix unsigned /testbench/data_out
+add wave -noupdate -radix unsigned /testbench/data_in
+add wave -noupdate -radix unsigned /testbench/q
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {3 ns} 0}
 quietly wave cursor active 1

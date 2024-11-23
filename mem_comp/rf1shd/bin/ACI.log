@@ -1,0 +1,34 @@
+2:35:41 PM - ARM Physical IP, Inc.
+2:35:42 PM - Linux cadpc13 4.18.0-553.27.1.el8_10.x86_64 #1 SMP Fri Oct 18 06:18:15 EDT 2024 x86_64 x86_64 x86_64 GNU/Linux
+2:35:42 PM - Version 2008Q3V1
+2:35:42 PM - GUI version 5.6.13
+2:35:42 PM - 
+2:35:42 PM - CONFIDENTIAL AND PROPRIETARY SOFTWARE OF ARM PHYSICAL IP, INC.
+2:35:42 PM - 
+2:35:42 PM - Copyright (c) 1993 - 2024 ARM Physical IP, Inc.  All Rights Reserved.
+2:35:42 PM - 
+2:35:42 PM - Use of this Software is subject to the terms and conditions of the
+2:35:42 PM - applicable license agreement with ARM Physical IP, Inc. 
+2:35:42 PM - In addition, this Software is protected by patents, copyright law 
+2:35:42 PM - and international treaties.
+2:35:42 PM - 
+2:35:42 PM - The copyright notice(s) in this Software does not indicate actual or
+2:35:42 PM - intended publication of this Software.
+2:35:42 PM - 
+2:35:42 PM - High Speed/Density Single Port Register File Generator, IBM CMRF8SF-LPVT Process
+2:35:42 PM - 
+2:35:42 PM - Log file is ACI.log
+2:35:42 PM - 
+2:36:04 PM - ASCII Datatable updated
+2:37:06 PM - ASCII Datatable updated
+2:37:15 PM - ASCII Datatable updated
+2:37:20 PM - ASCII Datatable updated
+2:37:46 PM - command: /user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/mem_comp/rf1shd/bin/rf1shd verilog -instname imem -words 64 -bits 16 -frequency 100 -ring_width 2.0 -mux 2 -write_mask off -wp_size 8 -top_layer "m6-m8_m4" -power_type rings -horiz met1 -vert met2 -cust_comment "" -bus_notation on -left_bus_delim "[" -right_bus_delim "]" -pwr_gnd_rename "VDD:VDD,GND:VSS" -prefix "" -pin_space 0.0 -name_case upper -check_instname on -diodes on -inside_ring_type GND -drive 4 -asvm on -corners ff_1p32v_m55c,ff_1p65v_125c,tt_1p2v_25c,ss_1p08v_m55c
+2:37:46 PM - Verilog Model generator succeeded, created:
+2:37:46 PM -    imem.v
+2:37:47 PM - command: /user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/mem_comp/rf1shd/bin/rf1shd synopsys -instname imem -words 64 -bits 16 -frequency 100 -ring_width 2.0 -mux 2 -write_mask off -wp_size 8 -top_layer "m6-m8_m4" -power_type rings -horiz met1 -vert met2 -cust_comment "" -bus_notation on -left_bus_delim "[" -right_bus_delim "]" -pwr_gnd_rename "VDD:VDD,GND:VSS" -prefix "" -pin_space 0.0 -name_case upper -check_instname on -diodes on -inside_ring_type GND -drive 4 -asvm on -libname USERLIB -corners ff_1p32v_m55c,ff_1p65v_125c,tt_1p2v_25c,ss_1p08v_m55c
+2:37:48 PM - Synopsys Model generator succeeded, created:
+2:37:48 PM -    imem_ff_1p32v_m55c_syn.lib
+2:37:48 PM -    imem_ff_1p65v_125c_syn.lib
+2:37:48 PM -    imem_tt_1p2v_25c_syn.lib
+2:37:48 PM -    imem_ss_1p08v_m55c_syn.lib

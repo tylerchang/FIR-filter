@@ -1,0 +1,19 @@
+#
+FilenameExt	Key	CommandPVT	PVTHelp	PVTDescr
+S	S	S	S	S
+ff_1p65v_m55c	ff_1p65v_m55c	ff_1p65v_m55c	ff, 1.65V, -55\u00b0C	ff_1p65v_m55c
+ff_1p65v_m40c	ff_1p65v_m40c	ff_1p65v_m40c	ff, 1.65V, -40\u00b0C	ff_1p65v_m40c
+ff_1p65v_0c	ff_1p65v_0c	ff_1p65v_0c	ff, 1.65V, 0\u00b0C	ff_1p65v_0c
+ff_1p65v_125c	ff_1p65v_125c	ff_1p65v_125c	ff, 1.65V, 125\u00b0C	ff_1p65v_125c
+ff_1p32v_m55c	ff_1p32v_m55c	ff_1p32v_m55c	ff, 1.32V, -55\u00b0C	ff_1p32v_m55c
+ff_1p32v_m40c	ff_1p32v_m40c	ff_1p32v_m40c	ff, 1.32V, -40\u00b0C	ff_1p32v_m40c
+ff_1p32v_0c	ff_1p32v_0c	ff_1p32v_0c	ff, 1.32V, 0\u00b0C	ff_1p32v_0c
+tt_1p2v_25c	tt_1p2v_25c	tt_1p2v_25c	tt, 1.2V, 25\u00b0C	tt_1p2v_25c
+ss_1p08v_m55c	ss_1p08v_m55c	ss_1p08v_m55c	ss, 1.08V, -55\u00b0C	ss_1p08v_m55c
+ss_1p35v_70c	ss_1p35v_70c	ss_1p35v_70c	ss, 1.35V, 70\u00b0C	ss_1p35v_70c
+ss_1p35v_100c	ss_1p35v_100c	ss_1p35v_100c	ss, 1.35V, 100\u00b0C	ss_1p35v_100c
+ss_1p35v_125c	ss_1p35v_125c	ss_1p35v_125c	ss, 1.35V, 125\u00b0C	ss_1p35v_125c
+ss_1p08v_70c	ss_1p08v_70c	ss_1p08v_70c	ss, 1.08V, 70\u00b0C	ss_1p08v_70c
+ss_1p08v_100c	ss_1p08v_100c	ss_1p08v_100c	ss, 1.08V, 100\u00b0C	ss_1p08v_100c
+ss_1p08v_125c	ss_1p08v_125c	ss_1p08v_125c	ss, 1.08V, 125\u00b0C	ss_1p08v_125c
+

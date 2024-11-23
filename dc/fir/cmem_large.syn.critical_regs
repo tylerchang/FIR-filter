@@ -1,0 +1,59 @@
+ 
+****************************************
+Report : timing
+        -path end
+        -delay max
+        -max_paths 10000
+        -sort_by slack
+Design : cmem_large
+Version: U-2022.12-SP7
+Date   : Sat Nov 23 16:46:09 2024
+****************************************
+
+Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
+Wire Load Model Mode: top
+
+Endpoint                         Path Delay     Path Required     Slack
+------------------------------------------------------------------------
+q[15] (out)                         1.53 r            1.95         0.42
+q[14] (out)                         1.53 r            1.95         0.42
+q[13] (out)                         1.53 r            1.95         0.42
+q[12] (out)                         1.53 r            1.95         0.42
+q[11] (out)                         1.53 r            1.95         0.42
+q[10] (out)                         1.53 r            1.95         0.42
+q[9] (out)                          1.53 r            1.95         0.42
+q[8] (out)                          1.53 r            1.95         0.42
+q[7] (out)                          1.53 r            1.95         0.42
+q[6] (out)                          1.53 r            1.95         0.42
+q[5] (out)                          1.53 r            1.95         0.42
+q[4] (out)                          1.53 r            1.95         0.42
+q[3] (out)                          1.53 r            1.95         0.42
+q[2] (out)                          1.53 r            1.95         0.42
+q[1] (out)                          1.53 r            1.95         0.42
+q[0] (out)                          1.53 r            1.95         0.42
+memory/A[0] (cmem)                  0.27 r            1.14         0.87
+memory/A[1] (cmem)                  0.27 r            1.14         0.87
+memory/A[2] (cmem)                  0.27 r            1.14         0.87
+memory/A[3] (cmem)                  0.27 r            1.14         0.87
+memory/A[4] (cmem)                  0.27 r            1.14         0.87
+memory/A[5] (cmem)                  0.27 r            1.14         0.87
+memory/WEN (cmem)                   0.34 f            1.27         0.93
+memory/CEN (cmem)                   0.28 f            1.25         0.98
+memory/D[0] (cmem)                  0.07 f            1.55         1.48
+memory/D[10] (cmem)                 0.07 f            1.55         1.48
+memory/D[11] (cmem)                 0.07 f            1.55         1.48
+memory/D[12] (cmem)                 0.07 f            1.55         1.48
+memory/D[13] (cmem)                 0.07 f            1.55         1.48
+memory/D[14] (cmem)                 0.07 f            1.55         1.48
+memory/D[15] (cmem)                 0.07 f            1.55         1.48
+memory/D[1] (cmem)                  0.07 f            1.55         1.48
+memory/D[2] (cmem)                  0.07 f            1.55         1.48
+memory/D[3] (cmem)                  0.07 f            1.55         1.48
+memory/D[4] (cmem)                  0.07 f            1.55         1.48
+memory/D[5] (cmem)                  0.07 f            1.55         1.48
+memory/D[6] (cmem)                  0.07 f            1.55         1.48
+memory/D[7] (cmem)                  0.07 f            1.55         1.48
+memory/D[8] (cmem)                  0.07 f            1.55         1.48
+memory/D[9] (cmem)                  0.07 f            1.55         1.48
+
+1

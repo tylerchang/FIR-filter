@@ -1,7 +1,7 @@
 #@ # 
 #@ # Running dc_shell Version U-2022.12-SP7 for linux64 -- Oct 10, 2023
-#@ # Date:   Sun Nov 17 19:36:59 2024
-#@ # Run by: hz3000@cadpc06
+#@ # Date:   Sat Nov 23 16:44:27 2024
+#@ # Run by: tc3407@micro26
 #@ 
 
 source /tools/synopsys/syn/U-2022.12-SP7/admin/setup/.synopsys_dc.setup
@@ -8674,8 +8674,8 @@ source /tools/synopsys/syn/U-2022.12-SP7/admin/setup/.synopsys_dc.setup
 #@ 
 #@ # -- End source /tools/synopsys/syn/U-2022.12-SP7/admin/setup/.synopsys_dc.setup
 
-source -echo -verbose /homes/user/stud/fall24/hz3000/Desktop/fall24/FIR-filter/dc/fir/alu.tcl
-#@ # -- Starting source /homes/user/stud/fall24/hz3000/Desktop/fall24/FIR-filter/dc/fir/alu.tcl
+source -echo -verbose /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/dc/fir/cmem.tcl
+#@ # -- Starting source /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/dc/fir/cmem.tcl
 
 #@ #########################################
 #@ # TCL script for Design Compiler        #
@@ -8685,7 +8685,7 @@ source -echo -verbose /homes/user/stud/fall24/hz3000/Desktop/fall24/FIR-filter/d
 #@ #########################################
 #@ # READ Design and Library               #
 #@ #########################################
-#@ set top_level alu
+#@ set top_level cmem_large
 #@ source -verbose "../common_script/common.tcl"
 #@ # -- Starting source ../common_script/common.tcl
 
@@ -8694,7 +8694,7 @@ source -echo -verbose /homes/user/stud/fall24/hz3000/Desktop/fall24/FIR-filter/d
 #@ set synthetic_library [list "dw_foundation.sldb"]
 #@ set link_library [list "*" \
 #@                        "/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db" \
-#@                        "dw_foundation.sldb"]
+#@                        "dw_foundation.sldb" "../fir/memory_tt_1p2v_25c_syn.db"]
 #@ set target_library "/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db"
 #@ 
 #@ # -- End source ../common_script/common.tcl

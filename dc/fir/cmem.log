@@ -1,0 +1,485 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version U-2022.12-SP7 for linux64 - Oct 10, 2023 
+
+                    Copyright (c) 1988 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Current time:       Sat Nov 23 16:44:31 2024
+Hostname:           micro26
+CPU Model:          12th Gen Intel(R) Core(TM) i7-12700
+CPU Details:        Cores = 20 : Sockets = 1 : Cache Size = 25600 KB : Freq = 3.80 GHz
+OS:                 Linux 4.18.0-553.27.1.el8_10.x86_64
+RAM:                 30 GB (Free  14 GB)
+Swap:                31 GB (Free  31 GB)
+Work Filesystem:    /homes mounted to auto.homes
+Tmp Filesystem:     /tmp mounted to tmpfs
+Work Disk:          18974 GB (Free 6828 GB)
+Tmp Disk:            15 GB (Free  15 GB)
+
+CPU Load: 62%, Ram Free: 14 GB, Swap Free: 31 GB, Work Disk Free: 6828 GB, Tmp Disk Free: 15 GB
+#########################################
+# TCL script for Design Compiler        #
+# MS 2015                               #
+#########################################
+#########################################
+# READ Design and Library               #
+#########################################
+set top_level cmem_large
+cmem_large
+source -verbose "../common_script/common.tcl"
+. /tools4/syn2007.12/libraries/syn/
+dw_foundation.sldb
+* /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db dw_foundation.sldb ../fir/memory_tt_1p2v_25c_syn.db
+/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+read_verilog "../../rtl/fir/$top_level.v"
+Loading db file '/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
+Loading db file '/tools/synopsys/syn/U-2022.12-SP7/libraries/syn/dw_foundation.sldb'
+Loading db file '/homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/dc/fir/memory_tt_1p2v_25c_syn.db'
+Loading db file '/tools/synopsys/syn/U-2022.12-SP7/libraries/syn/gtech.db'
+Loading db file '/tools/synopsys/syn/U-2022.12-SP7/libraries/syn/standard.sldb'
+  Loading link library 'scx3_cmos8rf_lpvt_tt_1p2v_25c'
+  Loading link library 'USERLIB'
+  Loading link library 'gtech'
+Loading verilog file '/homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/rtl/fir/cmem_large.v'
+Detecting input file type automatically (-rtl or -netlist).
+Running DC verilog reader
+Performing 'read' command.
+Compiling source file /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/rtl/fir/cmem_large.v
+Reading with netlist reader (equivalent to -netlist option).
+Verilog netlist reader completed successfully.
+Current design is now '/homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/rtl/fir/cmem_large.db:cmem_large'
+Loaded 1 design.
+Current design is 'cmem_large'.
+cmem_large
+set set_fix_multiple_port_nets "true"
+true
+list_designs
+cmem_large (*)
+1
+if { [check_error -v] == 1 } { exit 1 }
+#########################################
+# Design Constraints                    #
+#########################################
+current_design $top_level
+Current design is 'cmem_large'.
+{cmem_large}
+link
+
+  Linking design 'cmem_large'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  cmem_large                  /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/rtl/fir/cmem_large.db
+  scx3_cmos8rf_lpvt_tt_1p2v_25c (library) /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+  dw_foundation.sldb (library) /tools/synopsys/syn/U-2022.12-SP7/libraries/syn/dw_foundation.sldb
+  USERLIB (library)           /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/dc/fir/memory_tt_1p2v_25c_syn.db
+
+1
+check_design
+1
+source -verbose "./timing.tcl"
+2.00
+0
+0.010
+0.05
+0.05
+0.005
+1
+1
+1
+1
+1
+1
+Warning: Design rule attributes from the driving cell will be set on the port 'clk'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'cen'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'wen'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'a[5]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'a[4]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'a[3]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'a[2]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'a[1]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'a[0]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'd[15]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'd[14]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'd[13]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'd[12]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'd[11]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'd[10]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'd[9]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'd[8]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'd[7]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'd[6]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'd[5]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'd[4]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'd[3]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'd[2]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'd[1]'. (UID-401)
+Warning: Design rule attributes from the driving cell will be set on the port 'd[0]'. (UID-401)
+1
+1
+1
+1
+1
+1
+set_max_capacitance 0.005 [all_inputs]
+1
+set_max_fanout 4 $top_level
+1
+set_max_fanout 4 [all_inputs]
+1
+set_max_area 0 
+1
+set_fix_multiple_port_nets -all -buffer_constants
+1
+#########################################
+# Compile                               #
+#########################################
+check_design
+1
+#uniquify
+current_design $top_level
+Current design is 'cmem_large'.
+{cmem_large}
+link
+
+  Linking design 'cmem_large'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  cmem_large                  /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/rtl/fir/cmem_large.db
+  scx3_cmos8rf_lpvt_tt_1p2v_25c (library)
+                              /courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db
+  dw_foundation.sldb (library)
+                              /tools/synopsys/syn/U-2022.12-SP7/libraries/syn/dw_foundation.sldb
+  USERLIB (library)           /homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/dc/fir/memory_tt_1p2v_25c_syn.db
+
+1
+compile_ultra
+Information: Performing leakage power optimization. (PWR-850)
+CPU Load: 62%, Ram Free: 14 GB, Swap Free: 31 GB, Work Disk Free: 6828 GB, Tmp Disk Free: 15 GB
+Analyzing: "/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | U-2022.12-DWBB_202212.5 |     *     |
+| Licensed DW Building Blocks        | U-2022.12-DWBB_202212.5 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Command Line | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 1                                      |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 1                                      |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 1                                      |
+| Number of Dont Touch Nets                               | 1                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+  Simplifying Design 'cmem_large'
+
+Loaded alib file './alib-52/scx3_cmos8rf_lpvt_tt_1p2v_25c.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+CPU Load: 64%, Ram Free: 14 GB, Swap Free: 31 GB, Work Disk Free: 6828 GB, Tmp Disk Free: 15 GB
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'cmem_large'
+CPU Load: 64%, Ram Free: 14 GB, Swap Free: 31 GB, Work Disk Free: 6828 GB, Tmp Disk Free: 15 GB
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'HOLDX1TS' in the library 'scx3_cmos8rf_lpvt_tt_1p2v_25c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Command 'do_operand_isolation' is obsolete and is being ignored.  Please refer to the replacement command 'set power_enable_datapath_gating true' instead. (INFO-118)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:04   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:04   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:04   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:04   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:05   12671.4      0.00       0.0      70.8                           32100.0000      0.00  
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+    0:00:05   12740.5      0.00       0.0       0.0                           32152.1387      0.00  
+    0:00:05   12740.5      0.00       0.0       0.0                           32152.1387      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:05   12740.5      0.00       0.0       0.0                           32152.1387      0.00  
+    0:00:05   12740.5      0.00       0.0       0.0                           32152.1387      0.00  
+    0:00:05   12740.5      0.00       0.0       0.0                           32152.1387      0.00  
+    0:00:05   12740.5      0.00       0.0       0.0                           32152.1387      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:06   12740.5      0.00       0.0       0.0                           32148.5352      0.00  
+    0:00:06   12717.5      0.00       0.0       0.0                           32153.9863      0.00  
+    0:00:06   12717.5      0.00       0.0       0.0                           32153.9863      0.00  
+    0:00:06   12717.5      0.00       0.0       0.0                           32153.9863      0.00  
+    0:00:06   12717.5      0.00       0.0       0.0                           32153.9863      0.00  
+    0:00:06   12717.5      0.00       0.0       0.0                           32153.9863      0.00  
+    0:00:06   12717.5      0.00       0.0       0.0                           32153.9863      0.00  
+    0:00:06   12717.5      0.00       0.0       0.0                           32153.9863      0.00  
+    0:00:06   12717.5      0.00       0.0       0.0                           32153.9863      0.00  
+    0:00:06   12717.5      0.00       0.0       0.0                           32153.9863      0.00  
+    0:00:06   12717.5      0.00       0.0       0.0                           32153.9863      0.00  
+CPU Load: 64%, Ram Free: 14 GB, Swap Free: 31 GB, Work Disk Free: 6828 GB, Tmp Disk Free: 15 GB
+Loading db file '/courses/ee6321/share/ibm13rflpvt/synopsys/scx3_cmos8rf_lpvt_tt_1p2v_25c.db'
+Loading db file '/homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/dc/fir/memory_tt_1p2v_25c_syn.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated black box outputs. (PWR-428)
+CPU Load: 65%, Ram Free: 14 GB, Swap Free: 31 GB, Work Disk Free: 6828 GB, Tmp Disk Free: 15 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+1
+#########################################
+# Optimize design                       #
+# Some pointers for possible optimizatio# 
+# Check the DC reference manual         #
+#########################################
+#set_transform_for_retiming {temp_reg[6] temp_reg[5] temp_reg[4] temp_reg[3] temp_reg[2] temp_reg[1] temp_reg[0]} dont_retime
+#optimize_registers -clock clk -edge rise -justification_effort high 
+#balance_registers
+#source -verbose "../script/timing.1.2ns.tcl"
+#pipeline_design -stages 8 -clock_port_name $clk_name -check_design -verbose -print_critical_loop
+#set_max_capacitance 1 [all_inputs] 
+#compile_ultra -no_autoungroup -no_boundary_optimization
+#remove_clock -all
+#pipeline_design -stages 8 -clock_port_name $clk_name -async_reset reset -check_design -verbose -minimum_period_only
+#########################################
+# Write outputs                         #
+#########################################
+source -verbose "../common_script/namingrules.tcl"
+1
+
+Design          Type    Object                  New Name
+--------------------------------------------------------------------------------
+1
+1
+set verilogout_no_tri TRUE
+TRUE
+write -hierarchy -format verilog -output "${top_level}.nl.v"
+Writing verilog file '/homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/dc/fir/cmem_large.nl.v'.
+1
+#write_sdf -context verilog "${top_level}.temp.sdf"
+write_sdc "${top_level}.syn.sdc" -version 1.7
+1
+write_sdf "${top_level}.syn.sdf"
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/homes/user/stud/fall24/tc3407/Desktop/Fall2024-Advanced-Logic-Design/FIR-filter/dc/fir/cmem_large.syn.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+# Generate report file
+set maxpaths 20
+20
+set rpt_file "${top_level}.dc.rpt"
+cmem_large.dc.rpt
+check_design > $rpt_file
+report_area  >> ${rpt_file}
+report_power -hier -analysis_effort medium >> ${rpt_file}
+report_design >> ${rpt_file}
+report_cell >> ${rpt_file}
+report_port -verbose >> ${rpt_file}
+report_compile_options >> ${rpt_file}
+report_constraint -all_violators -verbose >> ${rpt_file}
+report_timing -path full -delay max -max_paths $maxpaths -nworst 100 >> ${rpt_file}
+report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack > ${top_level}.syn.critical_regs
+report_timing -delay max -nworst 1 -max_paths 10000 -path full -nosplit -unique -sort_by slack > ${top_level}.syn.critical_regs.full
+report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack -to [all_outputs] > ${top_level}.syn.critical_regs.output
+report_timing -delay max -nworst 1 -max_paths 10000 -path end -nosplit -unique -sort_by slack -to [all_registers -data_pins] > ${top_level}.syn.critical_regs.regs
+report_timing -delay min -nworst 1 -max_paths 10000 -path short -nosplit -unique -sort_by slack > ${top_level}.syn.fast_path
+quit
+
+Memory usage for this session 251 Mbytes.
+Memory usage for this session including child processes 251 Mbytes.
+CPU usage for this session 95 seconds ( 0.03 hours ).
+Elapsed time for this session 118 seconds ( 0.03 hours ).
+
+Thank you...
